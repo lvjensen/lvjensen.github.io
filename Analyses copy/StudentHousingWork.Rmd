@@ -1,0 +1,70 @@
+---
+title: "Student Housing Costs"
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+    toc: true
+    toc_float: true
+---
+
+```{r, include=FALSE}
+library(mosaic)
+library(DT) # If you get an error stating: 
+            # Error in library(DT): there is no package called 'DT'
+            # You will need to run: install.packages("DT") 
+            # in your Console, then try "Knit HTML" again.
+Rent <- read.csv("../Data/Rent.csv", header=TRUE)
+```
+
+<br />
+
+## Background
+
+Stephanie[^1] is a student that will be starting school at BYU-Idaho next semester. Here is a copy of the email request for information that she sent.
+
+"Hi. My name is Stephanie. I would like to learn about what housing options I have for living at BYU-Idaho next semester. It will be my first semester there, so I would like to find something that is close to campus and around $300 a month in rent. I'm not too picky on roomates, but I would like somewhere that has a lot of people around so I can get to know as many people as possible. Thanks in advance!"
+
+Use the data from the [BYU-Idaho Housing Website](https://web.byui.edu/tis/search) to prepare an Analysis that will answer Stephanie's questions and give her some recommendations on a few apartments that best meet her criterions above. However, also be sure to demonstrate all of her options to her.
+
+For your convenience, the first three observations of a dataset pulled from the BYUI website are shown in the following table. There are a total of `r nrow(Rent)` observations in the dataset.
+
+<!-- Hint, you should probably subset the Rent dataset to only show the "Approved Women's Housing" since Stephanie won't be interested in Male Housing options. Also, you can edit this background however you wish when completing your analysis. Notice how this text in green doesn't show up in the HTML output because we used the HTML comment tags around this text. --> 
+
+```{r}
+datatable(Rent, options=list(lengthMenu = c(3,10,30)))
+```
+
+
+## Analysis
+```{r message=FALSE, warning=FALSE}
+library(plotly)
+
+ RentF<-subset(Rent, Gender=="F")
+ rentf2<-subset(RentF, !is.na(Cost))
+ sally<-subset(rentf2, !is.na(WalkMinutes))
+ f<-list(family='Courier New, monospace', size=18, color='#7f7f7f')
+ plot_ly(sally, x = ~Residents, y = ~Cost, type='scatter', mode="markers", text = ~paste(Apartment, "<br>MINUTES TO CAMPUS:", WalkMinutes)) %>% layout(title="Housing for Women in Rexburg", xaxis = list(title="Amount of Residents", titlefont=f), yaxis=list(title="Cost per Semester", titlefont=f))
+
+
+```
+
+  
+  
+    
+  Depending on each students desires, goals, and budget, one could easily find a preferable complex to live in. While constructing the graph, it was evident that there is a trend within the data that shows that with more residents allowed in the complex there is a higher cost of housing. For this reason, the graph was constructed to compare those 2 elements. In addition to this, we can still see each complex's distance from campus while hovering over each data point. Important information to know is that the mean cost for rent for women is $1141.994, while the maximum was $1585 and the minimum was $870. The median amount of residents for all female housing is 92, while the maximum is 636 and the minimum is 5. It was decided that the median would be more suitable for the amount of residents because the information is skewed to the right. 
+  
+## Interpretation
+  If we consider that anything above the median amount of residents per housing complex is to be considered a large housing complex, we can reduce the number of viable housing situations for Stephanie. Also, we must note that a rent of $300/month is about $980/semester after taking into account that a semester at BYU-Idaho is normally 14 weeks long, or 98 days. Therefore, there are only 12 complexes that fall under Stephanie's budget. Our 3 recommendations for Stephanie's situation are Aspen Village, Birch Plaza or Brooklyn Apartments.
+  Aspen Village's cost for women is just $900/semester. Their number of residents/semester is 210. They are only a 6 minute walk from campus.
+  Birch Plaza's cost for women is $980/semester. Their number of residents/semester is 343. They are just a minute from campus.
+  Finally, Brooklyn Apartments's cost for women is $870/semester. Their number of residents/semester is 144. They are a 7 minute walk from campus.
+
+
+
+
+
+
+
+
+[^1]: Note that Stephanie is a fictional character who is based on real experiences of many faculty and staff here at BYU-Idaho.

@@ -1,0 +1,62 @@
+---
+title: "Recalling Recalling Words"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(mosaic)
+library(car)
+library(DT)
+library(pander)
+library(plotly)
+datatable(Friendly)
+```
+
+## Background
+
+In the `RecallingWords` analysis of Week 4 (Wilcoxon Tests) you were restricted to testing only two groups at a time. Revisit that analysis with a Kruskal-Wallis Test. What advantages and disadvantages does this approach have over your original analysis?
+
+$$
+H_0: \text{The samples are all from the same distribution}
+$$
+$$
+H_a: \text{At least one sample's distribution is stochastically different}
+$$
+## Graphic
+
+```{r}
+sfr<-subset(Friendly, condition == 'SFR')
+before<-subset(Friendly, condition == 'Before')
+mesh<-subset(Friendly, condition == 'Meshed')
+plot_ly(type='box') %>%
+add_boxplot(y=sfr$correct, name = 'SFR') %>%
+add_boxplot(y=before$correct, name = 'Before') %>%
+add_boxplot(y=mesh$correct, name = 'Meshed') %>%
+layout(title='Scores of Words Exam by Group', yaxis=list(title='Number of Words Recalled'), xaxis = list(title = 'Group'))
+```
+
+
+## Summary Table
+
+```{r}
+pander(favstats(sfr$correct))
+pander(favstats(mesh$correct))
+pander(favstats(bef$correct))
+```
+
+
+## Kruskal-Wallis Test
+
+```{r}
+pander(kruskal.test(correct~condition, data=Friendly))
+```
+
+
+
+## Interpretation
+
+
+
+## Conclusion
+
+Be sure to compare how the conclusions of this approach differ from your conclusions of your Wilcoxon Test analysis. Which approach do you find more meaningful, and why?

@@ -1,0 +1,181 @@
+---
+title: "Best Education Strategies"
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+---
+
+<script type="text/javascript">
+ function showhide(id) {
+    var e = document.getElementById(id);
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+ }
+</script>
+
+```{r, include=FALSE}
+library(mosaic)
+library(car)
+library(pander)
+library(DT) #You may need to run: install.packages("DT") 
+```
+
+```{r, eval=FALSE}
+# Play the chunk above and this one to get the data into your Console
+View(Friendly)
+?Friendly
+```
+
+
+<br />
+
+#### Background
+
+Many teachers and other educators are interested in understanding how to best deliver new content to students. In general, they have two choices of how to do this.
+
+1. The Meshed Approach
+    * Deliver new content while simultaneously reviewing previously understood content.
+
+2. The Before Approach
+    * Deliver new content after fully reviewing previously understood content.
+
+A study was performed to determine whether the *Meshed* or *Before* approaches to delivering content had any positive benefits on memory recall. 
+
+<div style="padding-left:15px;">
+
+##### <a href="javascript:showhide('uniquename')">The Experiment <span style="font-size:8pt;">(click to view)</span></a>
+
+
+<div id="uniquename" style="display:none;">
+
+Individuals were seated at a computer and shown a list of words. Words appeared on the screen one at a time, for two seconds each, until all words had been shown (40 total). After all words were shown, they were required to perform a few two-digit mathematical additions (like 15 + 25) for 15 seconds to avoid immediate memory recall of the words. They were then asked to write down as many of the 40 words as they could remember. They were given a maximum of 5.3 minutes to recall words.
+
+The process of showing words and recalling words was repeated four times with the same list of words each time (four chances to get it right). The presentation of the first trial was the same for all treatment conditions. However, trials 2, 3, and 4 were slightly different for each treatment condition.
+
+<div style="padding-left:15px;">
+
+The `SFR` group (the control group) stands for Standard Free Recall. In all four trials the same list of 40 words was presented, in a random order each time.
+
+The `Before` group also used the same 40 words during each trial. However, any words that were correctly recalled in a previous trial were presented first, or *before* the words that were not recalled in the last trial. After all the correct words were presented in random order, the non-recalled words were presented in a random order.
+
+The `Meshed` group also used the same 40 words during each trial. However, words that were correctly recalled in a previous trial were alternated with a missed word during the next presentation order. 
+
+</div>
+
+The data records the number of correctly recalled words (out of the 40 possible) from the fourth trial. Results were obtained for 30 students, 10 in each of the three treatment groups: `SFR`, `Before`, and `Meshed`. 
+
+This study could prove beneficial for students as well. One common question that often submerges among students is what is the most effective way to study? We read several different methods on how to study, yet all of the solutions vary. This research could help answer what ways of studying can be effective, or if changing the way we study would be worth our time.
+
+</div>
+
+##### <a href="javascript:showhide('uniquename2')">The Data <span style="font-size:8pt;">(click to view)</span></a>
+
+<div id="uniquename2" style="display:none;">
+
+The results from the study can be found in the `Friendly` data set in R after loading `library(car)`. 
+
+Click the "Code" button to see the data.
+
+
+```{r}
+datatable(Friendly, options=list(lengthMenu = c(5,10,30)))
+```
+</div>
+</div>
+<div style="padding-left:15px;">
+
+##### <a href="javascript:showhide('uniquename3')">Analysis <span style="font-size:8pt;">(click to view)</span></a>
+<div id="uniquename3" style="display:none;">
+Below we show a boxplot that shows comparisons between the 3 recall groups. Notice that each group has a boxplot and the data points are next to it in the same color. A table revealing the different quantiles for the data was also added.
+
+
+To decide whether or not these two different forms of recall were or were not more effective than the standard group, two tests were performed. The first is to compare the Before group to the SFR group. In other words, is the median of the SFR group stochastically different than the median of the Before group?
+
+$$
+  H_0: The \ distributions \ are \ stochastically \ equal
+$$
+
+$$
+  H_a: The \ distribution \ of \ the \ Before \ group \ is \ stochastically \ greater \ than \ the \ SFR \ group.
+$$
+$$
+\alpha=0.025
+$$
+After using a Wilcoxon Rank Sum Test for the Before and SFR groups, the following results were found:
+
+```{r message=FALSE, warning=FALSE}
+sfr<-subset(Friendly, condition == 'SFR')
+before<-subset(Friendly, condition == 'Before')
+mesh<-subset(Friendly, condition == 'Meshed')
+pander(wilcox.test(before$correct, sfr$correct, mu = 0, alternative = 'greater', conf.level = 0.95))
+```
+
+
+
+\ Therefore our result is to reject the null.
+
+We then decided to test the Meshed method against the standard method. In other words, is the median of the meshed group stochasticlly different than the median of the Standard group?
+$$
+  H_0: The \ distributions \ are \ stochastically \ equal
+$$
+
+$$
+  H_a: The \ distribution \ of \ the \ Meshed \ group \ is \ stochastically \ greater \ than \ the \ SFR \ group.
+$$
+
+$$
+\alpha=0.025
+$$
+After performing Wilcoxon Rank Sum test for the Meshed and SFR groups, the follwing results were found:
+
+```{r message=FALSE, warning=FALSE}
+pander(wilcox.test(mesh$correct, sfr$correct, mu = 0, alternative = 'greater', conf.level = 0.95))
+```
+
+
+\ Therefore our result is to fail to reject the null.
+
+\ It is important to note that for both tests there were ties present in the data. Therefore approximations to the p-value instead of the exact p-value were computed in each case.
+
+```{r message=FALSE, warning=FALSE}
+library(plotly)
+sfr<-subset(Friendly, condition == 'SFR')
+before<-subset(Friendly, condition == 'Before')
+mesh<-subset(Friendly, condition == 'Meshed')
+plot_ly(type='box') %>%
+add_boxplot(y=sfr$correct, name = 'SFR') %>%
+add_boxplot(y=before$correct, name = 'Before') %>%
+add_boxplot(y=mesh$correct, name = 'Meshed') %>%
+layout(title='Scores of Words Exam by Group', yaxis=list(title='Number of Words Recalled'), xaxis = list(title = 'Group'))
+```
+```{r}
+library(pander)
+pander(favstats(correct~condition, data=Friendly))
+```
+</div>
+</div>
+<div style="padding-left:15px;">
+
+##### <a href="javascript:showhide('uniquename4')">Interpretation <span style="font-size:8pt;">(click to view)</span></a>
+<div id="uniquename4" style="display:none;">
+
+The evidence shows 2 conlusions. The first is to conclude that there is sufficient evidence to show that the distribution of the Before groups is stochastically greater than the distribution of the SFR group. Also, because of the second test, we can say that there is insufficient evidence to show that the distribution of the Meshed group is stochastically greater than the distribution of the SFR group. 
+
+\ What this would mean for educators is that the Before group is proven to be of greater value than the SFR group. We would therefore recommend that educational institutions develop programs based around this form of teaching. 
+
+\ In addition to this, for students looking for effective ways of study, we can conclude that studying what you know before studying what you don't has been proven to help. We would recommend this form of study for the students. 
+</div>
+</div>
+
+<br />
+
+
+<!-- Begin writing your analysis below here. -->
+
+<!-- Note that your goal is to use the Friendly data to show whether or not the Meshed or Before methods have any positive benefit on memory recall. -->
+
+
+
+
+
+

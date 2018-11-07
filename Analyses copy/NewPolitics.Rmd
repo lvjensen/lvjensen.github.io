@@ -1,0 +1,81 @@
+---
+title: "Politics and Gender"
+output: 
+  html_document: 
+    theme: cerulean
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+library(mosaic)
+library(car)
+library(pander)
+library(plyr)
+library(DT)
+GSS2012 <- read.table("../Data/GSS2012.csv", sep="\t", header=TRUE)
+```
+
+## Background
+“The General Social Survey (GSS) conducts basic scientific research on the structure and development of American society with a data-collection program designed to both monitor societal change within the United States and to compare the United States to other nations.” - GSS
+
+This analysis will be based off of the General Social Survey, which is a survey done for scientific research based on Americans and their development. I thought it would be interesting to find if there are differences in the distribution of Women in the political spectrum compared to Men.
+
+The following table represents the observed counts of data. Note that the numbers represent the American people rated in a political aspect. For instance, 0 means they are a strong Democrat and 6 means they are a strong Republican, then 3 means they are independent or neutral.
+
+```{r plot}
+GSS2<-GSS2012[c('sex','partyid')]
+GSS2$newsex<-mapvalues(GSS2$sex, c(1,2), c('Male','Female'))
+GSStab<-subset(GSS2, partyid==0 | partyid==1 | partyid==2 | partyid==3 | partyid==4 | partyid==5 | partyid==6)
+poltab<-table(GSStab$partyid, GSStab$newsex)
+pander(poltab)
+```
+
+And I will base the rest of my analysis based off of the following hypotheses:
+$$
+  H_{01}:\ \text{Gender and Political Identity are not associated.}
+$$ 
+
+$$
+  H_{a1}:\ \text{Gender and Political Identity are associated.}
+$$
+## Data
+
+The data comes from a sample of 1,906 entries.
+
+```{r}
+datatable(GSStab,options = list(lengthMenu=c(5,10,20)))
+```
+
+
+## Analysis
+
+```{r}
+GSSchi<-chisq.test(poltab)
+pander(GSSchi)
+```
+
+Based off of the observed outcomes, I've also created an expected counts table to represent the results if everything were to follow order.
+
+```{r}
+pander(chisq.test(poltab)$expected)
+```
+
+Knowing all the expected counts are at least 5 will allow us to conclude that the assumptions for this test are met.
+
+Our above Chi-Squared test showed significant results within the test. According to the test, there is a measurable difference between the distribution of women in their political opinion and the distribution of men in their political opinion.
+
+```{r}
+barplot(poltab, beside=TRUE, legend.text = TRUE, args.legend = list(bty='n', legend=c('Strong Dem.', 'Democrat', 'Near Dem.', 'Neutral', 'Near Rep.','Rep','Strong Rep.')), col = c('blue','red','purple','orange','yellow','brown','green'), ylab='Number of Occurences', main='GSS Results of \n Political Party based off of Gender')
+```
+
+These values are also represented in the residuals table below. The residuals table is a portrayal of the contrasts between the expected outcomes and the observed outcomes.
+
+```{r}
+pander(GSSchi$residuals)
+```
+
+## Interpretation
+
+It's interesting that the most noticeable differences is in the strong Democrat sections. The Male barplot seems to be more level with less extreme changes while the Women's barplot has huge rises around the strong Democrat sections. The least significant area of the barplot is around the strong Republican side. It seems based off of this data that women seem to be stronger Democratic, although more testing would allow this statement to be more accurate and precise. 
+
+For now, the only conclusion we will make is that gender and political identity seem to be associated in some way. As the p-value is 1.025e-05, there is sufficient evidence to reject our null hypothesis that these two variables are independent. 

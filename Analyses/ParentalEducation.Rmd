@@ -1,0 +1,78 @@
+---
+title: "The Importance of Education for Mothers"
+author: "Logan Jensen"
+output: 
+  html_document:
+    theme: spacelab
+    code_folding: hide
+---
+
+```{r message=FALSE, warning=FALSE}
+library(mosaic)
+library(Ecdat)
+library(DT)
+library(plotly)
+library(pander)
+library(car)
+```
+
+
+## Background
+I often have conversations with my wfe about how important education is. I've always been a firm believer in getting as much education as possible. I have plans to eventually go on to get professional degrees and I think learning here at BYUI has been one of the greatest opportunities of my life. My wife feels the same way more often than not. However, we often have the question of what to do if we were to have a child. We're both eager to become parents and she feels like it could be difficult to be in school and be a mother. She also has an additional two years than I do until she finishes and often would rather get an associate's degree in place of a bachelor's degree. One worry she has is if failing to finish an education would effect our children in their educational endeavors. She sometimes worries that her lack of education would be an example of how education is not important. This eventually posed the question, does a mother's education effect the intelligence her kids will have later on in life? 
+
+The hypothesis for our question is posed below:
+
+$$
+\left.\begin{array}{ll}
+H_0: \beta_0 = 0\\
+H_a: \beta_0 \neq 0
+\end{array}
+\right\} \ \text{Intercept Hypothesis}
+$$
+
+$$
+\left.\begin{array}{ll}
+H_0: \beta_1 = 0\\
+H_a: \beta_1 \neq 0
+\end{array}
+\right\} \ \text{Slope Hypothesis}
+$$
+
+
+## Data
+I used a dataset from 1976 to find the answer to our question. It was a study carried out from 1966-1976 to measure the educational developments in children and the later results.
+```{r message=FALSE, warning=FALSE}
+datatable(Schooling, options=list(lengthMenu = c(3,10,30)))
+```
+
+
+
+## Analysis
+I developed the following plot to represent the data. 
+```{r message=FALSE, warning=FALSE}
+momlm<-lm(iqscore~momed, data=Schooling)
+plot(iqscore~momed, data=Schooling, col='darkred', xlab="Mother's Education(In Years)", ylab = 'Normalized IQ Score of the Child', pch=20)
+abline(momlm, col='navy')
+```
+
+
+I have plots to test the assumptions below. It shows that the normality of the error terms is approximately normal and the variance of the error terms is constant. It also shows evidence of a linear relationship.
+
+
+```{r}
+par(mfrow=c(1,2))
+plot(momlm, which=1:2, col='navy')
+```
+
+```{r message=FALSE, warning=FALSE}
+pander(summary(momlm))
+```
+
+## Interpretation
+
+After reviewing the data, there is sufficient evidence to conlude that there is a linear relationship between a mother's education and her child's iq. The estimated equation for this graph would be the following:
+$$
+Y_i = 84.45 + 1.314X_i +\epsilon_i
+$$
+Evidence shows that for every additional year of education a mother receives, their child's iq will increase by 1.314. Note that the R Squared values of this test are very weak, so this line could be inaccurate. However, we can safely conclude there is some type of positive slope present. I would recommend a test be done with more current data to verify if this trend has changed. For now, I would recommend that mothers receive as much education as they can, as the evidence shows that their education will effect how their children will develop intellectually as far as IQ goes.
+
