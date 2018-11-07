@@ -85,4 +85,4 @@ There is sufficient Evidence to conclude that the first 3 coefficients are not e
 
 What these coefficients mean for us is that we should be wiser with our Corvette purchases and the way we treat our Corvettes. According to this regression, for each additional mile, the Corvette would lose $0.3661 in value. When using a Corvette, one should keep this in mind.
 
-AccrodinAgain, please keep in mind the lack of normality of the plots, as this could've effected the significance of the data.
+Again, please keep in mind the lack of normality of the plots, as this could've effected the significance of the data.

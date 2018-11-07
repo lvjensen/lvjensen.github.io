@@ -18,3 +18,4 @@ output:
 ----
 
 - [Car Prices Statistical Analysis](Analyses/CarPrices.html)
+- [Income in Politics Logistic Regression Analysis](Analyses/PoliticalIncome.html)
