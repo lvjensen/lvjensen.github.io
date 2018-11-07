@@ -1,0 +1,12 @@
+name: "little-book-of-RStudio-websites"
+output:
+  html_document:
+    theme: flatly # specifies the theme
+navbar:
+  left:
+    - text: "Data"
+      href: Date
+    - text: "Analyses"
+      href: Analyses
+      
+output_dir: "." 
