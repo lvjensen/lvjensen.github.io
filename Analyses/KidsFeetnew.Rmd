@@ -1,0 +1,73 @@
+---
+title: "Why are Women's Shoe Sizes Different than Men's Shoe Sizes?"
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+---
+
+```{r, include=FALSE}
+library(mosaic)
+library(DT)
+```
+
+```{r, eval=FALSE, include=FALSE}
+# Run this in your Console to see the data.
+View(KidsFeet)
+?KidsFeet
+```
+
+<!-- Instructions
+
+1. Use the KidsFeet dataset in R to come up with a question that can be answered with a t Test (One Sample, Paired Samples, or Independent Samples).
+
+2. Establish why the question is interesting. State the question in written form as well as with a statistical "null" and "alternative" hypothesis.
+
+3. Clearly answer your question using statistics. Be sure to compute a p-value and provide supporting numerical and graphical summaries. Also be sure to establish whether or not the requirements of your t test have been satisfied. (See the Math 325 Notebook for details.)
+
+-->
+##Introduction
+
+
+There are a lot of different things about men and women. The accepted truth is that the average male tends to be larger than the average female. Thus it's concluded that the average boy has a larger foot than the average girl; furthermore there are different standards for shoe sizes between men and females. However, if the length of the foot is the only difference between the standard shoe sizes of women and the standard shoe sizes of males, then there is no need for different shoe size standards between boys and girls. We can have shoe sizes based off of centimeters and not based off of the current standards. The only thing that would not permit this change is if the width of boys' feet are different than the width of girls' feet. Then we would have to have seperate shoe size standards for boys and girls because of foot shape. In other words; is there a difference between the mean width of boys' feet and the mean width of girls' feet? To find the answer, a sample of 4th graders from Michigan was used. 
+
+$$
+  H_0: \mu_{\text{Boys Feet Width}} - \mu_{\text{Girls Feet Width}} = 0
+$$
+$$
+H_a: \mu_{\text{Boys Feet Width}} - \mu_{\text{Girls Feet Width}} ≠ 0
+$$
+$$
+\alpha = .05
+$$
+##Analysis
+
+
+
+```{r message=FALSE, warning=FALSE}
+library(mosaic)
+boxplot(width~sex, data=KidsFeet, xlab= 'Sex', ylab='Length of Foot (in cm)', main = 'Larger Foot Widths of Boys and Girls \n in 4th Grade', col=c('blue', 'pink'), names=c('Boys', 'Girls'))
+```
+
+
+```{r message=FALSE, warning=FALSE}
+library(car)
+par(mfrow=c(1,2))
+girls<-subset(KidsFeet, sex=='G')
+qqPlot(girls$width, xlab = 'Norm Quantiles', ylab = 'Width of Foot (in cm)', main = 'QQ Plot of the Width of the \n Larger Foot of the Girls', col = 'pink', pch = 19)
+boys<-subset(KidsFeet, sex=='B')
+qqPlot(boys$width, xlab = 'Norm Quantiles', ylab = 'Width of Foot (in cm)', main = 'QQ Plot of the Width of \n the Larger Foot of the Boys', col = 'blue', pch=19)
+```
+
+```{r}
+library(pander)
+pander(t.test(girls$width, boys$width, mu = 0, alternative = 'two.sided', conf.level = 0.95))
+```
+
+From our plots we know that the data is normally distributed. An independent sample t-test was performed to find the difference of the sample means of the width of the boys' feet and the width of the girls' feet. The t value was -2.6741, the degrees of freedom was 36.281, and the p-value for the test statistic was .01117. Note that this data is gathered from a convenience sample, which could give inaccurate results, but the QQ plots help us understand that the data is approximately normal.
+
+##Interpretation
+
+
+
+Based off this research, there is sufficient evidence to reject the null. Indeed the difference of the means of boys' foot widths and girls' foot widths is different. This concludes that the shape of the boys' foot is different in more than just the way that they tend to be longer than the womens' foot. A standardized system of shoe sizes according to centimeters would not work as well, because the shoe size variation between men and women vary more than just the length. They should continue the current method of measuring shoe sizes. It could be more conclusive to do a test between full-grown men adults to have more decisive results for older ages.

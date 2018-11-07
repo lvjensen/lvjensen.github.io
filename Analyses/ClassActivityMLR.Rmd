@@ -1,0 +1,43 @@
+---
+title: "Class Activity Solutions"
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+---
+
+
+
+```{r}
+mtcars.lm <- lm(mpg ~ qsec + am + qsec:am, data=mtcars)
+summary(mtcars.lm)
+```
+
+$$
+  Y_i = \beta_0 + \beta_1 \underbrace{X_{1i}}_{qsec} + \beta_2 \underbrace{X_{2i}}_{am} + \beta_3 \underbrace{X_{1i}X_{2i}}_{interaction} + \epsilon_i  
+$$
+The $\beta_0$ is the y-intercept of the baseline.
+The $\beta_1$ is the slope of the baseline.
+The $\beta_2$ is the change in y-intercept for the second line over baseline.
+The $\beta_3$ is the change in the slope for the second line over baseline.
+
+$$
+  \hat{Y}_i = -9.01 + 1.44 X_{1i} - 14.51 X_{2i} + 1.32 X_{1i}X_{2i}
+$$
+
+
+```{r}
+palette(c("skyblue","firebrick"))
+plot(mpg ~ qsec, data=mtcars, col=as.factor(am), pch=16, xlim=c(14,28), main="1974 Motor Trend Cars")
+b <- mtcars.lm$coefficients
+abline(b[1], b[2], col=palette()[1])
+abline(b[1]+b[3], b[2]+b[4], col=palette()[2])
+legend("topright", legend=c("automatic","manual"), pch=1, col=palette(), title="Transmission (am)", bty="n")
+```
+
+
+
+
+
+
+

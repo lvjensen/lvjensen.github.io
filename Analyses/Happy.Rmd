@@ -1,0 +1,86 @@
+---
+title: "Can Money Buy Happiness?"
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+---
+## Background
+```{r setup, include=FALSE}
+GSS <- read.table("../Data/GSS2012.csv", sep="\t", header=TRUE)
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+library(mosaic)
+library(plyr)
+library(pander)
+library(DT)
+
+goodgss<-GSS[c('god', 'happy', 'coninc')]
+goodgss$money<-cut(goodgss$coninc, c(-1, 25000, 50000, 100000, 1000000), labels = c("$25,000 or less", '$25,000-$50,000', '$50,000-$100,000', '$100,000 or more'))
+hapgss<-subset(goodgss, happy==1|happy==2|happy==3)
+hapgss$gladness<-mapvalues(hapgss$happy, c(1,2,3), c('Very Happy', 'Pretty Happy', 'Not Happy'))
+happy<-table(hapgss$money, hapgss$gladness)
+```
+We often hear many varying phrases that describe whether money can or can not buy happiness. Those on the poor end hope that money isn't everything, whereas those that are richer we might suppose believe that money is everything. My study today is based off of data from the GSS , the General Social Survey, which is a survey given out to many Americans to identify the different concerns and development of the people in the United States.
+
+Uisng this data, I will perform a Permutated Chi-Squared Test to find the results. Our question posed will be whether or not money has had an impact on people's happiness. Or in other words; can money buy happiness?
+
+My hypotheses will be the following:
+$$
+H_0: \text{A person's happiness and their income are independent of each other}
+$$
+
+$$
+H_a: \text{A person's happiness and their income are associated}
+$$
+
+## Data
+
+```{r}
+datatable(hapgss,options = list(lengthMenu=c(5,10,30,100)))
+```
+
+
+## Analysis
+
+I've created the following barplot to effectively decribe the spread of the data.
+```{r}
+barplot(happy, beside=TRUE, legend.text = TRUE, col=c('dodgerblue4','firebrick4','darkorchid4','darkolivegreen4'))
+```
+
+According to what we see in the plot, it does appear that there is a difference between the levels of happiness for those that make more than $100,000. After viewing this and other potential trend, this following histogram will represent how extreme our results are based off of a permutations test.
+
+```{r}
+set.seed(121)
+myTest<-chisq.test(happy)
+obsteststat<-myTest$statistic
+
+N <- 2000
+permutedteststats<-rep(NA, N)
+for (i in 1:N) {
+  permutedData<-table(hapgss$money, sample(hapgss$gladness))
+  permutedtest<-chisq.test(permutedData)
+  permutedteststats[i]<-permutedtest$statistic
+}
+
+
+hist(permutedteststats, xlim=c(0,100), col='royalblue')
+abline(v = obsteststat, col = "red", lwd = 3)
+```
+
+And below I have placed a table decribing the results of this permuted test. 
+
+</div>
+
+`Permuted Test Results`
+
+|X-squared|p-value| 
+|---------|-------|
+|84.08345|0|
+
+## Interpretation
+We have sufficient evidence to reject the null hypothesis. We can say that happiness and money have some type of association. Based off of the bar plot, the trends that seem evident is that those that make more money tended to be happier, whereas those that made less than $50,000 seemed to be more spread out among the levels of happiness. Therefore, if one definitely wanted to be happier later in life, I would suggest making at least 50,000 per year, as those that made at least that much were at least categorized as 'Pretty Happy'. However more testing would help this statement be more conclusive. For now we can only safely conclude that money and happiness are related.
+

@@ -1,0 +1,138 @@
+---
+title: "Chocolate"
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+---
+
+```{r, include=FALSE}
+# Be sure to use your file menus at the top of R-Studio to:
+# "Session -> Set working directory -> To source file location"
+# Then play this chunk and the next one to get the data into R.
+library(mosaic)
+library(car)
+library(DT)
+library(pander)
+library(readr)
+library(plyr)
+library(plotly)
+Chocolate <- read_csv("../Data/Chocolate.csv")
+```
+
+```{r, eval=FALSE}
+Chocolate$continent<-mapvalues(Chocolate$Location, c('Amsterdam', 'Austria', 'Belgium', 'Czech Republic', 'Denmark', 'Finland', 'France', 'Germany', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Lithuania', 'Netherlands', 'Poland', 'Sweden', 'Portugal', 'Scotland', 'Spain', 'Switzerland', 'U.K.', 'Wales', 'Argentina', 'Ecuador', 'Eucador', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Peru', 'Suriname', 'Venezuela', 'Canada', 'Costa Rica', 'Domincan Republic', 'Grenada', 'Guatemala', 'Honduras', 'Martinique', 'Mexico', 'Niacragua', 'Nicaragua', 'Puerto Rico', 'U.S.A.', 'St. Lucia', 'Australia', 'Fiji', 'New Zealand', 'Singapore', 'Ghana', 'Madagascar', 'Sao Tome', 'South Africa', 'India', 'Israel', 'Japan', 'Philippines', 'Russia', 'South Korea', 'Vietnam'), c(rep('Europe', 22), rep('South America', 10), rep('North America', 13), rep('Oceania', 4), rep('Africa', 4), rep('Asia', 7)))
+View(Chocolate)
+```
+
+
+----
+
+<!-- Instructions:
+
+ Use the Chocolate dataset and a Kruskal-Wallis Test(s) to answer an interesting question(s) that you come up with.
+ 
+ About the dataset:
+ 
+  * Company: Name of the company manufacturing the bar.
+
+  * Orig: The specific geo-region of origin for the bar.
+
+  * Review: Date of publication of the review.
+
+  * Cocoa: Cocoa percentage (darkness) of the chocolate bar being reviewed.
+
+  * Location: Manufacturer base country.
+
+  * Rating: Expert rating for the bar.
+      5= Elite (Transcending beyond the ordinary limits)
+      4= Premium (Superior flavor development, character and style)
+      3= Satisfactory(3.0) to praiseworthy(3.75) (well made with special qualities)
+      2= Disappointing (Passable but contains at least one significant flaw)
+      1= Unpleasant (mostly unpalatable)
+
+   * Type: The variety (breed) of cocoa bean used, if provided.
+   
+   * BroadOrig: The broad geo-region of origin for the bean.
+
+Note this dataset and description come from: © 2018 Kaggle Inc for further details visit:
+
+[Kaggle.com](https://www.kaggle.com/rtatman/chocolate-bar-ratings/data)
+
+
+If you want to give your critiquers some ideas about what you have questions on and would like help with, place those details here.-->
+**Comments to Critiquers:** 
+
+
+
+<!--End your comments to your critiquers before this line.-->
+
+----
+
+<!--Begin writing your Analysis after this point.-->
+
+## Background
+The word 'Chocolate' often will bring delightful thoughts into every person's mind. It's a dessert or even addiction we often hear about. Additionally, Something interesting about chocolate is that it is an international treat; all countries enjoy it. We will hear arguments about how each country has the best chocolate, but all these opinions vary based off of each individual's personal experience. A study was performed to compare thousands of different types of chocolate around the world and each chocolate was given a rating between 1-5 by experts. Thus we must ask the question, does one country have better chocolate than another? Or is all chocolate created equally in each continent?
+
+$$
+H_0: \text{All samples are from the same distribution.}
+$$
+$$
+H_a: \text{At least one sample's distribution is stochastically different.}
+$$
+$$
+\alpha = 0.05
+$$
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
+datatable(Chocolate)
+```
+
+##Analysis 
+
+I created a display to view the comparisons between the different continents in their varying chocolate ratings. For the most part, it seems like the boxplots remain constant with their ratings.
+
+```{r}
+Chocolate$continent<-mapvalues(Chocolate$Location, c('Amsterdam', 'Austria', 'Belgium', 'Czech Republic', 'Denmark', 'Finland', 'France', 'Germany', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Lithuania', 'Netherlands', 'Poland', 'Sweden', 'Portugal', 'Scotland', 'Spain', 'Switzerland', 'U.K.', 'Wales', 'Argentina', 'Ecuador', 'Eucador', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Peru', 'Suriname', 'Venezuela', 'Canada', 'Costa Rica', 'Domincan Republic', 'Grenada', 'Guatemala', 'Honduras', 'Martinique', 'Mexico', 'Niacragua', 'Nicaragua', 'Puerto Rico', 'U.S.A.', 'St. Lucia', 'Australia', 'Fiji', 'New Zealand', 'Singapore', 'Ghana', 'Madagascar', 'Sao Tome', 'South Africa', 'India', 'Israel', 'Japan', 'Philippines', 'Russia', 'South Korea', 'Vietnam'), c(rep('Europe', 22), rep('South America', 10), rep('North America', 13), rep('Oceania', 4), rep('Africa', 4), rep('Asia', 7)))
+north<-subset(Chocolate, continent == 'North America')
+south<-subset(Chocolate, continent == 'South America')
+euro<-subset(Chocolate, continent == 'Europe')
+asia<-subset(Chocolate, continent == 'Asia')
+ocean<-subset(Chocolate, continent == 'Oceania')
+afro<-subset(Chocolate, continent == 'Africa')
+plot_ly(type = 'box')%>%
+add_boxplot(y=north$Rating, name = 'N America')%>%
+add_boxplot(y=south$Rating, name = 'S America')%>%
+add_boxplot(y=asia$Rating, name = 'Asia')%>%
+add_boxplot(y=afro$Rating, name = 'Africa')%>%
+add_boxplot(y=euro$Rating, name = 'Europe')%>%
+add_boxplot(y=ocean$Rating, name = 'Oceania')%>%
+layout(title='Expert Chocolate Rating \n By Continent', yaxis=list(title='Rating'), xaxis=list(title='Continent'))
+```
+
+
+I performed a Kruskal-Wallis test to best answer this question.
+
+
+```{r}
+Chocolate$continent<-mapvalues(Chocolate$Location, c('Amsterdam', 'Austria', 'Belgium', 'Czech Republic', 'Denmark', 'Finland', 'France', 'Germany', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Lithuania', 'Netherlands', 'Poland', 'Sweden', 'Portugal', 'Scotland', 'Spain', 'Switzerland', 'U.K.', 'Wales', 'Argentina', 'Ecuador', 'Eucador', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Peru', 'Suriname', 'Venezuela', 'Canada', 'Costa Rica', 'Domincan Republic', 'Grenada', 'Guatemala', 'Honduras', 'Martinique', 'Mexico', 'Niacragua', 'Nicaragua', 'Puerto Rico', 'U.S.A.', 'St. Lucia', 'Australia', 'Fiji', 'New Zealand', 'Singapore', 'Ghana', 'Madagascar', 'Sao Tome', 'South Africa', 'India', 'Israel', 'Japan', 'Philippines', 'Russia', 'South Korea', 'Vietnam'), c(rep('Europe', 22), rep('South America', 10), rep('North America', 13), rep('Oceania', 4), rep('Africa', 4), rep('Asia', 7)))
+Chocolate$continent<-as.factor(Chocolate$continent)
+pander(kruskal.test(Rating ~ continent, data = Chocolate))
+```
+
+
+
+Our Five-Number Summary or each factor is listed in the table below.
+
+
+```{r}
+pander(favstats(Rating ~ continent, data=Chocolate))
+```
+
+
+
+##Interpretation
+As a result of the test, the P-value observed is 0.01782. Which means that there is sufficient evidence to reject the null hypothesis and conclude that at least one of these sample distributions is stochastically different than the other. 
+To conclude effectively how each country compares to the world, it could be useful to do additional testing to compare countries individually. At first glance, we would assume that the continents with different Chocolate ratings would be either Oceania with higher quality chocolate or Africa with the lowest quality chocolate. However, without further testing, we can neither accept nor reject these theories.
+
+
+

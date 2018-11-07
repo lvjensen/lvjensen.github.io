@@ -1,0 +1,88 @@
+---
+title: "Car Prices"
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+---
+
+<br>
+```{r message=FALSE, warning=FALSE, include=FALSE}
+# Be sure to download the CarPrices.csv file and save it
+# into your Data folder prior to knitting this file.
+CarPrices <- read.csv("../Data/CarPrices.csv", header=TRUE)
+library(mosaic)
+library(DT)
+library(plyr)
+library(pander)
+Corve<-subset(CarPrices, Model == 'Corvette')
+lmcor<-lm(Price~Mileage+Trim+Mileage:Trim, data=Corve)
+# Remember, to get the CarPrices data into your Console you have
+# to use the "Import Dataset" option in the "Environment" window.
+```
+
+## Background
+
+A study was done to find the overall decline of prices of several cars by finding car prices of varying cars over the years. It's often wondered how one can maintain the value of their car and how much is therir car actually worth. We obviously know some cars are worth more than others. I raised the question; what is the overall decline of the Chevrolet Corvette Coupe value compared to the Chevrolet Corvette Convertible?
+
+I have used the following model to exhibit our test:
+
+$$
+
+Y_i = \beta_0 + \beta_1 X_{i1} + \beta_9 X_{1i} X_{2i} + \epsilon_i
+
+$$
+
+
+The hypothesis is as follows:
+$$
+  H_0: \beta_j = 0
+$$
+
+$$
+  H_a: \beta_j \neq 0
+$$
+
+##Data
+This data table shows the decrease in values of the Corvette model. It is taken originally from a larger list of other car values, but for the sake of this test it has been truncated.
+```{r}
+datatable(Corve,options = list(lengthMenu=c(5,10,20)))
+```
+
+##Analysis
+
+
+To be sure we have normality within the data we have produced the following plots.
+```{r}
+par(mfrow=c(1,2))
+plot(lmcor, which=1:2)
+```
+
+
+From these plots we understand that the normality is questionable. The QQ plot showed that the error terms being normally distributed are debatable. The Residuals and Fitted plot shows that there is a regression and the variance of terms is constant over all x values. For now I will disregard these normality notes and carry on with they study, but please note that the plots showed questionable normality.
+
+
+```{r message=FALSE, warning=FALSE}
+palette(c('orchid4', 'seagreen'))
+Corve<-subset(CarPrices, Model == 'Corvette')
+lmcor<-lm(Price~Mileage+Trim+Mileage:Trim, data=Corve)
+plot(Price~Mileage, data=Corve, col=Trim, pch=16, xlim=c(0,40000))
+legend('topright', legend=c('Coupe', 'Convertible'), pch=16, col=palette(), title='Type of Corvette')
+b<-lmcor$coefficients
+abline(b[1], b[2], col=palette()[2])
+abline(b[1]+b[3], b[2]+b[4], col=palette()[1])
+```
+
+Through the plot above we find the decline of the prices of the Corvette displayed. Note the following coefficients as representatives of this plot below.
+```{r message=FALSE, warning=FALSE}
+pander(lmcor)
+```
+
+
+
+##Interpretation
+There is sufficient Evidence to conclude that the first 3 coefficients are not equal to zero. The p-values of the t-tests are significant for the coefficients of the y intercept, the slope, and the change in y intercept for the second group. However, there is not sufficient evidence to conclude that the interaction of the second slope from the first slope is significantly different.
+
+What these coefficients mean for us is that we should be wiser with our Corvette purchases and the way we treat our Corvettes. According to this regression, for each additional mile, the Corvette would lose $0.3661 in value. When using a Corvette, one should keep this in mind.
+
+AccrodinAgain, please keep in mind the lack of normality of the plots, as this could've effected the significance of the data.

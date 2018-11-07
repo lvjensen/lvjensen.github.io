@@ -1,0 +1,16 @@
+---
+title: "Can Money Buy Happiness?"
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+---
+
+```{r}
+library(mosaic)
+library(DT)
+library(pander)
+
+friend<-read.csv("../Data/Housing.csv", header=TRUE)
+```
+

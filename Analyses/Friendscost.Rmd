@@ -1,0 +1,83 @@
+---
+title: "Housing and Roommates at BYU-Idaho"
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+---
+
+
+##Background
+```{r message=FALSE, warning=FALSE}
+library(mosaic)
+library(DT)
+library(pander)
+library(plyr)
+friend <- read.csv('../Data/houses.csv', header = TRUE)
+
+```
+
+Every semester, BYU-Idaho sends out a survey to students about their housing situation. Inside these surveys, the school asks a variety of questions about topics such as the honor code, living conditions, and roommate relationships. Most of the questions followed the format giving a situation and asking whether or not the student agreed or disagreed with the information. There were 7 possible answers for the student to choose from, ranging from 'Strongly Agree' to 'Strongly Disagree'.
+
+One situation offered in the survey was 'I feel a responsibility to help a roommate who is struggling spiritually or socially.' Many students come here hoping to find an uplifting atmosphere. A lot of what they will eventually find here will be based off of the help they receive from their room mates. Based off this situation, I'd like to find whether or not the amount of money you spend on a housing complex can help decide if you'll have a roommate willing to help. I will consider those that answered 'Agree' or around it would be considered good roommates.
+
+I will use the following hypotheses to help us establish our focus for this study.
+
+$$
+H_0: \text{The amount of money a student spends on housing and their quality of roommates are independent.}
+$$
+$$
+H_0: \text{The amount of money a student spend on housing and their quality of roommates are associated}
+$$
+$$
+\alpha=0.05
+$$
+
+## Data 
+
+```{r message=FALSE, warning=FALSE}
+friend2<-subset(friend, Cost != 'NA')
+friends<-subset(friend2, help != '')
+friends$newcost<-cut(friends$Cost, c(0, 1000, 1300, 2000), labels = c('Less Than $1000', '$1000 - $3000', 'Greater Than $1300'))
+friends$labhelp<-mapvalues(friends$help, c('Strongly Agree','Agree','Somewhat Agree','Neither Agree nor Disagree','Somewhat Disagree','Disagree','Strongly Disagree'), c(7,6,5,4,3,2,1))
+friends$labhelp<-factor(friends$labhelp, levels=1:7, ordered=TRUE)
+```
+```{r}
+datatable(friends,options = list(lengthMenu=c(5,10,30,100)))
+```
+
+## Analysis
+For the analysis, I've created a scale from 1-7 to help describe the data. 1 would be 'Strongly Disagree', whereas 7 will be 'Strongly Agree'.
+
+In order for this test to be appropriate, it will need to fulfill certain assumptions. One assumption for the test is that all expected counts should be over 5. The following table exhibits the results for that assumption.
+
+```{r message=FALSE, warning=FALSE}
+costtab<-table(friends$labhelp, friends$newcost)
+coocoo<-chisq.test(costtab)
+pander(coocoo$expected)
+```
+
+Note that though it failed this original test, the test is still appropriate, because every expected count is above 1 and the average of the expected counts is above 5. 
+
+Now this table below will show us the total outcomes for each category:
+```{r}
+pander(costtab)
+```
+
+The following barplot will offer us a graphical summary of the table above. 
+
+```{r}
+barplot(costtab, beside=TRUE, legend.text = TRUE, args.legend = list(x='topleft'), main = "The Total Inidividual Count for Good Roommates \n by Complex Price", col = c('skyblue3','slateblue4','slategray4','springgreen4','steelblue4','tomato4','violetred4'), ylab='Count of Responses', xlab='Housing Complex Cost')
+```
+
+I've exhibited the results of my Chi-Squared test below.
+
+```{r}
+pander(coocoo)
+```
+
+As exhibited, the results are insignificant with a p-value of .7771. 
+
+## Interpretation
+
+Due to the p-value(.7771) being much higher than our significance level($a=0.05$), our test statistic in insignificant. Thus I have insufficient evidence to reject the null hypothesis. According to this study, the quality of roommates and their willingness to help our each other is independent of the cost of their housing. One will find the odds of having a helpful roommate the same in the cheapest housing as they will in the most expensive housing. Thus, one should find housing based on other qualities of the complex and not worry about the quality of people they will find there as there is no significant difference.
