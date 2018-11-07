@@ -1,0 +1,882 @@
+ResponseID,ResponseSet,Name,ExternalDataReference,EmailAddress,Gender,Cost,Complex Name,Address,service,help,treat,affect,direct
+R_1BRxxnZ62Meh9mc,Default Response Set,"de Faria, Sofia",,def16001@byui.edu,Female,981,GREENBRIER SOUTH,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_QblLEmmodNmRfKF,Default Response Set,"Mills, Cassinda",,mil13016@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Somewhat Agree,Neither Agree nor Disagree,Somewhat Agree,Somewhat Agree,Somewhat Agree
+R_30cWpntd3X7CYSf,Default Response Set,"Giguiere, Jentri",,gig16001@byui.edu,Female,1323,MOUNTAIN LOFTS - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_BwT1pbpPoCcEtzP,Default Response Set,"Dochterman, Lydia",,doc17003@byui.edu,Female,1259,HERITAGE WOMEN,,Agree,Strongly Agree,Strongly Agree,Somewhat Agree,Neither Agree nor Disagree
+R_3MyUWq0E2YieLTy,Default Response Set,"Jeppson, Samm",,jep15010@byui.edu,Female,1155,SHELBOURNE APARTMENTS,,Strongly Agree,Somewhat Agree,Somewhat Agree,Strongly Agree,Strongly Agree
+R_3nSIgI6PKzPiZpq,Default Response Set,Drake,,dra14007@byui.edu,Female,1125,HILLCREST TOWNHOUSES,,Agree,Agree,Agree,Agree,Agree
+R_1rGl7lV3FWi7CB3,Default Response Set,"Greene, Brooke",,gre17022@byui.edu,Female,1388,MOUNTAIN LOFTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1MWWWo8zSUYW2In,Default Response Set,"Butler, Dallin",,but17010@byui.edu,Male,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Agree,Strongly Agree,Agree
+R_2SqR2TB6xG5mciE,Default Response Set,"Fuller, Lisa",,ful14007@byui.edu,Female,1129,LA JOLLA - WOMEN,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2eVfjY4Po4CehWR,Default Response Set,"Browning, Amy",,bro17030@byui.edu,Female,1075,CARRIAGE HOUSE,,Disagree,Somewhat Disagree,Agree,Agree,Disagree
+R_1PdfcqBfGxv7D0U,Default Response Set,"Read, Jared",,rea14003@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Agree,Agree,Agree,Agree,Agree
+R_2rAPdG0dEIPgD1k,Default Response Set,"Savage, Lucy",,sav17002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Disagree
+R_3oFICrI4RBUrsCK,Default Response Set,"Anderson, Kimber",,and17060@byui.edu,Female,999,ALPINE CHALET,,Agree,Agree,Agree,Agree,Agree
+R_2amA4QMuzY1kIEq,Default Response Set,"Nunez, Hailey",,nun14002@byui.edu,Female,1019,BIRCH WOOD I,,Agree,Agree,Agree,Agree,Agree
+R_qRA5kdJeFjWt2bn,Default Response Set,"Neff, Michael",,nef16009@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Agree,Strongly Agree,Agree,Agree,Agree
+R_W6v08uFtXmSY3T3,Default Response Set,"Pickett, Lincoln",,pic13003@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3Q0oY9vuAfAq8G4,Default Response Set,"Smith, Amy",,smi12011@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_UswXS8D2UiC6THH,Default Response Set,"Lammi, Giselle",,lam14003@byui.edu,Female,1275,BIRCH WOOD II,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_0cDLhcAvOnSp5LP,Default Response Set,"Vannatter, David",,van16021@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Agree,Somewhat Agree,Strongly Agree,Somewhat Agree,Strongly Agree
+R_ZdFdn1cq7abKba9,Default Response Set,"Hafen, Ashley",,haf14001@byui.edu,Female,1279,NAUVOO HOUSE I,,Somewhat Agree,Agree,Agree,Agree,Agree
+R_2RQEwHntBi1PHr5,Default Response Set,"Lucas, Jacob",,luc17010@byui.edu,Male,999,ALPINE CHALET,,Somewhat Agree,Agree,Strongly Agree,Agree,Agree
+R_1mQRwUrfoTx0yIW,Default Response Set,"Tyler, Emily",,tyl17002@byui.edu,Female,1050,PARK VIEW APTS - WOMEN,,Agree,Agree,Agree,Agree,Strongly Agree
+R_3fQ1VPlSlmPSEnW,Default Response Set,"Marion, Emma",,mar12048@byui.edu,Female,980,BIRCH PLAZA,,Somewhat Agree,Agree,Agree,Strongly Agree,Somewhat Agree
+R_3r1eOkc2Dw09umw,Default Response Set,"Contini, Tyler",,con14016@byui.edu,Male,1245,COLONIAL HOUSE,,Agree,Somewhat Agree,Strongly Agree,Agree,Somewhat Agree
+R_3plgWIrk7pjZOF0,Default Response Set,"Andrews, Mackenzie",,and15058@byui.edu,Female,999,ALPINE CHALET,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3qUKcXZUXPamSCp,Default Response Set,"Hansen, Sam",,han17015@byui.edu,Male,1279,NAUVOO HOUSE II,,Agree,Somewhat Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1gvU4mYmooZzZVZ,Default Response Set,"Stauffer, Melissa",,sta11007@byui.edu,Female,972.5,ALEXANDER APARTMENT,,Neither Agree nor Disagree,Somewhat Agree,Agree,Strongly Agree,Neither Agree nor Disagree
+R_20YhA52SmjGDqOD,Default Response Set,"Merritt, Scott",,mer15027@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_1in8PGPyx9bzhVm,Default Response Set,"Flake, Dallin",,fla15003@byui.edu,Male,1374,JORDAN RIDGE,,Neither Agree nor Disagree,Somewhat Agree,Agree,Agree,Somewhat Disagree
+R_3g00GWALQgJJrvY,Default Response Set,"Scharnhorst, Madison",,sch17012@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_2TM3ztTdJV4aur4,Default Response Set,"Mohney, Ian",,moh15003@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Somewhat Agree,Somewhat Agree,Agree,Somewhat Agree
+R_3gOgHrJeG2MTFpy,Default Response Set,"Stocking, Natalie",,sto17027@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Agree,Agree,Somewhat Disagree,Somewhat Disagree
+R_cGic2SNt6mq3Sw1,Default Response Set,"Taylor, Ryan",,tay17053@byui.edu,Male,975,"PINES SOUTH, THE",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_UrOyqZqivUuR2md,Default Response Set,"McNevin, Kayla",,mcn14004@byui.edu,Female,1345,AUTUMN WINDS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_bHtae8hC5yXg1Sp,Default Response Set,"Michaelis, Maddie",,mic17006@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_XigB9gtt3breV5D,Default Response Set,"Pyron, Angie",,pyr16001@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Disagree,Strongly Disagree,Strongly Disagree,Strongly Disagree,Strongly Disagree
+R_7PAlCHqNl8yLUNX,Default Response Set,"Goldsberry, Parker",,gol13002@byui.edu,Male,1323,MOUNTAIN LOFTS - MEN,,Agree,Agree,Strongly Agree,Somewhat Agree,Agree
+R_3fr4AVIOpn6wmGE,Default Response Set,"Saulala, Peti",,sau16007@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Somewhat Agree,Agree,Agree
+R_DDcdSVD7eKDJn7b,Default Response Set,"Andreasen, Emily",,and16024@byui.edu,Female,999,ALPINE CHALET,,Agree,Strongly Agree,Strongly Agree,Agree,Strongly Agree
+R_2pWPtHnS2cRNCsr,Default Response Set,"Bean, Jensen",,bea17017@byui.edu,Male,980,BIRCH PLAZA,,Neither Agree nor Disagree,Agree,Somewhat Agree,Agree,Disagree
+R_3qrJTBlClLrvSVX,Default Response Set,"Olson, Christy",,ols17009@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_DoYbpDSt2JdcIRb,Default Response Set,"Klepich, Ezri",,kle17008@byui.edu,Female,1585,WINDSOR MANOR-WOMEN,,Agree,Strongly Agree,Agree,Agree,Somewhat Agree
+R_2Ug6w3FzDLIDpgU,Default Response Set,"Crofts, Adeline",,cro16045@byui.edu,Female,1375,"GATES, THE - MEN",,Somewhat Agree,Somewhat Agree,Neither Agree nor Disagree,Agree,Agree
+R_25Tm1F0n8zHamf3,Default Response Set,"Wheeler, Jesse A",,whe12009@byui.edu,Male,NA,"PINES NORTH, THE",,Neither Agree nor Disagree,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Disagree
+R_2951otLOzUZIO60,Default Response Set,"Proctor, Caitlin",,pro17001@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Agree,Strongly Agree,Somewhat Agree,Agree
+R_8013AkWU0QFAAAF,Default Response Set,"Waite, Cacie",,wai16001@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Somewhat Agree,Agree,Agree,Agree
+R_XoEfyOOMv1Rn04N,Default Response Set,"Mays, Breanna",,may16004@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3PNPbjOL9JKkj3f,Default Response Set,"Livingston, Drew",,liv14004@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3qWGQ8SOXfe9HZf,Default Response Set,"Stoddard, Judson",,sto16001@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Neither Agree nor Disagree,Strongly Disagree,Somewhat Agree,Agree,Agree
+R_2DZD3pHL1Rv9dWa,Default Response Set,"Sholer, Brendan",,sho16005@byui.edu,Male,1420,ABRI APARTMENTS - MEN,,Agree,Strongly Agree,Agree,Agree,Somewhat Agree
+R_2ah0ZCPZl6rQ9Ws,Default Response Set,"Hogan, Emily",,hog17001@byui.edu,Female,975,"PINES SOUTH, THE",,Agree,Agree,Agree,Agree,Neither Agree nor Disagree
+R_3rGJ9iO6MWj3OqS,Default Response Set,"Olsen, Gavin",,ols16025@byui.edu,Male,1133.333333,PARK VIEW APTS-MEN,,Agree,Agree,Agree,Agree,Agree
+R_2DXCFwzYbnyJXMn,Default Response Set,"Stowell, Sarah",,sto14010@byui.edu,Female,1310,BROOKSIDE VILLAGE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3k7D24fB8x63fKy,Default Response Set,"Giguiere, Sasha",,gig15001@byui.edu,Female,1323,MOUNTAIN LOFTS - MEN,,Agree,Agree,Agree,Strongly Agree,Strongly Agree
+R_2QG1WaB95t0VaUi,Default Response Set,"Durgin, Benjamin Scott",,dur16018@byui.edu,Male,1267.5,"IVY, THE - Men",,Agree,Agree,Agree,Agree,Neither Agree nor Disagree
+R_3HBKBLnbZwDJ4n2,Default Response Set,"Slade, Whitney",,sla15005@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Strongly Agree
+R_2uQjtT34sSbPRLN,Default Response Set,"Cook, Corbin",,coo17034@byui.edu,Male,950,COTTONWOOD-WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_DzZ8Y8JJvinDpEl,Default Response Set,"West, Madeline",,wes17010@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Somewhat Agree,,Somewhat Agree,Somewhat Agree,Somewhat Agree
+R_1LTJJxDrwkcutLO,Default Response Set,"Plank, Cheyenne",,pla05007@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Agree,Agree,Somewhat Agree,Agree
+R_6L5fl0I2ZvfvsHL,Default Response Set,"Stewart, Sara",,ste17009@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Agree,Agree,Agree
+R_24wVIvTnSeVXwMP,Default Response Set,"Bailey, Caleb",,bai15008@byui.edu,Male,1100,ASPEN VILLAGE - MEN ,,Somewhat Disagree,Somewhat Agree,Somewhat Agree,Disagree,Somewhat Agree
+R_1IE4jHEl46l3DC8,Default Response Set,"Hiatt, Andrew",,hia14002@byui.edu,Male,1537.333333,NORTHPOINT - WOMEN,,Somewhat Agree,Somewhat Agree,Somewhat Agree,Agree,Disagree
+R_1gwrEuTuJtjjuuK,Default Response Set,"Jolley, Natalie",,jol15004@byui.edu,Female,1300,TOWERS I,,Agree,Agree,Agree,Agree,Agree
+R_3Hk3JYd29uTOJPf,Default Response Set,"Oswald, Caleb Kimball",,osw16002@byui.edu,Male,1345,"CEDARS, THE-MEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_BwVNers1kCatVoR,Default Response Set,"Smith, Trent",,smi16163@byui.edu,Male,1345,"CEDARS, THE-MEN",,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Strongly Agree
+R_1E3XfLoqlrxAvPO,Default Response Set,"Curtis, Jessica",,cur16002@byui.edu,Female,1375,"GATES, THE - MEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2VyfTFJsBsrvclX,Default Response Set,"Morgan, Shanilla",,mor17016@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_eScHG2tz3zfKBmp,Default Response Set,"Biesinger, Tova",,bie15002@byui.edu,Female,1325,BRIGHAM'S MILL,,Agree,Somewhat Agree,Agree,Somewhat Agree,Neither Agree nor Disagree
+R_xaafgJyIbnC6DYJ,Default Response Set,"Wiseman, Connor",,wis14007@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Somewhat Agree,Somewhat Disagree,Agree,Somewhat Agree,Somewhat Agree
+R_290blU2HCZs8RJB,Default Response Set,"Gonzalez Ramirez, Karen",,gon15005@byui.edu,Female,1388,MOUNTAIN LOFTS - WOMEN,,Strongly Disagree,Strongly Disagree,Strongly Disagree,Strongly Disagree,Strongly Disagree
+R_ufXRrcCGa7zhxLP,Default Response Set,"Bennett, Sarah",,ben16007@byui.edu,Female,1200,BOUNTIFUL PLACE,,Strongly Disagree,Strongly Disagree,Strongly Disagree,Strongly Disagree,Strongly Disagree
+R_3szw2GZ9vM4dVYy,Default Response Set,"Morris, Eliza",,mor16023@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Agree,Agree,Somewhat Agree
+R_33DwlQFN88irrFp,Default Response Set,"Bullock, Brooke",,bul16005@byui.edu,Female,1345,"CEDARS, THE-MEN",,Agree,Agree,Agree,Agree,Agree
+R_2zIpMAb57kkPtGP,Default Response Set,"Wright, Daniel",,wri14012@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Agree,Strongly Agree,Agree,Strongly Agree
+R_3Odk4xct86xcAuV,Default Response Set,"Grow, Jacob",,gro13023@byui.edu,Male,1388,MOUNTAIN LOFTS - WOMEN,,Strongly Agree,Agree,Strongly Agree,Agree,Agree
+R_2BbMsBqDEGusPuk,Default Response Set,"Ginn, Caroline",,gin15003@byui.edu,Female,1323,MOUNTAIN LOFTS - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_6P7hPvyWDB48hsR,Default Response Set,"Jones, David",,jon14013@byui.edu,Male,1300,TOWERS I,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_1iqZBF2Xk6K4d4b,Default Response Set,"Van Der Watt, Ariane",,van16051@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Agree,Somewhat Agree,Agree,Strongly Agree,Neither Agree nor Disagree
+R_BsuNumEAYsfEiZz,Default Response Set,"Jennings, Michael",,jen15005@byui.edu,Male,995,ROYAL CREST,,Agree,Agree,Agree,Agree,Agree
+R_1pxp58J8nNMXNLb,Default Response Set,"Ouedraogo, Orokya",,oue17001@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_swdhHQzrlgFZGud,Default Response Set,"Beidleman, Bobby",,bei17001@byui.edu,Male,1019,BIRCH WOOD I,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1KrnULUHedypm8y,Default Response Set,"Maccabee, Kristina",,mac17012@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1PdtPXWo4EwTgbp,Default Response Set,"Williams, Noelle",,wil16030@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3k1XyvajBvsKQRP,Default Response Set,"Eaton, Emily",,eat16001@byui.edu,Female,1267.5,"IVY, THE - Men",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_cYlw3u6ZfTp1ucp,Default Response Set,"Hebdon, Staci",,heb17001@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Strongly Agree,Agree,Strongly Agree,Somewhat Disagree
+R_2QQxtpTo2mctUwA,Default Response Set,"Sherwood, Jordan",,she17020@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2TLDA1FY3jbaPBb,Default Response Set,"Hawkes, Laura",,haw11010@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Somewhat Agree,Somewhat Agree,Somewhat Agree,Agree,Agree
+R_bmwGW7a5da3SbC1,Default Response Set,"Somsen, Brandon",,som11001@byui.edu,Male,1345,"CEDARS, THE-MEN",,Strongly Agree,Strongly Agree,Agree,Agree,Agree
+R_Tqi7duj5FKL0BZn,Default Response Set,"Beard, Hannah",,bea17040@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_1GwSCedzQISCu1j,Default Response Set,"Resendez, Kiana",,res16001@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1IH1Gto0pEWhLn8,Default Response Set,"Harmon, Jessica",,har16032@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Agree,Agree,Strongly Agree,Strongly Agree
+R_3hflTSNatCfmBpY,Default Response Set,"Haight, Riley",,hai17005@byui.edu,Female,1279,NAUVOO HOUSE I,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1r9tn7OvrffnzYQ,Default Response Set,"Su, Cami",,su16002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_5mRDgSTdgzRVJ8l,Default Response Set,"Medlyn, Jenna",,med15006@byui.edu,Female,1125,SNOWVIEW APARTMENTS,,Agree,Agree,Agree,Agree,Somewhat Disagree
+R_3ptdJTOGg15SODK,Default Response Set,"Nevil, Makaila",,nev13002@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_2SkORkJFGrB1ZyY,Default Response Set,"Brown, Courtney",,bro16106@byui.edu,Female,1075,CARRIAGE HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1dFu1J3qXQ9asR1,Default Response Set,"Guinn, Emily",,gui13001@byui.edu,Female,1279,NAUVOO HOUSE I,,Agree,Strongly Agree,Agree,Agree,Agree
+R_UGTQyHI0XDF3pf3,Default Response Set,"Webb, Jasmine",,web16016@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Agree,Agree,Agree,Strongly Agree
+R_1hGCy4ZyhY3ejFu,Default Response Set,"Hayes, Andrew",,hay17001@byui.edu,Male,1537.333333,NORTHPOINT - WOMEN,,Agree,Neither Agree nor Disagree,Strongly Agree,Strongly Agree,Strongly Agree
+R_DOgYGQmbVHbsN5T,Default Response Set,"Rutherford, Kaitlyn",,rut16003@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1q7JPVNIBcj9IX4,Default Response Set,"Kingsford, Rachel",,kin17009@byui.edu,Female,1585,WINDSOR MANOR-WOMEN,,Somewhat Agree,Agree,Agree,Agree,Neither Agree nor Disagree
+R_3nVnFb5yLCoszvO,Default Response Set,"Ruiz, Luis",,rui13003@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Agree,Agree,Agree,Agree,Agree
+R_0Jyb7AXfIL2I385,Default Response Set,"Young, Amanda",,you15021@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_1im320ImweyDVsk,Default Response Set,"Hair, Amanda",,hai17004@byui.edu,Female,1279,NAUVOO HOUSE I,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_pxAODy3CN9Z2skV,Default Response Set,"Coray, Steven",,cor17041@byui.edu,Male,NA,DANBURY MANOR,,Agree,Agree,Agree,Agree,Agree
+R_yqKSUuR7MaCviTv,Default Response Set,"Child, Preston",,chi17012@byui.edu,Male,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_2DSyiXfmEpw5z4f,Default Response Set,"Harger, Madeline",,har17007@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_Rr7mRp0V0xEgXkZ,Default Response Set,"Hall, Matt",,hal13008@byui.edu,Male,1279,NAUVOO HOUSE I,,Agree,Agree,Agree,Agree,Agree
+R_3j6ErX9X61pQ5Nm,Default Response Set,"Mickelson, Korrin",,mic17011@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Agree,Agree,Agree
+R_2960TIIwpFTmJZi,Default Response Set,"Waterlyn, Aubrey",,wat16005@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_279ww1fRXE5OY9J,Default Response Set,"Dorny, Juliann",,dor16004@byui.edu,Female,1259,HERITAGE WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_C2GzigWJEoIvLup,Default Response Set,"Morrison, Bradley",,mor17006@byui.edu,Male,NA,"PINES NORTH, THE",,Somewhat Agree,Somewhat Agree,Agree,Somewhat Agree,Neither Agree nor Disagree
+R_1luA6AMPm0uxaRa,Default Response Set,"Knecht, Kimberly",,kne14001@byui.edu,Female,1585,WINDSOR MANOR-WOMEN,,Agree,Agree,Agree,Strongly Agree,Agree
+R_1obPzCoNvy6UUxw,Default Response Set,"Tomkinson, Dani",,tom17001@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2YQDy7RzOUUCG29,Default Response Set,"Garvey, Dallin",,gar16094@byui.edu,Male,950,MOUNTAIN CREST,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2dMvOXgA3f9EMl3,Default Response Set,"Johnson, Abbey",,joh17050@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1hX2bBlyOmCyDxC,Default Response Set,"White, Mitchell",,whi15031@byui.edu,Male,1345,"CEDARS, THE-MEN",,Strongly Agree,Somewhat Agree,Agree,Strongly Agree,Strongly Agree
+R_338wllOlR0z95Pc,Default Response Set,"Yamane, Gentry",,yam17002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2ZNDDmfaFOlK8Ao,Default Response Set,"Spafford, Makayla",,spa15008@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Somewhat Agree,Agree,Agree,Somewhat Disagree
+R_A0et3VwurH1YDWF,Default Response Set,"Clark, Katie",,cla16011@byui.edu,Female,850,COLONIAL HEIGHTS TOWNHOUSE,,Somewhat Agree,Neither Agree nor Disagree,Agree,Agree,Neither Agree nor Disagree
+R_SUBkOkhEwnDvk65,Default Response Set,"Sedrick, Hannah",,sed17001@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Agree,Somewhat Agree,Somewhat Agree,Neither Agree nor Disagree,Somewhat Agree
+R_3maXHyvZxB2T24m,Default Response Set,"Evans, Nathan",,eva17022@byui.edu,Male,1267.5,"IVY, THE - Women",,Agree,Somewhat Agree,Agree,Agree,Somewhat Agree
+R_1Cdzu0dFfGLA1pU,Default Response Set,"Smith, Ali",,smi14066@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Somewhat Agree,Somewhat Agree,Agree
+R_2VPHXGKGAE4Xfwh,Default Response Set,"Larsson, Jessica",,lar17019@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_3WuCPlKRChJOe09,Default Response Set,"Haynie, Shalene",,hay15002@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Agree,Agree,Agree,Agree,Agree
+R_1pEbr3tr6BtrFMa,Default Response Set,"Moser, Sarah",,mos17007@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3erE7Zr9gAVit5d,Default Response Set,"Cheever, Kaitlin",,che14002@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_3Re0nUTsNbo92iy,Default Response Set,"Pinder, Sean",,pin16011@byui.edu,Male,1310,BROOKSIDE VILLAGE - MEN,,Somewhat Agree,Disagree,Agree,Agree,Agree
+R_2TtL4WpY1N7lLqW,Default Response Set,"Smith, Julianna",,smi17032@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_3Ge4c0rPnDRKej0,Default Response Set,"Baird, Sabrina",,bai17016@byui.edu,Female,1100,ASPEN VILLAGE - MEN ,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_1ozOnuVmjTOkWkY,Default Response Set,"Jetton, Austin",,jet16003@byui.edu,Male,1125,SNOWVIEW APARTMENTS,,Disagree,Neither Agree nor Disagree,Neither Agree nor Disagree,Agree,
+R_WlfINrjiVeBdZ4d,Default Response Set,"Nelson, Marci",,nel14010@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Strongly Agree,Agree,Agree,Neither Agree nor Disagree
+R_1oqd5bSRR0aaPx6,Default Response Set,"Kerstetter, Racheal",,ker17009@byui.edu,Female,1410,WEST WINDS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_w5hvPbxZQ9URsQx,Default Response Set,"Agboyin, Matilda",,agb16001@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_2wuk46a1HlqD8SM,Default Response Set,"Bright, Daniel",,bri16038@byui.edu,Male,988,CAMPUS VIEW APARTMENTS,,Somewhat Agree,Strongly Agree,Agree,Strongly Agree,Strongly Agree
+R_22Ai5nL4sLnomj5,Default Response Set,"Leggieri, Richard",,leg10002@byui.edu,Male,1202.5,AMERICAN AVENUE - MEN,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2YbK9ENyZXIySB6,Default Response Set,"Norton, Mariah Rae",,nor15004@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree
+R_217bpfDp8z9NrWD,Default Response Set,"Baker, Jordan",,bak13013@byui.edu,Male,900,ASPEN VILLAGE - WOMEN,,Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_30wQAE4ZYQrV1gs,Default Response Set,"Castellano, Jess",,cas12008@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Strongly Agree,Somewhat Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1mJDZ4QfYK3rnap,Default Response Set,"Ryan, Kayenta",,rya13001@byui.edu,Female,1245,COLONIAL HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_4SnNalQDm9t24vL,Default Response Set,"Ransom, Jenessa",,ran13008@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Strongly Agree,Agree,Agree,Strongly Agree
+R_1OlZtdEl2vaOKG6,Default Response Set,"Bramell, Curtis",,bra15037@byui.edu,Male,961.666666,BUNKHOUSE,,Agree,Agree,Agree,Agree,Agree
+R_3n01D5q1jT4zWkc,Default Response Set,"Hawkins, Jake",,haw17022@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Neither Agree nor Disagree,Agree,Somewhat Agree,Agree,Neither Agree nor Disagree
+R_3O1SlfeSFeHs4IP,Default Response Set,"Laubaugh, Alex",,lau11005@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3FKEvkc0gI3vTPA,Default Response Set,"Light, Rachel",,lig15001@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_sGb8yKz1apr2w1z,Default Response Set,"Hammond, Kayleigh",,ham14018@byui.edu,Female,1279,NAUVOO HOUSE II,,Agree,Somewhat Agree,Agree,Agree,Agree
+R_2dgnYzK5L0VyyDu,Default Response Set,"Webb, Katie",,web16004@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_22rJLNwBWNdNPZC,Default Response Set,"Duerst, Noah",,due13002@byui.edu,Male,1125,HILLCREST TOWNHOUSES,,Neither Agree nor Disagree,Neither Agree nor Disagree,Neither Agree nor Disagree,Neither Agree nor Disagree,Neither Agree nor Disagree
+R_dfYxT6IkPKugKlP,Default Response Set,"Ostler, Dallin",,ost14003@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_xa9QMZ2IiyzXWwx,Default Response Set,"Jenks, Abbey",,jen17006@byui.edu,Female,1155,SHELBOURNE APARTMENTS,,Agree,Agree,Agree,Agree,Agree
+R_uxiYQyAkmLaXh73,Default Response Set,"Lee, Gyeongchan",,lee16030@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Agree,Agree,Agree,Agree
+R_Z9mGg6rJV91DneF,Default Response Set,"Hemming, Jonathan",,hem14003@byui.edu,Male,1537.333333,NORTHPOINT - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_1eQSVNeJmckXN2j,Default Response Set,"Cruz, Jazmin",,cru17010@byui.edu,Female,1375,"GATES, THE - MEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2tzCYMMZOfmGdJy,Default Response Set,"Dickenson, Leah",,dic09008@byui.edu,Female,1189,HERITAGE MEN,,Somewhat Agree,Neither Agree nor Disagree,Agree,Agree,Agree
+R_XSBBGYGAWgj75QZ,Default Response Set,"Dickenson, Shannon",,dic16022@byui.edu,Female,1189,HERITAGE MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2QAQVGmrbH3swtX,Default Response Set,"Crawford, Alyssa",,cra15020@byui.edu,Female,1375,"GATES, THE - MEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_d70Yaua5RDiveJX,Default Response Set,"Diaz, Lizette",,dia17005@byui.edu,Female,1189,HERITAGE MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_0J6nRg9pvd9QiY1,Default Response Set,"Buys, Rachel",,buy15001@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Agree,Agree,Agree
+R_tEQrKi9SU4axp3H,Default Response Set,"Benitez de Jesus, Isaac",,ben15009@byui.edu,Male,1200,BOUNTIFUL PLACE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2UfIiclwJN4HMj2,Default Response Set,"Yao, Lan",,yao17001@byui.edu,Female,1245,COLONIAL HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_3MSiQmBTn2M1BjK,Default Response Set,"Muller, Micheal",,mul15007@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree,Strongly Agree
+R_20OsUWb9Hbi9vfY,Default Response Set,"Craythorn, Bronson",,cra13003@byui.edu,Male,995,DELTA PHI APARTMENTS,,Disagree,Strongly Disagree,Strongly Agree,Somewhat Agree,Strongly Agree
+R_2al4pID3XfMHXXm,Default Response Set,"Griggs, Dakota",,gri13003@byui.edu,Male,1388,MOUNTAIN LOFTS - WOMEN,,Agree,Agree,Agree,Somewhat Agree,Somewhat Agree
+R_3dXKYBDAMegAiwr,Default Response Set,"Young, Erika",,you15035@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Disagree
+R_3J8mGRrBURDRFGK,Default Response Set,"Caine, Daniel",,cai12002@byui.edu,Male,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Somewhat Agree,Agree,Agree
+R_2wbKL9Jyb9YoQxU,Default Response Set,"Leonard, J",,leo15001@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - MEN,,Somewhat Agree,Agree,Agree,Agree,Strongly Agree
+R_3R49Vj0L44j4m7N,Default Response Set,"Burkgren, Mikaela",,bur12023@byui.edu,Female,1345,"CEDARS, THE-MEN",,Agree,Agree,Agree,Agree,Agree
+R_1Ok2aeQlNa8Z9bz,Default Response Set,"Byers, Andrew",,bye17004@byui.edu,Male,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1row2r0bX7jINOH,Default Response Set,"Hammond, Keegan",,ham15018@byui.edu,Male,1279,NAUVOO HOUSE II,,Neither Agree nor Disagree,Strongly Disagree,Strongly Disagree,Strongly Disagree,Strongly Disagree
+R_BJtZGz2J3OWuolX,Default Response Set,"Gagnon, Melia",,gag14004@byui.edu,Female,1374,LEGACY RIDGE,,Agree,Agree,Agree,Agree,Disagree
+R_0CXs0whod3clBfP,Default Response Set,"Torrie, Bradley",,tor13005@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,Agree,Agree,Agree,Agree,Agree
+R_Pv0oIbRBWB5ASFb,Default Response Set,"Blackmon, Christina",,bla17056@byui.edu,Female,1310,BROOKSIDE VILLAGE - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_2uwHdSGAgs3XUQB,Default Response Set,"Elowitt, Natalie",,elo15001@byui.edu,Female,1267.5,"IVY, THE - Women",,Agree,Agree,Strongly Agree,,Somewhat Agree
+R_29uowUpHNY9ZjJx,Default Response Set,"Howard, Ashlynn",,how14008@byui.edu,Female,NA,RIVIERA APARTMENTS,,Agree,Agree,Somewhat Agree,Agree,Somewhat Agree
+R_2qz22SRx9LIYo5L,Default Response Set,"Perez, Cliff",,per09024@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Agree,Agree,Strongly Agree,Somewhat Agree
+R_3MEE4Go5NipD3vf,Default Response Set,"Lyons, Heather",,lyonsh@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3qy5tDfJ6sWEIit,Default Response Set,"Johnson, Marie",,joh17051@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Agree,Strongly Agree,Agree
+R_1pmNLM2MYQWQ0OQ,Default Response Set,"Crowson, Avery",,cro17014@byui.edu,Male,1375,"GATES, THE - MEN",,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree,Strongly Agree
+R_2DN98LNx3rC3Hsa,Default Response Set,"Branch, Taylor",,bra12049@byui.edu,Male,961.666666,BUNKHOUSE,,Agree,Agree,Strongly Agree,Agree,Agree
+R_23f3qfp7Hr4uRx7,Default Response Set,"Swindle, McKenna",,swi15003@byui.edu,Female,1245,COLONIAL HOUSE,,Somewhat Agree,Strongly Agree,Somewhat Agree,Somewhat Disagree,Neither Agree nor Disagree
+R_3p5QAb6iaUGNA5e,Default Response Set,"Esterholdt, Levi",,est14002@byui.edu,Male,1267.5,"IVY, THE - Women",,Agree,Agree,Agree,Agree,Agree
+R_2ayifZJJl9HWS04,Default Response Set,"Shepherd, Matt",,she13007@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Strongly Disagree,Strongly Disagree,Strongly Disagree,Strongly Disagree,Strongly Disagree
+R_3O2loSIfJu0xPXJ,Default Response Set,"Marriott, Grant",,mar15028@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Agree,Somewhat Agree,Agree,Agree,Agree
+R_2BzYMCj4iPh8Y6F,Default Response Set,"Brogdon, Katherine",,bro17022@byui.edu,Female,1075,CARRIAGE HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_tWMNq91jX6l73Mt,Default Response Set,"Cook, Kole",,coo17044@byui.edu,Male,950,COTTONWOOD-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2e2tqEWbD7gT8Hp,Default Response Set,"Walker, Ashley",,wal17017@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3QFfMR3CaqbSVee,Default Response Set,"Butler, Zack",,but13003@byui.edu,Male,1345,"CEDARS, THE-MEN",,Agree,Agree,Agree,Agree,Agree
+R_2zSgXnlMgKbwLVj,Default Response Set,"Sundquist, Gabriela",,sun16001@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Agree,Agree,Agree
+R_3NLrRznLO87oJED,Default Response Set,"Newhouse, Olivia",,new17023@byui.edu,Female,1019,BIRCH WOOD I,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3NWbDzsfXGaLs7P,Default Response Set,"Gettys, Paul",,get14001@byui.edu,Male,1323,MOUNTAIN LOFTS - MEN,,Agree,Agree,Agree,Agree,Agree
+R_3gN8xYAdwdv6vDg,Default Response Set,"Stephens, Ethan Gentry",,ste17027@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3gMXseZohmbuamI,Default Response Set,"Tolman, Kyrie",,tol14002@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Somewhat Agree,Strongly Agree,Agree,Strongly Agree
+R_3EmvJRjHMfwZ2xy,Default Response Set,"Buttars, Abigail",,but17001@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1o7OWUllJceed0S,Default Response Set,"Perrine, Sadie",,per17006@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_2y1rSjTqyF30i6o,Default Response Set,"Lee, Michelle",,lee15015@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1NeKotWwRQu0EEO,Default Response Set,"Kirkpatrick, Mary",,kir12015@byui.edu,Female,1585,WINDSOR MANOR-WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_3PpfvjJaqib3uJu,Default Response Set,"Quackenbush, Emma",,qua17003@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Agree,Strongly Agree,Somewhat Agree
+R_1MPZdtYhqhUoIxD,Default Response Set,"Mickelsen, Krystle",,mic17013@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Neither Agree nor Disagree,Strongly Agree,Agree,Agree,Neither Agree nor Disagree
+R_3ENk5BlZ2X5W2kP,Default Response Set,"Abbott, Becca",,abb16004@byui.edu,Female,1035,ABBY LANE MANOR,,Agree,Agree,Agree,Agree,Agree
+R_3QJmgBRi1E06cJl,Default Response Set,"Coleman, Benjamin John",,col15023@byui.edu,Male,1245,COLONIAL HOUSE,,Neither Agree nor Disagree,Neither Agree nor Disagree,Strongly Agree,Neither Agree nor Disagree,Somewhat Agree
+R_4ZQHS0aAuzZdXc5,Default Response Set,"Despain, Sam",,des14003@byui.edu,Male,1010,HEMMING HOUSE IV,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_21HZ45urqf6Qn4U,Default Response Set,"Fielding, Ashley",,fie16009@byui.edu,Female,1374,JORDAN RIDGE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Neither Agree nor Disagree
+R_2rPeLRATfG8bPMi,Default Response Set,"Clark, Crystal",,cla16016@byui.edu,Female,850,COLONIAL HEIGHTS TOWNHOUSE,,Neither Agree nor Disagree,Somewhat Agree,Agree,Agree,Somewhat Agree
+R_YXhcVfxIwc4hHah,Default Response Set,"Burrell, Alyssa",,bur15059@byui.edu,Female,1345,"CEDARS, THE-MEN",,Agree,Agree,Agree,Agree,Agree
+R_1dB6BbQyQSlfvzR,Default Response Set,"Stohs, Benjamin",,sto15021@byui.edu,Male,NA,"PINES NORTH, THE",,Agree,Agree,Agree,Somewhat Agree,Agree
+R_2zisM0m9I9cuHmY,Default Response Set,"Cutler, Avalon",,cut14002@byui.edu,Female,1375,"GATES, THE - WOMEN",,Agree,Agree,Strongly Agree,Strongly Agree,Somewhat Disagree
+R_3IQTfWBa6YGwGyq,Default Response Set,"Ekpagha, Ejoke",,ekp13001@byui.edu,Male,1267.5,"IVY, THE - Women",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3hbwKu9uWufgcs2,Default Response Set,"Rugg, Claire",,rug14001@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_3iEHUdtIIHBBxrr,Default Response Set,"Wynn, Jeffrey",,wyn16001@byui.edu,Male,1345,"CEDARS, THE-MEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_RWTPH7uoX3rJ02Z,Default Response Set,"Kazeh-Anfo, Lethe-Ann",,kaz17001@byui.edu,Female,NA,TUSCANY PLACE - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1GQrQKhggxGEztL,Default Response Set,"Kaye, Zach",,kay15003@byui.edu,Male,NA,TUSCANY PLACE - MEN,,Agree,Somewhat Disagree,Strongly Agree,Agree,Strongly Agree
+R_3Hn6h3QjHtKPxHP,Default Response Set,"Nielson, Emiline",,nie17010@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_2RWibumMh2VnLVQ,Default Response Set,"Lopez-Carrasco, Jared",,lop12001@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_0JLg7Tdvx0BoQ13,Default Response Set,"Eudaily, Courtney",,eud14001@byui.edu,Female,1267.5,"IVY, THE - Women",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_sNdiV3I1mAWErxn,Default Response Set,"O'Reilly, Brenna",,ore15001@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1r69qCuSk9GyOO0,Default Response Set,"Swapp, Spencer",,swa17012@byui.edu,Male,1345,"CEDARS, THE-MEN",,Agree,Agree,Agree,Agree,Agree
+R_2zOKSgj0WTnmkx9,Default Response Set,"Grigg, Hayley",,gri17005@byui.edu,Female,1388,MOUNTAIN LOFTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3h08Yar7SD7twG0,Default Response Set,"Doty, Kailyn",,dot17003@byui.edu,Female,1259,HERITAGE WOMEN,,Strongly Agree,Agree,Strongly Agree,Agree,Somewhat Agree
+R_1lnmEKvH3UxlgG6,Default Response Set,"Gentry, Spencer",,gen12004@byui.edu,Male,1323,MOUNTAIN LOFTS - MEN,,Somewhat Agree,Agree,Agree,Agree,Somewhat Agree
+R_1mCVU6GBHoE6J0w,Default Response Set,"Morgan, Emily",,mor16020@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_3oTMIRWtJW1GNmJ,Default Response Set,"Goodhue, Brian",,goo11025@byui.edu,Male,1388,MOUNTAIN LOFTS - WOMEN,,Agree,Neither Agree nor Disagree,Agree,Agree,Agree
+R_6hd4hYLt7ULscAF,Default Response Set,"Macfarlane, Alex",,mac13003@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Agree,Strongly Agree,Agree
+R_Ov7IUIpdEsK5MZz,Default Response Set,"Pizzo, Cameron",,piz17001@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Somewhat Agree,Agree,Strongly Agree,Somewhat Agree
+R_2ToToAPLxeqg86Z,Default Response Set,"Goff, Logan",,gof13002@byui.edu,Male,1323,MOUNTAIN LOFTS - MEN,,Agree,Strongly Agree,Agree,Strongly Agree,Agree
+R_2rMzGSPf2VXhbb2,Default Response Set,"Murray, Jamie",,mur12022@byui.edu,Female,1125,SNOWVIEW APARTMENTS,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_CawbdkWU0ZSgGHf,Default Response Set,"Despain, Toni Jo",,des17002@byui.edu,Female,1189,HERITAGE MEN,,Agree,Agree,Agree,Agree,Agree
+R_1gOUjEXbuAMvII0,Default Response Set,"Payne, Morgan",,pay16013@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Somewhat Agree,Strongly Agree,Neither Agree nor Disagree,Strongly Agree
+R_2s0CSoxdJ4ecLKv,Default Response Set,"Jossie, Erin",,jos14001@byui.edu,Female,1400,TOWERS II,,Somewhat Agree,Strongly Agree,Agree,Somewhat Agree,Neither Agree nor Disagree
+R_1d0PpjY3X5GELZI,Default Response Set,"Varela Atkins, Daviana",,var15011@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_2icThlHMvADbUpr,Default Response Set,Bear,,bea16010@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_votohik77fG6nxT,Default Response Set,"Kotter, Mikelle",,kot17002@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_2tsU5Fh85JigYHB,Default Response Set,"Slayton, Sarah",,sla16010@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_VWFJ1mDqwyFmFBD,Default Response Set,"Alder, Hannah",,ald17001@byui.edu,Female,1045,ALLDREDGE HOUSE ,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_1NDmQDcSEFBnjFC,Default Response Set,"Hastings, NiCole",,has16011@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Disagree
+R_22RCbQnxRAo8LP8,Default Response Set,"Peterson, Morgan",,pet17020@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1Ojyu1j606Ys2NR,Default Response Set,"Lewis, Samantha",,lew16005@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Agree,Strongly Agree,Agree,Strongly Agree
+R_AExahZZp2sqsr2V,Default Response Set,"Moore, Hannah",,moo14003@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_bxbsiuo5AKYtanf,Default Response Set,"Plummer, McKayla",,plu15004@byui.edu,Female,1310,BROOKSIDE VILLAGE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_ZeOibPC70yP0gI9,Default Response Set,"Bennett, Melissa",,ben16020@byui.edu,Female,1200,BOUNTIFUL PLACE,,Agree,Agree,Agree,Agree,Agree
+R_3HojFZakcBoZ7WY,Default Response Set,"Hilton, Paige",,hil16042@byui.edu,Female,NA,"PINES NORTH, THE",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1jJxrQnkGMWvHCy,Default Response Set,"Riley, Connor",,ril15001@byui.edu,Male,999,ALPINE CHALET,,Strongly Agree,Strongly Agree,Agree,Agree,Strongly Agree
+R_12gb2QCXLX3C4nA,Default Response Set,"Osborn, Sarah",,osb16002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Somewhat Agree,Agree,Agree,Agree
+R_2ciUXgopXGeDSRv,Default Response Set,"Johnson, Cannon",,joh15032@byui.edu,Male,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Strongly Agree,Strongly Agree,Agree,Strongly Agree
+R_2UXASkdsy1K7Iim,Default Response Set,"Goldscheitter, Becca",,gol15012@byui.edu,Female,1323,MOUNTAIN LOFTS - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_11c3R6gK5ffZvGH,Default Response Set,"Kurup, Meera",,kur15004@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Somewhat Agree,Agree,Agree
+R_2QFooAQeZF7pJb4,Default Response Set,"Eddington, Megan",,edd16001@byui.edu,Female,1267.5,"IVY, THE - Men",,Agree,Agree,Agree,Strongly Agree,Agree
+R_u9dZUp1OPOeVzWN,Default Response Set,"Brown, Rachael",,bro17037@byui.edu,Female,1075,CARRIAGE HOUSE,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_1g2q3Mdig7hai7v,Default Response Set,"Rickenbacker, Audreylee",,ric14019@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Agree,Agree,Agree
+R_2co0xtHtqIcBbOB,Default Response Set,"Cardenaz, Bradley",,car17110@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Somewhat Agree,Agree,Agree,Agree,Agree
+R_3eyRzE0qitTpuiN,Default Response Set,"Radke, Carl",,rad13008@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Agree,Agree,Agree,Agree,Agree
+R_2RVxvdgzBQAVgcW,Default Response Set,"Ukle, Ariel",,ukl14001@byui.edu,Female,NA,AT THE GROVE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_yHIb3GPOC71GwXT,Default Response Set,"Lundgren, Nathan",,lun16005@byui.edu,Male,999,ALPINE CHALET,,Somewhat Agree,Somewhat Disagree,Strongly Agree,Somewhat Agree,Neither Agree nor Disagree
+R_UKhf9WCXVHkaxY5,Default Response Set,"Abercrombie, Kathryn",,abe17003@byui.edu,Female,1035,ABBY LANE MANOR,,Agree,Agree,Agree,Agree,Agree
+R_3EYcPEWyNbJpJBB,Default Response Set,"Zander, Kyrsten",,zan17001@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2rPjHNjGjLwvfXv,Default Response Set,"Jarvis, Ian",,jar17014@byui.edu,Male,995,ROYAL CREST,,Agree,Agree,Agree,Strongly Agree,Strongly Agree
+R_3NDLSkdv2y7eB7c,Default Response Set,"Neil, Natassja",,nei17004@byui.edu,Female,980,BIRCH PLAZA,,Somewhat Agree,Neither Agree nor Disagree,Agree,Strongly Agree,Neither Agree nor Disagree
+R_2yrMUBQZp2eApRs,Default Response Set,"Hollingworth, Austin",,hol17069@byui.edu,Male,1046.25,PINNACLE POINT,,Agree,Somewhat Disagree,Agree,Strongly Agree,Strongly Agree
+R_2ToZDLxkuqLb3Ca,Default Response Set,"Gale, Ryan",,gal17027@byui.edu,Male,1374,LEGACY RIDGE,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3egFrhR8FjNQy5s,Default Response Set,"Hendrix, Hunter",,hen17028@byui.edu,Male,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Disagree
+R_3Eu84sXChnw4HGa,Default Response Set,"Jackson, Elyse",,jac14011@byui.edu,Female,995,ROYAL CREST,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_2P83eVmlEJ0L230,Default Response Set,"Gillming, Dylan",,gil16032@byui.edu,Male,1323,MOUNTAIN LOFTS - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Somewhat Agree
+R_3qpO033zcgY0erg,Default Response Set,"Dobson, Molly",,dob16001@byui.edu,Female,1259,HERITAGE WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_2CUu1mi0HXOoI6S,Default Response Set,"Mathias, Makayla",,mat12010@byui.edu,Female,1310,BROOKSIDE VILLAGE - WOMEN,,Agree,Somewhat Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_28HQk2yQr2awFDK,Default Response Set,"Jarvis, Brooklynn",,jar16002@byui.edu,Female,995,ROYAL CREST,,Strongly Agree,Strongly Agree,Agree,Agree,Agree
+R_rokhCibQsqQ3j0J,Default Response Set,"Barzee, Rebekah",,bar15045@byui.edu,Female,1222,AVONLEA APARTMENTS,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_pu7jYH562OxNdTj,Default Response Set,"Wartena, Chelsey",,war13043@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Agree,Somewhat Agree,Agree,Agree,Disagree
+R_29K7b9vvh167Rw5,Default Response Set,"Summerhays, Lydia",,sum15002@byui.edu,Female,1275,BIRCH WOOD II,,Somewhat Agree,Agree,Agree,Agree,Agree
+R_3D8vQ1UrxzJJ7S9,Default Response Set,"Bassett, Becca",,bas14003@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Agree,Agree,Neither Agree nor Disagree
+R_2QAPljMrj00yLRe,Default Response Set,"Craft, Tanner",,cra15010@byui.edu,Male,1375,"GATES, THE - MEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1hNhGrK1e7fOCLs,Default Response Set,"Morrow, Shaun",,mor14045@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - MEN,,Agree,Agree,Agree,Agree,Agree
+R_1jrFft1qwwDJjEe,Default Response Set,"Ottley, Ruthanne",,ott17001@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Somewhat Agree,Agree,Agree,Somewhat Agree
+R_3EEXZNXj3nUXmeR,Default Response Set,"Moura Filho, Rogerio",,mou17006@byui.edu,Male,999,ALPINE CHALET,,Somewhat Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1oyZaEskuSPMVUS,Default Response Set,"Perschon, Savannah",,per16014@byui.edu,Female,1245,COLONIAL HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_2w4V5nD6VwcSzkj,Default Response Set,"Verkist, Kristen",,ver15003@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_1Os1XEXj4MmBxcU,Default Response Set,"Ang, Rachel",,ang16001@byui.edu,Female,999,ALPINE CHALET,,Agree,Somewhat Agree,Agree,Agree,Agree
+R_3JCp5vyAd4d7R1Q,Default Response Set,"Hamblet, Madi",,ham17015@byui.edu,Female,1279,NAUVOO HOUSE II,,Neither Agree nor Disagree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Disagree
+R_1IiSyQPp2U9lfOI,Default Response Set,"Bartholomew, Ila",,bar17009@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Agree,Agree,Strongly Agree,Strongly Agree
+R_1JEeqlZmOAxqYDl,Default Response Set,"Gamez, Sabrina",,gam17005@byui.edu,Female,1374,LEGACY RIDGE,,Somewhat Disagree,Disagree,Agree,Agree,Somewhat Disagree
+R_1ruoWLj33DizuMu,Default Response Set,"Tingey, Erika",,tin17002@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Neither Agree nor Disagree,Somewhat Agree,Agree,Agree
+R_1mL7bmm0E5lIIbl,Default Response Set,"Norton, Tanner",,nor16022@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2D6o9ST8Dl5k17o,Default Response Set,"Caldwell, Zach",,cal17045@byui.edu,Male,1495,"CEDARS, THE-WOMEN",,Somewhat Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_WebTkiaSDyZN3vb,Default Response Set,"Holyoak, Sarah",,hol15023@byui.edu,Female,1046.25,PINNACLE POINT,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2eOJm3w9f6XaHQ6,Default Response Set,"Aydelotte, Matt",,ayd17001@byui.edu,Male,1150,ARPAD,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_277Kbe2MywpAMuK,Default Response Set,"Newlun, Jashon",,new17012@byui.edu,Male,999,ALPINE CHALET,,Agree,Somewhat Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1ib62Y5ly8oc6H4,Default Response Set,"Hamblin, Kyle",,ham15023@byui.edu,Male,1279,NAUVOO HOUSE II,,Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_2R8MyQ1sozxJLWX,Default Response Set,"Wille, Ryan",,wil17144@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1M4BeCTNCmgFdAB,Default Response Set,"Madsen, Maren",,mad16021@byui.edu,Female,1050,PARK VIEW APTS - WOMEN,,Agree,Strongly Agree,Strongly Agree,Agree,Somewhat Agree
+R_3mauNTgyxbZLUZz,Default Response Set,"Crawford, Chase",,cra17019@byui.edu,Male,1375,"GATES, THE - MEN",,Agree,Agree,Agree,Agree,Agree
+R_2TvlC7LQ06Fy57o,Default Response Set,"Smith, Cameron",,smi15105@byui.edu,Male,1310,BROOKSIDE VILLAGE - MEN,,Somewhat Agree,Neither Agree nor Disagree,Agree,Strongly Agree,Agree
+R_5ju1XOxbTmyblnP,Default Response Set,"Painter, McKell",,pai15002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_T7YkxqwbynE8D9T,Default Response Set,"Ellsworth, Kyle",,ell15018@byui.edu,Male,1267.5,"IVY, THE - Women",,Disagree,Disagree,Agree,Disagree,Strongly Disagree
+R_2UguveBgnWzeMjk,Default Response Set,"Doucette, Sierra",,dou16002@byui.edu,Female,1259,HERITAGE WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_DjVOWxY4OmJdmk9,Default Response Set,"Misseldine, Katana",,mis17004@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_22nQww9zm5fL5Zd,Default Response Set,"Morgan, Kellie Nicole",,mor15026@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Agree,Agree,Agree
+R_0jILc5aLSrWZWO5,Default Response Set,"James, Krista",,jam17002@byui.edu,Female,995,ROYAL CREST,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_31dsq0WEGRJX9tV,Default Response Set,"Bailey, Derek",,bai14022@byui.edu,Male,1100,ASPEN VILLAGE - MEN ,,Somewhat Agree,Somewhat Agree,Strongly Agree,Agree,Somewhat Agree
+R_2WHkxJ1cbHTnkoj,Default Response Set,"Olson, Natalie",,ols17028@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_2D5gN3vgjiLAnPs,Default Response Set,"Pease, Carissa",,pea17007@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Agree,Agree,
+R_3ozQkZXzVTMRxPJ,Default Response Set,"Loosle, Kaitlyn",,loo16002@byui.edu,Female,1245,COLONIAL HOUSE,,Somewhat Agree,Neither Agree nor Disagree,Somewhat Agree,Strongly Agree,Somewhat Disagree
+R_3HOL6WOx3zp5xE9,Default Response Set,"Challoner, Liz",,cha15031@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_PM7fFw1vZzwnKkF,Default Response Set,"Wiseman, Michael",,wis17005@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_ukna0Hxg52aEUpj,Default Response Set,"White, Jerikka",,whi16039@byui.edu,Female,1245,COLONIAL HOUSE,,Somewhat Agree,Somewhat Agree,Agree,Agree,Somewhat Disagree
+R_2pRyP1QyczbBI8F,Default Response Set,"Brown, Jennifer",,bro17010@byui.edu,Female,1075,CARRIAGE HOUSE,,Somewhat Agree,Neither Agree nor Disagree,Somewhat Agree,Agree,Disagree
+R_3iRpHIEuOCaswTH,Default Response Set,"Cook, Nichole",,coo15002@byui.edu,Female,955,COTTONWOOD-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2R2oRWjNFvLxnO3,Default Response Set,"Ahumada-Azocar, Melissa",,ahu13003@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Somewhat Disagree,Disagree,Neither Agree nor Disagree,Somewhat Disagree,Neither Agree nor Disagree
+R_8oUcAH89rNNTGKt,Default Response Set,"Chavarria Calles, Lesly",,cha17072@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_rp5btsR70qiCI6d,Default Response Set,"Madeux, Becca",,mad14001@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_XvakUnf9GTbgCel,Default Response Set,"Jepsen, Kenton",,jep15006@byui.edu,Male,1155,SHELBOURNE APARTMENTS,,Somewhat Agree,Agree,Agree,Somewhat Agree,Disagree
+R_3M6xDQeurfX0wGw,Default Response Set,"Mabey, Clayton",,mab15001@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Agree,Agree,Agree,Agree,Agree
+R_1DYxtEWbiQWM3IV,Default Response Set,"Roach, Mckay",,roa05002@byui.edu,Male,1345,"CEDARS, THE-MEN",,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_20TcImOGrFuSCTm,Default Response Set,"Ruiz, Sebastian Andres",,rui17009@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Somewhat Agree,Somewhat Agree,Agree,Agree,Agree
+R_72p640i9IM0Qd9v,Default Response Set,"Packard, Mikayla",,pac13028@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree,Agree
+R_1LjIsYrlCtQQ07C,Default Response Set,"White, Mary Ann",,whi15065@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_3Ja9Dy4KHECBcZb,Default Response Set,"Puckett, Brandon",,puc17002@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,Somewhat Agree,Neither Agree nor Disagree,Somewhat Agree,Somewhat Disagree,Agree
+R_271ZuMwypuZ6GZw,Default Response Set,"Farnsworth, Julie",,far17002@byui.edu,Female,1374,JORDAN RIDGE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_237sJOKEKsOXUPk,Default Response Set,"Luthy, Elizabeth",,lut12003@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3oNh0BD3Bz63vJg,Default Response Set,"McKee, Angie",,mck15029@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3L0VtkUOTh23i9c,Default Response Set,"Hetrick, Julianne",,het16004@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_pmfSvbMQ5X2KKl3,Default Response Set,"Plessinger, Paige",,ple15001@byui.edu,Female,1345,AUTUMN WINDS,,Agree,Agree,Agree,Agree,Agree
+R_2498joU3oMtxCB2,Default Response Set,"Bateman, Shayla",,bat17005@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Strongly Agree,Agree,Somewhat Agree
+R_1YRy8JaYnzu9Nrr,Default Response Set,"Cropper, Andrew",,cro15028@byui.edu,Male,1375,"GATES, THE - MEN",,Agree,Agree,Agree,Agree,Agree
+R_yD9dxRKwPnFcNY5,Default Response Set,"Nequis, Brenda",,neq17001@byui.edu,Female,1035,ABBY LANE MANOR,,Strongly Agree,Strongly Agree,Agree,Agree,Strongly Agree
+R_SAXIsTa9PHYwOoF,Default Response Set,"Ipanaque, Perla",,ipa13002@byui.edu,Female,1175,"ROOST, THE - WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2CPb4jd79Hfk0th,Default Response Set,"Hancock, McKell",,han16090@byui.edu,Female,1279,NAUVOO HOUSE II,,Agree,Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_27I21vfZuLw3wi4,Default Response Set,"House, Naomi",,hou13004@byui.edu,Female,NA,RIVIERA APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1kSLFBsUwcasLLU,Default Response Set,"Maddocks, Sylvia",,mad12012@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Neither Agree nor Disagree,Agree,Agree,Agree
+R_24G9SanSZkQ230C,Default Response Set,"Muns, Katie",,mun16010@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Agree,Agree,Agree
+R_80Vd5dAfzoK5S6t,Default Response Set,"Nielsen, Marlee Esther",,nie16018@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1msZRikIjdCCS6i,Default Response Set,"Harrop, Hannah",,har12065@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3lDC6EcqlaRgMjW,Default Response Set,"Wells, Kristina",,wel17007@byui.edu,Female,1035,ABBY LANE MANOR,,Agree,Agree,Agree,Agree,Agree
+R_08u357UzqTKQkzT,Default Response Set,"Doolittle, Megan",,doo15001@byui.edu,Female,1259,HERITAGE WOMEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_1OxK8jOpqLYNB9F,Default Response Set,"Daugherty, Kaylie",,dau15001@byui.edu,Female,1375,"GATES, THE - WOMEN",,Somewhat Disagree,Agree,Strongly Agree,Agree,Neither Agree nor Disagree
+R_3h4KXFvoCR3LgJy,Default Response Set,"Hooton, Katie",,hoo17001@byui.edu,Female,900,QUINCY HOUSE,,,Strongly Agree,Strongly Agree,Agree,Somewhat Agree
+R_1FJV1H15Fj0x46J,Default Response Set,"McTavish, Tyler",,mct14001@byui.edu,Male,1325,BRIGHAM'S MILL,,Agree,Somewhat Agree,Somewhat Agree,Strongly Agree,Neither Agree nor Disagree
+R_31MZssatSzFsz1g,Default Response Set,"Varga, Ashleigh",,var14002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3qLiUTkIsYMFxrr,Default Response Set,"Meadows, Jessie",,mea14003@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_29ayn6sSrMe5u8p,Default Response Set,"Schroeder, Maridee",,sch14018@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2QRoZrDLjGSwZe7,Default Response Set,"Martin, Amberlee",,mar14009@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1mfxVK3lAJQbylv,Default Response Set,"Hutchings, Joshua",,hut15003@byui.edu,Male,1175,"ROOST, THE - WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3IRejw9X6WuBQJC,Default Response Set,"Cutler, Tyler",,cut16004@byui.edu,Male,1375,"GATES, THE - WOMEN",,Agree,Agree,Agree,Agree,Agree
+R_PLpgT7ydta2gqk1,Default Response Set,"Bartschi, Megan",,bar17024@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Agree,Agree,Agree
+R_1lbMUCF1JAsAHvB,Default Response Set,"Dene, Alyssa",,den17020@byui.edu,Female,1020,HARRIS HALL,,Strongly Agree,Somewhat Agree,Agree,Agree,Neither Agree nor Disagree
+R_1Ldvv3U6DkntNTz,Default Response Set,"Liddle, Nicole",,lid17001@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Agree,Strongly Agree,Agree,Somewhat Agree
+R_2QSruCL0FPL8TI6,Default Response Set,"Fredericks, Courtney",,fre16006@byui.edu,Female,1129,LA JOLLA - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_3lVuM7P5jciEH4E,Default Response Set,"Robertson, Darren",,rob16040@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Somewhat Disagree,Somewhat Agree,Somewhat Agree,Strongly Agree,Strongly Agree
+R_6nF3t1bmzzplaF3,Default Response Set,"Ludeman, Kyle",,lud16006@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Neither Agree nor Disagree,Neither Agree nor Disagree,Strongly Agree,Agree,Agree
+R_3kbkwimn11DLgKK,Default Response Set,"Estes, Richard",,est16003@byui.edu,Male,1267.5,"IVY, THE - Women",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_usuK8Qo4ZgoCPsZ,Default Response Set,"Isaak, Klarissa-Sue",,isa12002@byui.edu,Female,995,ROYAL CREST,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1QzjIYEu5UavbIb,Default Response Set,"Carl, James",,car13126@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Agree,Agree,Strongly Agree,Strongly Agree
+R_4195MgJiQp7wpDX,Default Response Set,"Pochop, Paige",,poc13001@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1MST4US2kWExPEb,Default Response Set,"Lee, Ngaodawb",,lee17022@byui.edu,Female,1035,ABBY LANE MANOR,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_24JncI3NQorWuta,Default Response Set,"Harker, Max",,har17003@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Agree,Agree,Agree,Agree,Agree
+R_1ikcQC2PdPwAsim,Default Response Set,"Campbell, Madison",,cam13004@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_22lvTzfev3AmXVC,Default Response Set,"Williams, Nicholas",,wil12070@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,Somewhat Agree,Agree,Agree,Strongly Agree,Agree
+R_3hykGtHH4q9BoIM,Default Response Set,"Radmall, Nathan",,rad14003@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Disagree,Strongly Disagree,Strongly Agree,Neither Agree nor Disagree,Agree
+R_tY5hq1ZPScnreBr,Default Response Set,"Williams, Hyrum",,wil17059@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Agree,Agree,Agree,Agree
+R_29jiBQ07LQFf9NL,Default Response Set,"Davis, Adam",,dav17061@byui.edu,Male,1375,"GATES, THE - WOMEN",,Somewhat Agree,Strongly Agree,Strongly Agree,Somewhat Agree,Somewhat Agree
+R_2xxRkMxcBDD6QO1,Default Response Set,"Sosa, J",,sos17002@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3lLKkT07qusrXkd,Default Response Set,"Mickelsen, Cody",,mic17002@byui.edu,Male,1325,BRIGHAM'S MILL,,Agree,Agree,Agree,Agree,Agree
+R_1FPTqNBkhVgNzTf,Default Response Set,"Duff, Becca",,duf13008@byui.edu,Female,1125,HILLCREST TOWNHOUSES,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_sH8MfVw9vuoMTsZ,Default Response Set,"Anderson, Amber",,and16044@byui.edu,Female,999,ALPINE CHALET,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_1ITwh4QospgJBPU,Default Response Set,"Milani, Giulia",,mil17008@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2zkjdsq0CJsPybh,Default Response Set,"Mulder, Bryce",,mul12009@byui.edu,Male,1202.5,AMERICAN AVENUE - MEN,,Somewhat Agree,Neither Agree nor Disagree,Somewhat Agree,Somewhat Agree,Agree
+R_3qPEB5FaMla380H,Default Response Set,"Muhlestein, Cedar",,muh13001@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Agree,Somewhat Agree,Strongly Agree
+R_28S3U7QKE98kaJ2,Default Response Set,"Nielson, Christina",,nie14008@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_1F8GHSspJCMqLSP,Default Response Set,"Belliston, Mitch",,bel13034@byui.edu,Male,1019,BIRCH WOOD I,,Somewhat Disagree,Agree,Agree,Agree,Agree
+R_Y97CwkUc7sm7L9f,Default Response Set,"Daw, Thomas Gerome",,daw17004@byui.edu,Male,995,GEORGETOWN APARTMENTS,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1OQ5Ew6MD7eWvwE,Default Response Set,"Anderson, Curtis",,and14031@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Strongly Agree,Agree,Agree,Strongly Agree,Agree
+R_1hzGdf6zsDb0GVP,Default Response Set,"Hansen, Cody",,han16004@byui.edu,Male,1279,NAUVOO HOUSE II,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2AS7U9S7dCYJKGV,Default Response Set,"Escujuri, Cassie",,esc12005@byui.edu,Female,1267.5,"IVY, THE - Women",,Agree,Neither Agree nor Disagree,Strongly Agree,Strongly Agree,Strongly Agree
+R_bkAFFPksoByyMBX,Default Response Set,"Nelson, Jaden",,nel13006@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,Somewhat Agree,Neither Agree nor Disagree,Agree,Agree,Somewhat Disagree
+R_1OHJN2XcvOo6AlM,Default Response Set,"Behling, Kyle",,beh12005@byui.edu,Male,1019,BIRCH WOOD I,,Agree,Agree,Agree,Agree,Agree
+R_1fla9tfq7YinknJ,Default Response Set,"Duke, Parker",,duk17001@byui.edu,Male,1267.5,"IVY, THE - Men",,Agree,Agree,Agree,Agree,Agree
+R_3qa1K4leieP9bmI,Default Response Set,"Smith, Kaydee",,smi17118@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Agree,Agree,Somewhat Disagree
+R_yxrbsYXWPdi7cK5,Default Response Set,"West, Mitchell",,wes15026@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_2bTrnYNsLDS8IF8,Default Response Set,"Jacobson, Kagen",,jac15032@byui.edu,Male,995,ROYAL CREST,,Agree,Somewhat Agree,Somewhat Agree,Agree,Strongly Agree
+R_5c0nSc4HfZfSoFP,Default Response Set,"Sears, Marli",,sea12023@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_2viTT6fPlrKr6yk,Default Response Set,"Reese, Abby",,ree15025@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Agree,Strongly Agree,Agree
+R_2EibfCjvWwxZXhh,Default Response Set,"Vasquez, Lilibeth",,vas14003@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Somewhat Agree
+R_1CdP8k2NqCSnBlk,Default Response Set,"Smith, Rachel",,smi16036@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Agree,Agree,Agree
+R_3QRYpNallkE5xDN,Default Response Set,"Gibson, Natalie",,gib16008@byui.edu,Female,1323,MOUNTAIN LOFTS - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_ahLVjtk64qtPWDf,Default Response Set,"Wright, Jessie",,wri16031@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_3nSNJYpXVBNxFaQ,Default Response Set,"Baker, Baylee",,bak16012@byui.edu,Female,900,ASPEN VILLAGE - WOMEN,,Agree,Somewhat Agree,Agree,Agree,Agree
+R_2az93hTnwazec0Y,Default Response Set,"Jones, Caedy",,jon17066@byui.edu,Female,1400,TOWERS II,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_yVAivV2xhFePYqZ,Default Response Set,"Nagano, Yuta",,nag13001@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Somewhat Agree,Agree,Agree,Agree,Somewhat Agree
+R_2BmlJUsVBCHSjTp,Default Response Set,"Schultz, Constance",,sch17067@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_301c6vSvBV5ka1q,Default Response Set,"Lee, Rebecca anne",,lee14013@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2zou7twlrmAchcq,Default Response Set,"Stoneking, Kayla",,sto14016@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Agree,Agree,Agree
+R_1LUJGSTH5kqfPlH,Default Response Set,"Heywood, Dana",,hey14001@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3PjgFZ2CWgTM2uR,Default Response Set,"Smith, Collin",,smi14063@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - MEN,,Agree,Strongly Agree,Agree,Agree,Agree
+R_3KVGdruLkBttN8y,Default Response Set,"Fisher, Victoria",,fis14005@byui.edu,Female,1374,JORDAN RIDGE,,Agree,Agree,Strongly Agree,Strongly Agree,Neither Agree nor Disagree
+R_1qg5wULU2efu5MG,Default Response Set,"Pincock, Kalynne",,pin15003@byui.edu,Female,1035,ABBY LANE MANOR,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1FG2GqInwpT9aKt,Default Response Set,"Perdue, Shannon",,per13010@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1dpiKK53WtpXbIl,Default Response Set,"Gallagher, Danielle",,gal15003@byui.edu,Female,1374,LEGACY RIDGE,,Agree,Somewhat Agree,Agree,Agree,Agree
+R_1gbjtcxVEPnfWvI,Default Response Set,"Dowd, Carlyle",,dow14003@byui.edu,Female,1259,HERITAGE WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_1mF6zon6g2VQnRD,Default Response Set,"Hodge, Mercedes",,hod16001@byui.edu,Female,975,"PINES SOUTH, THE",,Strongly Agree,Agree,Agree,Somewhat Agree,Agree
+R_3JwourW4jWquHZt,Default Response Set,"Sumpter, Diane",,sum13001@byui.edu,Female,972.5,ALEXANDER APARTMENT,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2bWrFO1ndsns8vA,Default Response Set,"Clark, Mikayla",,cla14014@byui.edu,Female,995,CLARKE APARTMENTS,,Agree,Somewhat Disagree,Agree,Agree,Agree
+R_31ENXHhc0gMHKDD,Default Response Set,"Roberts, Lily",,rob17028@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_R4zPc8NJguQAWaJ,Default Response Set,"Moser, Ben",,mos17013@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - MEN,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_21G0FqbOQhsJLJn,Default Response Set,"Rowden, Caitlyn",,row14004@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Somewhat Agree,Agree,Agree,Agree
+R_2dgSJQrjaaoNTUM,Default Response Set,"Braun, Isabel",,bra12036@byui.edu,Female,961.666666,BUNKHOUSE,,Agree,Agree,Agree,Agree,Agree
+R_3rTn3e76MbgAEkO,Default Response Set,"Halls, Courtney",,hal13004@byui.edu,Female,1279,NAUVOO HOUSE I,,Agree,Agree,Agree,Agree,Agree
+R_9nsshSCJmbU1UL7,Default Response Set,"Price, Lane",,pri14016@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3PKM4Sw7bfjwzYQ,Default Response Set,"Shattuck, Stephanie",,sha16005@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1q2hmxSfilcyTtw,Default Response Set,"Spaugh, Isabel",,spa17011@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Somewhat Agree,Somewhat Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_1P01xmUsdsU4yKk,Default Response Set,"Dimond, Jonathan",,dim14003@byui.edu,Male,1189,HERITAGE MEN,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2do3jgXEjaKTKck,Default Response Set,"Garrett, Madison",,gar16012@byui.edu,Female,950,MOUNTAIN CREST,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2af4iYLkL9xXSkC,Default Response Set,"Anderson, Derek",,and14087@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Agree,Somewhat Agree,Strongly Agree,Agree,Somewhat Disagree
+R_10Jc00RkYayGttg,Default Response Set,"Alverson, Julia",,alv17014@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_2aWte3HOlFLg852,Default Response Set,"Kerr, Tyler",,ker13007@byui.edu,Male,1302.5,TUSCANY PLACE - WOMEN,,Agree,Somewhat Disagree,Strongly Agree,Strongly Agree,Agree
+R_1o5ffbuCGAPCy6C,Default Response Set,"Huefner, McKinley",,hue13001@byui.edu,Female,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_30f1PR37v51SNXk,Default Response Set,"Poves Mavila, Grecia",,pov16001@byui.edu,Female,1019,BIRCH WOOD I,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3NWMeAy3d0rvcXU,Default Response Set,"Wells, Madison",,wel17011@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Somewhat Agree,Agree,Agree,Agree,Somewhat Agree
+R_3PSGwGXPAF02960,Default Response Set,"Gardner, Jake",,gar16039@byui.edu,Male,950,MOUNTAIN CREST,,Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_xDf4yweTysOGM9z,Default Response Set,"Dunkley, Sarah",,dun16012@byui.edu,Female,1267.5,"IVY, THE - Men",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3JCuhol7LnCwfuI,Default Response Set,"Edwards, Ryan",,edw16004@byui.edu,Male,1267.5,"IVY, THE - Women",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2SuZhfHKto6C4Xe,Default Response Set,"Hughes, Ethan",,hug17008@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Somewhat Agree,Somewhat Agree,Agree,Agree,Somewhat Agree
+R_1gwGcBpvbrC9GjG,Default Response Set,"Kilgrow, Elisabeth",,kil12008@byui.edu,Female,1560,WINDSOR MANOR-MEN,,Agree,Agree,Somewhat Agree,Somewhat Agree,Disagree
+R_3sjJhAahpwc8jAV,Default Response Set,"Doolittle, Rachel",,doo12001@byui.edu,Female,1259,HERITAGE WOMEN,,Agree,Agree,Somewhat Agree,Somewhat Agree,Somewhat Disagree
+R_31iaZmrDqdydtxA,Default Response Set,"Jacobson, Cambria",,jac16013@byui.edu,Female,995,ROYAL CREST,,Somewhat Agree,Neither Agree nor Disagree,Somewhat Agree,Somewhat Agree,Disagree
+R_2CE3cbzVvB6tzSo,Default Response Set,"Twitchell, Jeri",,twi15002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_32Mm6fOfOZhIViB,Default Response Set,"Potter, Caitlin",,pot16010@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_1DI8pDeHVBHroGi,Default Response Set,"Martinez, Monica",,mar14033@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_2dTqHWdjLxG5V5C,Default Response Set,"Perkins, Emily Rose",,per15024@byui.edu,Female,1050,PARK VIEW APTS - WOMEN,,Agree,Disagree,Agree,Agree,Agree
+R_31hmqrkVD9Alurd,Default Response Set,"Slaugh, Hailey",,sla16002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Agree,Agree,Agree
+R_3pn9H2KHcGUnHOV,Default Response Set,"Justesen, Shawn",,jus15005@byui.edu,Male,1400,TOWERS II,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3qPCGg3Xxga7XFg,Default Response Set,"Duchene, Michelle",,bei16001@byui.edu,Female,1019,BIRCH WOOD I,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_27UVxpACbHj5h6j,Default Response Set,"Noel, Gwynne",,noe12001@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Agree,Agree,Strongly Agree,Agree
+R_sMVuVM5J5Jvce1X,Default Response Set,"Hoch, Jordan",,hoc13001@byui.edu,Male,975,"PINES SOUTH, THE",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_9TWZNy2XMHGpY65,Default Response Set,"King, Addy",,kin17005@byui.edu,Female,1585,WINDSOR MANOR-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1OE3abMJSDUfiVK,Default Response Set,"Larsen, Jared",,lar16016@byui.edu,Male,975,"PINES SOUTH, THE",,Neither Agree nor Disagree,Disagree,Somewhat Agree,Strongly Disagree,Strongly Agree
+R_1IyEv8AiKOR7tz5,Default Response Set,"Clark, Ashlyn",,cla16021@byui.edu,Female,850,COLONIAL HEIGHTS TOWNHOUSE,,Agree,Agree,Agree,Agree,Agree
+R_vojAHxxUJ0mKR9L,Default Response Set,"Edwards van Muijen, Tori",,edw17005@byui.edu,Female,1267.5,"IVY, THE - Women",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_33mtklraHCweFx1,Default Response Set,"Schwitters, Haley",,sch14030@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Somewhat Agree,Neither Agree nor Disagree,Agree,Agree,Somewhat Agree
+R_3CTyLimgFEAerfJ,Default Response Set,"Mainoo, Smith",,mai15005@byui.edu,Male,1345,"CEDARS, THE-MEN",,Agree,Agree,Agree,Agree,Agree
+R_2q8xLyNWsq3JvSi,Default Response Set,"Osburn, Spencer",,osb13005@byui.edu,Male,1310,BROOKSIDE VILLAGE - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3sgC3vDnzKWwquB,Default Response Set,"Van Wagenen, Isaac",,van15016@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Agree,Agree,Strongly Agree,Somewhat Disagree
+R_3nUcoMy9sX3Nonm,Default Response Set,"Pearson, Rebecca",,pea15002@byui.edu,Female,1035,ABBY LANE MANOR,,Somewhat Agree,Agree,Agree,Somewhat Agree,Agree
+R_10SDSHhGZiQ3DEG,Default Response Set,"Hamilton, Ally",,ham16025@byui.edu,Female,1279,NAUVOO HOUSE II,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2E75QIfym9E4BZF,Default Response Set,"Casper, Mackenzie",,cas14036@byui.edu,Female,1349,CENTRE SQUARE-MEN,,Agree,Agree,Agree,Agree,Strongly Agree
+R_cw5HpOq44jJjzsR,Default Response Set,"Giblette, Sophie",,gib15023@byui.edu,Female,1323,MOUNTAIN LOFTS - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2YJ0KYGh47y2F1B,Default Response Set,"Comer, Abbey",,com17004@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Somewhat Agree,Agree,Strongly Agree,Neither Agree nor Disagree
+R_2V3E8SkSrKmDx1U,Default Response Set,"Moeller, Dahlin",,moe17003@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Neither Agree nor Disagree,Somewhat Agree,Agree,Somewhat Disagree,Strongly Disagree
+R_1XtlJFpG2tJ0CWd,Default Response Set,"Baldwin, Christopher",,bal17025@byui.edu,Male,1345,AUTUMN WINDS,,Agree,Agree,Agree,Agree,Agree
+R_3dLfooYCgCNLTG0,Default Response Set,"Bolton, Mikaela",,bol16005@byui.edu,Female,1310,BROOKSIDE VILLAGE - WOMEN,,Strongly Agree,Agree,Agree,Agree,Agree
+R_2pVqL2vxiNWmbMz,Default Response Set,"Morris, Brandon",,mor16007@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2sRcJee48cjIbrA,Default Response Set,"Wevers, Kora",,wev14001@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_AyqdybvoRmcgg9P,Default Response Set,"Young, Kendell",,you17011@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_233iibXo1sXx40d,Default Response Set,"Terry, Bryce",,ter17002@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - MEN,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_32Vh1LK242R3jHp,Default Response Set,"Vincil, Sarah",,vin17001@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_1gubG1yAsVuiIoU,Default Response Set,"Hadley, Meredith",,had16002@byui.edu,Female,1279,NAUVOO HOUSE I,,Agree,Neither Agree nor Disagree,Agree,Somewhat Agree,Agree
+R_248biBAkau1ErPL,Default Response Set,"Kentner, Abe",,ken17027@byui.edu,Male,1302.5,TUSCANY PLACE - WOMEN,,Disagree,Disagree,Disagree,Disagree,Disagree
+R_12rJr9ZjgAPsg3y,Default Response Set,"Cardinet, Porter",,car14069@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree
+R_795F8NW2bT5MWUV,Default Response Set,"Sebring, Laura",,seb16002@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Somewhat Agree,Agree,Somewhat Disagree,Somewhat Agree,Somewhat Agree
+R_30qkmgxdiFdymi8,Default Response Set,"Smith, Becca",,smi15033@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Neither Agree nor Disagree,Strongly Agree,Strongly Agree,Strongly Agree
+R_214xnCQ0aQ5ALSq,Default Response Set,"Roberts, Micah Redd",,rob17087@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Agree,Agree,Agree,Strongly Agree
+R_27sp5i0K9GCJWjs,Default Response Set,"Joffs, Hannah",,jof15001@byui.edu,Female,1125,SNOWVIEW APARTMENTS,,Agree,Somewhat Agree,Strongly Agree,Agree,Strongly Agree
+R_2zbGL63sFLfjzF9,Default Response Set,"Webb, William",,web17025@byui.edu,Male,NA,"PINES NORTH, THE",,Agree,Agree,Agree,Agree,Somewhat Agree
+R_DwoG95CbFLseyUp,Default Response Set,"Taggart, Colin",,tag17004@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2f9bo781bvjP68i,Default Response Set,"Walker, Lauren",,wal16024@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3Ph0uyIXLzjTtPS,Default Response Set,"Black, Travis",,bla16048@byui.edu,Male,870,BROOKLYN APARTMENTS,,Agree,Agree,Somewhat Agree,Agree,Agree
+R_24qIkKEIzZZKpLm,Default Response Set,"Griffith, Brooke",,gri16014@byui.edu,Female,1388,MOUNTAIN LOFTS - WOMEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_wMrgHNx8bjnlnVf,Default Response Set,"Moreira, Rute",,mor16100@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_21ywEmn1lmtTbHG,Default Response Set,"Hackbart, Rebekah",,hac17002@byui.edu,Female,1279,NAUVOO HOUSE I,,Agree,Somewhat Agree,Agree,Somewhat Agree,Strongly Agree
+R_2zZVy06vQV6qExN,Default Response Set,"Schaeffer, Daniel",,sch17042@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_24oSAwlVkEpZx7L,Default Response Set,"Clark, Amy",,cla17023@byui.edu,Female,850,COLONIAL HEIGHTS TOWNHOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3OjiJv5OOTt6Q6P,Default Response Set,"Chatterton, Jessie",,cha14022@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Strongly Agree,Agree,Somewhat Agree,Agree
+R_2ZCTMcLjFTnI3Uq,Default Response Set,"Johnson, Amy",,joh14018@byui.edu,Female,1110,SOMERSET APARTMENTS - MEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_vYsJHlYyLUVGvZv,Default Response Set,"Brown, Miriam",,bro16061@byui.edu,Female,1075,CARRIAGE HOUSE,,Agree,Strongly Agree,Strongly Agree,Agree,Strongly Agree
+R_1I9FfWHrqO84cU8,Default Response Set,"Butts, Alexander",,but17017@byui.edu,Male,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Strongly Agree,Agree,Agree
+R_zSheRudU3wp5mEN,Default Response Set,"Powell, Matthew",,pow17023@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Somewhat Agree,Somewhat Disagree,Somewhat Agree,Neither Agree nor Disagree,Somewhat Disagree
+R_2WHjOpGOHWSY2Ue,Default Response Set,"Potter, Delaney",,pot17007@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_09tkWsCjwu26hyN,Default Response Set,"Goodman, Nate",,goo17016@byui.edu,Male,1388,MOUNTAIN LOFTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1SyAJMHymF6TZyF,Default Response Set,"Oswald, Ashlyn",,osw15002@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3iqEz0kQPESFGSH,Default Response Set,"Blakely, Cassandra",,bla14006@byui.edu,Female,870,BROOKLYN APARTMENTS,,Somewhat Agree,Somewhat Disagree,Agree,Agree,Strongly Agree
+R_6f03lHFKmBSK85X,Default Response Set,"Hall, Jared",,hal15033@byui.edu,Male,1279,NAUVOO HOUSE II,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2YJJ0gsiFWt00tH,Default Response Set,"Yamamura, Teru",,yam17006@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Somewhat Agree,Somewhat Agree,Agree,Agree,Disagree
+R_2CWagIYlnuIftUs,Default Response Set,"Glancy, Zach",,gla14004@byui.edu,Male,1323,MOUNTAIN LOFTS - MEN,,Strongly Agree,Strongly Agree,Agree,Strongly Agree,Strongly Agree
+R_2foI8vHfpKa0zcL,Default Response Set,"Morgan, Kristina",,mor14003@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_2y2E88sxJMhomHD,Default Response Set,"Liddle, Susannah",,lid16001@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_CdbbdaLy5FOv0S5,Default Response Set,"Taylor, Josh",,tay17029@byui.edu,Male,1133.333333,PARK VIEW APTS-MEN,,Strongly Disagree,Strongly Disagree,Agree,Agree,Strongly Disagree
+R_3n1Kwaps8XfUddW,Default Response Set,"Rasmussen, Anna",,ras16012@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_3gREed1iaqWgRIB,Default Response Set,"Dunn, Haleigh",,dun17008@byui.edu,Female,1267.5,"IVY, THE - Men",,Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_dmQG6EAFLaUfCUN,Default Response Set,"Dochterman, Katie",,doc16001@byui.edu,Female,1259,HERITAGE WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_pS227DRsf1lznK9,Default Response Set,"Goad, Tevett Allen",,goa17002@byui.edu,Male,1323,MOUNTAIN LOFTS - MEN,,Agree,Agree,Agree,Agree,Agree
+R_3kq6QO5wfI0NIf8,Default Response Set,"Hansen, Emma",,han16005@byui.edu,Female,1279,NAUVOO HOUSE II,,Agree,Agree,Strongly Agree,Agree,Strongly Agree
+R_2Ucmg7WYoN8x0jw,Default Response Set,"Lau, David",,lau16003@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_24BNeCp2vGWGXl6,Default Response Set,"Miller, Wynter",,mil17016@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1oiHs4y5WWoNYoS,Default Response Set,"Manwaring, Nyal",,man14009@byui.edu,Male,975,"PINES SOUTH, THE",,Somewhat Agree,Somewhat Agree,Somewhat Agree,Agree,Agree
+R_WkRBuD170UNoZeV,Default Response Set,"Carey, Alexa",,car14009@byui.edu,Female,1349,CENTRE SQUARE-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_RqLmjMeH84TJiRX,Default Response Set,"O'Connor, Phoebe",,oco14003@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_Qcd3XltA4TAVanf,Default Response Set,"Clark, Tony",,cla15006@byui.edu,Male,995,CLARKE APARTMENTS,,Somewhat Agree,Somewhat Agree,Somewhat Agree,Agree,Somewhat Disagree
+R_cTNii08IQYVP13H,Default Response Set,"Horan, Summer",,hor17005@byui.edu,Female,972.5,"RED DOOR, THE",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3neEfR5O6sk9Shj,Default Response Set,"Child, Erin",,chi16005@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3CVIACNYmCVX1fl,Default Response Set,"Harris, Samuel",,har13135@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Somewhat Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_Ap01gTHTZ1WoZsB,Default Response Set,"Galvan, Roberto",,gal16014@byui.edu,Male,1374,LEGACY RIDGE,,Agree,Agree,Agree,Agree,Agree
+R_1YcxGPaJo0eWSsN,Default Response Set,"Crowther, Neil",,cro17039@byui.edu,Male,1375,"GATES, THE - MEN",,Strongly Agree,Neither Agree nor Disagree,Strongly Agree,Strongly Agree,Neither Agree nor Disagree
+R_1impgVYzV7vXYsf,Default Response Set,"Womble, Tim",,wom17002@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Somewhat Agree,Agree,Strongly Agree,Agree
+R_1QuUm3UcCRCX91u,Default Response Set,"Mackay, Landon",,mac16015@byui.edu,Male,999,ALPINE CHALET,,Agree,Agree,Agree,Agree,Agree
+R_3kGuFyHonkflI2b,Default Response Set,"Klaassen, Haley",,kla15002@byui.edu,Female,1585,WINDSOR MANOR-WOMEN,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Neither Agree nor Disagree
+R_29prvzcaTMqpbC9,Default Response Set,"Hansen, Toni",,han10007@byui.edu,Female,1279,NAUVOO HOUSE II,,Somewhat Agree,Agree,Somewhat Agree,Agree,Neither Agree nor Disagree
+R_3scQUNWtTXzby7f,Default Response Set,"Jenkins, Josselyn",,jen15004@byui.edu,Female,995,ROYAL CREST,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2sWQ6K8ossAEgPW,Default Response Set,"Olsen, Kayla",,ols15011@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Agree,Agree,Strongly Agree,Somewhat Agree
+R_2bUwlQTEISJDhCc,Default Response Set,"Pennington, Aleseea",,pen14002@byui.edu,Female,1310,BROOKSIDE VILLAGE - WOMEN,,Agree,Somewhat Agree,Agree,Somewhat Disagree,Agree
+R_ysEgxK87iKbe57r,Default Response Set,"Von Doersten, Will",,von16004@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_RagJ8qLnbuQNCiR,Default Response Set,"Wang, Liya",,wan15002@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Agree,Strongly Agree,Somewhat Agree
+R_3D1QAP95ac8rgXu,Default Response Set,"Brown, Tawny",,bro13006@byui.edu,Female,1075,CARRIAGE HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_22D1NtvKhcz1Bj4,Default Response Set,"Howard, Erin",,how15002@byui.edu,Female,NA,RIVIERA APARTMENTS,,Agree,Somewhat Agree,Agree,Agree,Agree
+R_3iXf3pyX5NjOreq,Default Response Set,"Sessions, Maddie",,ses14002@byui.edu,Female,1345,AUTUMN WINDS,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_3TMLzUQtTHXwMBr,Default Response Set,"Paul, Emily",,pau15010@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Neither Agree nor Disagree
+R_1OB6xa7SxEsQO42,Default Response Set,"Milla, Luis",,mil15084@byui.edu,Male,999,ALPINE CHALET,,Agree,Agree,Agree,Agree,Agree
+R_1SQ9V2ckL2BdK5b,Default Response Set,"Stevens, Tori",,ste16011@byui.edu,Female,1245,COLONIAL HOUSE,,Neither Agree nor Disagree,Somewhat Agree,Neither Agree nor Disagree,Agree,Somewhat Agree
+R_3n14BdBS3sLJEFm,Default Response Set,"Daynes, Jacob",,day13001@byui.edu,Male,995,GEORGETOWN APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3LcNaUENMa0M2la,Default Response Set,"Clarke, Collin",,cla17054@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,Neither Agree nor Disagree,Somewhat Agree,Strongly Agree,Somewhat Agree,Somewhat Agree
+R_3p0cVRJfcUu0lUV,Default Response Set,"Doxey, Emily",,dox17001@byui.edu,Female,880,HILL'S COLLEGE AVE APTS,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_AB9nVW422M1CCCR,Default Response Set,"Dean, Kim",,dea13004@byui.edu,Female,995,GEORGETOWN APARTMENTS,,Somewhat Agree,Somewhat Agree,Agree,Agree,Agree
+R_3eyKEH1MtF9sG50,Default Response Set,"Allred, Rylee",,all15052@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Neither Agree nor Disagree
+R_3PSGS0CmcDi4ziy,Default Response Set,"Ogden, Lucas",,ogd12001@byui.edu,Male,999,ALPINE CHALET,,Somewhat Disagree,Strongly Disagree,Agree,Agree,Agree
+R_331PSjN7YnZ7qiC,Default Response Set,"Quiles, Emily",,qui16020@byui.edu,Female,1019,BIRCH WOOD I,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2EAaxyLEWCVAZvp,Default Response Set,"Hughes, Kyle",,hug15002@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Agree,Agree,Agree,Agree,Agree
+R_UFlCFUxXfrVYiat,Default Response Set,"Jicha, Melina",,jic13001@byui.edu,Female,1125,SNOWVIEW APARTMENTS,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_1d9K8nupR1xTc7L,Default Response Set,"Otoo, Edward",,oto17001@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1o6UX7KHEANh7HB,Default Response Set,"Schaffner, Kelsy",,sch12058@byui.edu,Female,1035,ABBY LANE MANOR,,Somewhat Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_3P7QGxK6HEnLho4,Default Response Set,"Pennington, Whitney",,pen16016@byui.edu,Female,1310,BROOKSIDE VILLAGE - WOMEN,,Agree,Neither Agree nor Disagree,Agree,Agree,Somewhat Agree
+R_2VJwfqcAaAEeUKT,Default Response Set,"Copen, Spencer",,cop17009@byui.edu,Male,1261.666666,CREEKSIDE COTTAGES - WOMEN,,Agree,Somewhat Disagree,Agree,Somewhat Agree,Somewhat Disagree
+R_1eQtY4mlFrHWMGv,Default Response Set,"Hudson, Mikayla",,hud13005@byui.edu,Female,896.666666,ROCKLAND APARTMENTS,,Agree,Agree,Somewhat Agree,Strongly Agree,Agree
+R_ePRlkPVN0SUo9QB,Default Response Set,"Absher, Paige",,abs15001@byui.edu,Female,1035,ABBY LANE MANOR,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_di25baaehqYon8l,Default Response Set,"Ker, Kimarie",,ker17003@byui.edu,Female,1410,WEST WINDS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_3iPDVC0pRqvtASn,Default Response Set,"Goodwin, Reagan",,goo16010@byui.edu,Female,1388,MOUNTAIN LOFTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2BqTgFa4J5ARX7i,Default Response Set,"Dunn, Ty",,dun16004@byui.edu,Male,1267.5,"IVY, THE - Men",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3NEPZCKFzgRKzAW,Default Response Set,"Heumann, Hailey",,heu16003@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Agree,Somewhat Agree,Agree,Somewhat Agree
+R_296cADUhwprCkPJ,Default Response Set,"Hernandez, Angelica",,her17016@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_2pVvpi4KHVgfSeF,Default Response Set,"Aldous, Josh",,ald15005@byui.edu,Male,1045,ALLDREDGE HOUSE ,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3QSrDDUH45v2ygr,Default Response Set,"Hoffman, Randy",,hof12016@byui.edu,Male,975,"PINES SOUTH, THE",,Disagree,Somewhat Disagree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2aJmKNjZI0nk0HT,Default Response Set,"Kellar, Tesia",,kel12013@byui.edu,Female,NA,TUSCANY PLACE - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_2ZTum6pQbHTNiwR,Default Response Set,"Jonson, Athens",,jon15025@byui.edu,Female,1300,TOWERS I,,Agree,Somewhat Agree,Strongly Agree,Strongly Agree,Agree
+R_s6vfUaMVUA5UOgF,Default Response Set,"Allison, Emma",,all17018@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - MEN,,Agree,Neither Agree nor Disagree,Somewhat Agree,Agree,Neither Agree nor Disagree
+R_qQSarlvrSmxmcPT,Default Response Set,"Little, Gabrielle",,lit16014@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_YQaC8CNn7nFDDoZ,Default Response Set,"Haderlie, Aspen",,had16003@byui.edu,Female,1279,NAUVOO HOUSE I,,Agree,Somewhat Agree,Agree,Agree,Strongly Agree
+R_24xh15jWNpu8gqF,Default Response Set,"Laney, Sierra",,lan16003@byui.edu,Female,1245,COLONIAL HOUSE,,Neither Agree nor Disagree,Somewhat Agree,Agree,Agree,Agree
+R_1pJWgnX7GOtXdC2,Default Response Set,"Oviatt, Gwen",,ovi16001@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2dEyK5YsbS6q1s8,Default Response Set,"Condie, Carissa",,con13007@byui.edu,Female,1245,COLONIAL HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2Xb8paFuNk6J8tQ,Default Response Set,"Leighton, Jessica",,lei16004@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_9NaP25B2Kf48E8N,Default Response Set,"Rutan, Cooper",,rut16002@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Somewhat Agree,Agree,Agree,Agree,Neither Agree nor Disagree
+R_2qzbLBsvvneKRw8,Default Response Set,"Daines, Anna",,dai15004@byui.edu,Female,1375,"GATES, THE - WOMEN",,Agree,Somewhat Agree,Agree,Somewhat Agree,Agree
+R_1DAQtLvyeBVxopa,Default Response Set,"Haws, Abigail",,haw15002@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Somewhat Agree,Agree,Agree,Neither Agree nor Disagree,Agree
+R_ApJBVNymO3oHdkd,Default Response Set,"Robinson, Cody",,rob16024@byui.edu,Male,1345,"CEDARS, THE-MEN",,Agree,Agree,Agree,Agree,Somewhat Agree
+R_1FsMmbbR0UaxTwj,Default Response Set,"Wheeler, Samantha",,whe16008@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_wLC3Np3ufVTS3Jf,Default Response Set,"Wagley, Brendan",,wag17002@byui.edu,Male,1410,WEST WINDS,,Somewhat Agree,Neither Agree nor Disagree,Agree,Agree,Agree
+R_27vWRYhiHkUhmhy,Default Response Set,"Mattei, Shaina",,mat17011@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1g77g1ITWas5kkT,Default Response Set,"VanDyke, Isabella Shannon",,van17002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Neither Agree nor Disagree,Agree,Agree,Agree
+R_2dt3E6AMxDf5s5z,Default Response Set,"Jacobson, Christine",,jac14012@byui.edu,Female,995,ROYAL CREST,,Somewhat Disagree,Somewhat Disagree,Somewhat Agree,Somewhat Agree,Somewhat Disagree
+R_3HB1Zz8Q1PfMJIr,Default Response Set,"Chalmers, Troy",,cha17071@byui.edu,Male,1349,CENTRE SQUARE-WOMEN,,Somewhat Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_eerefYQj84aM0dr,Default Response Set,"Gaunt, James",,gau13002@byui.edu,Male,1323,MOUNTAIN LOFTS - MEN,,Agree,Strongly Agree,Agree,Agree,Strongly Agree
+R_1hNftYuwn48BI1o,Default Response Set,"Nunnally, Jo",,nun12007@byui.edu,Male,1202.5,AMERICAN AVENUE - MEN,,Neither Agree nor Disagree,Neither Agree nor Disagree,Agree,Neither Agree nor Disagree,Somewhat Agree
+R_0udLMYBgOIWWj5f,Default Response Set,"Toews, Dallin",,toe17001@byui.edu,Male,995,GEORGETOWN APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3G3NzAeHOncV8Eh,Default Response Set,"Leslie, Dakota",,les15003@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_1P1TlJeSAg5H6PQ,Default Response Set,"Seedall, Abbigail",,see17003@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_OkCL0eKxmNOkI9z,Default Response Set,"Doty, David",,dot14002@byui.edu,Male,1259,HERITAGE WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_3KQ1hxOlrYueTQY,Default Response Set,"Gullion, Will",,gul14002@byui.edu,Male,1279,NAUVOO HOUSE I,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_Y5qdLoIsyQB2XxT,Default Response Set,"Thompson, Jeremy",,tho17084@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Strongly Disagree,Strongly Disagree,Neither Agree nor Disagree,Neither Agree nor Disagree,Strongly Disagree
+R_vuVffgKAMoVPAEF,Default Response Set,"Harris, Tayson",,har16121@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Agree,Agree,Somewhat Agree,Strongly Agree,Somewhat Agree
+R_VPv8yv0324gG40x,Default Response Set,"Walker, Jacob",,wal15059@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Somewhat Agree,Agree,Strongly Agree,Agree,Somewhat Agree
+R_77zvAETf3Bog86J,Default Response Set,"Kratt, Courtney",,kra17004@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_3Rflk30DEGPOllq,Default Response Set,"Swallow, Carli",,swa17002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_x4O7YusF5TQ3wMV,Default Response Set,"McNatt, Tanner",,mcn15003@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_3NQa8uG0FC3myRL,Default Response Set,"Fernelius, Emma",,fer16006@byui.edu,Female,1374,JORDAN RIDGE,,Agree,Agree,Agree,Agree,Agree
+R_yKoN9ruf4mFldex,Default Response Set,"Mason, Annajane",,mas17011@byui.edu,Female,1019,BIRCH WOOD I,,Agree,Agree,Agree,Agree,Agree
+R_3OrKzaofsPiFP2Z,Default Response Set,"Andrus, Camille",,and17054@byui.edu,Female,999,ALPINE CHALET,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_24CMaLtmy2k0Sl7,Default Response Set,"Talbot, Annika",,tal15009@byui.edu,Female,1245,COLONIAL HOUSE,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_2SuztOKmNmec4Mw,Default Response Set,"Stout, Paul",,sto16017@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Agree,Agree,Agree,Agree,Agree
+R_1QycPjWHpzvkxUs,Default Response Set,"Nilson, Lillian",,nil12005@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_1pSctBVUyC04jCj,Default Response Set,"DeSpain, Brooklyn",,des17004@byui.edu,Female,1189,HERITAGE MEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_3frc9ncF8RIryU8,Default Response Set,"Finlayson, Alyse",,fin14003@byui.edu,Female,1374,JORDAN RIDGE,,Agree,Somewhat Agree,Strongly Agree,Strongly Agree,Agree
+R_Qb95edf7Nm1fU7T,Default Response Set,"Meza Leon, Christopher",,mez16005@byui.edu,Male,975,"PINES SOUTH, THE",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Disagree
+R_xlKIKOhERyqwIJH,Default Response Set,"Relph, Chelsie",,rel16001@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3HA3dKPNoLjTiB6,Default Response Set,"Davidson, Emily",,dav14035@byui.edu,Female,1375,"GATES, THE - WOMEN",,Agree,Disagree,Agree,Agree,Agree
+R_1IoV1a4eXeSbXB7,Default Response Set,"Jenkins, Joseph",,jen16070@byui.edu,Male,1155,SHELBOURNE APARTMENTS,,Agree,Agree,Strongly Agree,Agree,Strongly Agree
+R_1QhbAhe22oTGwPZ,Default Response Set,"Cordada, David",,cor15032@byui.edu,Male,1245,CREEKSIDE COTTAGES-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_Yc1U9AHPgL1UqoV,Default Response Set,"Strode, Victoria Jeanne",,str17031@byui.edu,Female,1345,AUTUMN WINDS,,Strongly Agree,Somewhat Disagree,Strongly Agree,Strongly Agree,Strongly Agree
+R_0AgPTNDFz7m5SZH,Default Response Set,"Anderson, Gary",,and13004@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Somewhat Agree,Agree,Somewhat Agree,Agree,Somewhat Agree
+R_vpHYNlRm57O2gzT,Default Response Set,"Salinas, Grant",,sal17013@byui.edu,Male,1325,BRIGHAM'S MILL,,Agree,Somewhat Agree,Agree,Agree,Agree
+R_wQQV0S0b4lcFwY1,Default Response Set,"Ripley, Nicole Erin",,rip15004@byui.edu,Female,1245,COLONIAL HOUSE,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_1fdt7Am2dhJtUyD,Default Response Set,"Serr, Janessa",,ser17003@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Agree,Agree,Agree
+R_3LbhXV2llFNkJXJ,Default Response Set,"Akin, Calvin",,aki17002@byui.edu,Male,1445,ABRI APARTMENTS - WOMEN,,Disagree,Somewhat Disagree,Neither Agree nor Disagree,Somewhat Disagree,Strongly Disagree
+R_27iXdOunN805eEd,Default Response Set,"Hassell, Mariah",,has12004@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_0wWLt3nkzqHbr4B,Default Response Set,"Gray, Madison",,gra16020@byui.edu,Female,1388,MOUNTAIN LOFTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_ufAoacjTHgx8VyN,Default Response Set,"Beazer, Lauren",,bea17036@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_3Ib3wX5alFqpIb2,Default Response Set,"Sellers, Ellie",,sel12006@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_r9JT9BnK3DBomQ1,Default Response Set,"Exon, Kendall",,exo17001@byui.edu,Male,1267.5,"IVY, THE - Women",,Strongly Agree,Somewhat Agree,Somewhat Agree,Agree,Neither Agree nor Disagree
+R_2WZ01i1VronadJZ,Default Response Set,"Anderson, Nels",,and17104@byui.edu,Male,999,ALPINE CHALET,,Somewhat Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3dGHBlg9FUaCUWU,Default Response Set,"Engmann, Richard-Scott",,eng16005@byui.edu,Male,1267.5,"IVY, THE - Women",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3lSpQlMmgrtrUfx,Default Response Set,"Westwood, Jessalyn",,wes17003@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_3G3Aqdybr4laYUs,Default Response Set,"Hokanson, Danielle",,hok14001@byui.edu,Female,975,"PINES SOUTH, THE",,Agree,Neither Agree nor Disagree,Strongly Agree,Agree,Agree
+R_3s5H7I1fpGTEyUF,Default Response Set,"Schwarze, Aaron",,sch16111@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,Agree,Agree,Strongly Agree,Agree,Agree
+R_2tA6bTnvj6i703F,Default Response Set,"West, Macall",,wes16005@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3Jgt0lCFz4j0h5I,Default Response Set,"Benson, Lauren",,ben17029@byui.edu,Female,1200,BOUNTIFUL PLACE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2zzEIW2wgoWoPb6,Default Response Set,"Achee, Eliska",,ach13001@byui.edu,Female,1420,ABRI APARTMENTS - MEN,,Somewhat Agree,Somewhat Agree,Agree,Strongly Agree,Somewhat Agree
+R_2QVsO81mRoZp3Nh,Default Response Set,"Woods, Ryan",,woo17043@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_9KVA6RkamlG60Fz,Default Response Set,"Tedeschi, Henrique",,ted17001@byui.edu,Male,1325,BRIGHAM'S MILL,,Agree,Agree,Agree,Agree,Agree
+R_3r2GJdK5QrpMBSg,Default Response Set,"Palmer, Seth",,pal12014@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree
+R_3lApQu7UFaAhoug,Default Response Set,"Hale, Brianna",,hal15052@byui.edu,Female,1279,NAUVOO HOUSE II,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_Y4ZOovotujWZiYV,Default Response Set,"Breeden, Clay",,bre15008@byui.edu,Male,1250,CAMDEN APARTMENTS-MEN,,Somewhat Agree,Agree,Somewhat Agree,Strongly Agree,Agree
+R_279VoU3ufKYmSNP,Default Response Set,"Thomas, Ginger",,tho14014@byui.edu,Female,1345,AUTUMN WINDS,,Agree,Agree,Agree,Agree,Agree
+R_2fxNp0zt9Jxi1ci,Default Response Set,"Anderson, Noah",,and17062@byui.edu,Male,999,ALPINE CHALET,,Agree,Agree,Agree,Agree,Agree
+R_3nJJNF7IoghHzty,Default Response Set,"Christiansen, Aubrey",,chr17006@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_3MtDcR34US4FpQU,Default Response Set,"Eller, Sienna",,ell16011@byui.edu,Female,1267.5,"IVY, THE - Women",,Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_Ox4jZ4TheNUNRUB,Default Response Set,"Prange, Lizabeth Lee",,pra14003@byui.edu,Female,980,BIRCH PLAZA,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3O6pccx3RVrzsxx,Default Response Set,"Welburn, Tess",,wel15031@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Strongly Agree,Strongly Agree,Agree,Strongly Agree
+R_2QlzRLTYSRJCC0P,Default Response Set,"Kitt, Cassidy-Beau",,kit15002@byui.edu,Female,1585,WINDSOR MANOR-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_9HMu1zH95d8qpln,Default Response Set,"Vane, Nic",,van15029@byui.edu,Male,1345,"CEDARS, THE-MEN",,Somewhat Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_6hwQjo3CTUHnh5L,Default Response Set,"Marr, Jared",,mar15115@byui.edu,Male,1310,BROOKSIDE VILLAGE - MEN,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2D623H1LT8hCTaS,Default Response Set,"Sylvester, Sawyer",,syl17002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Agree,Strongly Agree,Agree,Somewhat Agree
+R_245AcLrebXl7VM5,Default Response Set,"Anderson, Benjamin",,and12063@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_a5DfVxq9AnPi3cJ,Default Response Set,"Williams, Alyssa",,wil12072@byui.edu,Female,1345,AUTUMN WINDS,,Strongly Agree,Somewhat Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_2qn6kk4QO6Jw7wx,Default Response Set,"Holmes, Eric",,hol15026@byui.edu,Male,1046.25,PINNACLE POINT,,Agree,Agree,Agree,Agree,Agree
+R_1dy04h6Kj5G0m8y,Default Response Set,"Sears, Rebecca",,sea16020@byui.edu,Female,1050,PARK VIEW APTS - WOMEN,,Agree,Strongly Agree,Strongly Agree,Agree,Somewhat Agree
+R_bpyw2l93ihnsafD,Default Response Set,"Havens, Megan",,hav17001@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Somewhat Agree,Somewhat Disagree,Strongly Agree,Somewhat Agree,Somewhat Disagree
+R_1H8iHFCAXuyzsEI,Default Response Set,"Cruz, Paola",,cru15015@byui.edu,Female,1375,"GATES, THE - MEN",,Agree,Agree,Agree,Agree,Agree
+R_7Uq4FgvfLZ7y19L,Default Response Set,"Stancliffe, Merri",,sta11034@byui.edu,Female,1019,BIRCH WOOD I,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2QAMH93nl0rtLoD,Default Response Set,"Brown, Ronnie Gayle",,bro15089@byui.edu,Female,1075,CARRIAGE HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2PznkwpYmBLu2cx,Default Response Set,"Martini, Brittany",,mar17069@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_2ztCPI408GxFhHC,Default Response Set,"Humble, Hannah",,hum17004@byui.edu,Female,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_aWxK9BJVxMNqDfz,Default Response Set,"Michalek, Larisa",,mic17007@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3R8SJTrSTCTQ8WC,Default Response Set,"McClellan, Sarina",,mcc17031@byui.edu,Female,1345,AUTUMN WINDS,,Agree,Agree,Agree,Agree,Agree
+R_1Ig75Rp5aFUOTSg,Default Response Set,"Wright, Matthew",,wri13001@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - MEN,,Somewhat Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3m4QH6RaeEFI5Ep,Default Response Set,"Arrayan Rebaza, Fernando",,arr16003@byui.edu,Male,1050,AMERICAN AVENUE - WOMEN,,Agree,Neither Agree nor Disagree,Agree,Agree,Somewhat Disagree
+R_2s5N1KdGLrWLqo7,Default Response Set,"Causse, Rachel",,cau14002@byui.edu,Female,1349,CENTRE SQUARE-MEN,,Agree,Strongly Agree,Agree,Agree,Agree
+R_2fdjwLn27NwrqRJ,Default Response Set,"Jenkins, Veronica",,jen13001@byui.edu,Female,995,ROYAL CREST,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_3QDY5NzQb6WQhUR,Default Response Set,"Chisholm, Jadi",,chi16020@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Neither Agree nor Disagree,Neither Agree nor Disagree,Agree,Neither Agree nor Disagree,Neither Agree nor Disagree
+R_115Fnk5olKMPY6F,Default Response Set,"Carlson, Marissa",,car15006@byui.edu,Female,1349,CENTRE SQUARE-MEN,,Agree,Agree,Agree,Agree,Agree
+R_2PhwON7ODrS0NDI,Default Response Set,"Castaneda, Ashley",,cas17029@byui.edu,Female,1349,CENTRE SQUARE-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1H48VKgYwO8aTrb,Default Response Set,"Bennett, Kacie",,ben17031@byui.edu,Female,1200,BOUNTIFUL PLACE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1EYwfkj7rMt0EVM,Default Response Set,"Stabile, Kennedy",,sta16019@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_rrlCjDJWMQ5g1xf,Default Response Set,"Okerlund, Brighton",,oke16002@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_1CjuwOl8sopV0ra,Default Response Set,"De Osambela, Stephanie",,deo17002@byui.edu,Female,1120,HEMMING HOUSE I,,Somewhat Disagree,Somewhat Disagree,Somewhat Disagree,Somewhat Disagree,Somewhat Disagree
+R_1mlQCOWFF5J0NE0,Default Response Set,"VanDyke, Victoria",,van17007@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2PgHLQTteguTkSy,Default Response Set,"Johnston, Sierra",,joh15066@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_VXcZPzoDtarPuX7,Default Response Set,"Isabell, Sarah",,isa17001@byui.edu,Female,995,ROYAL CREST,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_szp2lR4oyIsOIal,Default Response Set,"Gibson, Cassie",,gib17002@byui.edu,Female,1323,MOUNTAIN LOFTS - MEN,,Strongly Agree,Strongly Agree,Somewhat Agree,Neither Agree nor Disagree,Somewhat Agree
+R_12mQYCiODJZcNFX,Default Response Set,"Johnson, Abigail",,joh17044@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_xaAFDpu328FNbd7,Default Response Set,"Jensen, Madison",,jen16009@byui.edu,Female,1155,SHELBOURNE APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1IH0hsgXJwM2obu,Default Response Set,"Mckeown, Lucy-mae",,mck17008@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Agree,Agree,Agree,Agree
+R_2rwKIldlYLR0f9i,Default Response Set,"Kreutzer, Sterling",,kre13006@byui.edu,Male,999,ALPINE CHALET,,Neither Agree nor Disagree,Agree,Agree,Somewhat Agree,Agree
+R_2Sk9Dtbw4VHPV2t,Default Response Set,"Blake, Elizabeth",,bla17015@byui.edu,Female,870,BROOKLYN APARTMENTS,,Agree,Somewhat Agree,Agree,Agree,Agree
+R_1q8w8lva32512bQ,Default Response Set,"Dickenson, Emily",,dic16023@byui.edu,Female,1189,HERITAGE MEN,,Agree,Agree,Strongly Agree,Agree,Strongly Agree
+R_1gCPajzumlwaYvg,Default Response Set,"Michalek, Tia",,mic17014@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2v5POKgMKPKzLWn,Default Response Set,"Nate, Karlie",,nat17001@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2v2GnrdaA3TfyDc,Default Response Set,"Crapo, Jacie",,cra14007@byui.edu,Female,995,DELTA PHI APARTMENTS,,Agree,Agree,Agree,Agree,Agree
+R_2y32dFYf4NhIt4X,Default Response Set,"Pearson, Maggie",,pea17024@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Agree,Agree,Agree
+R_af5Tf21aU7MfwSB,Default Response Set,"Murphy, Hannah",,mur12012@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Neither Agree nor Disagree,Neither Agree nor Disagree,Neither Agree nor Disagree,Neither Agree nor Disagree,Disagree
+R_3hoJgHaztFgAguC,Default Response Set,"Anderson, Tyler",,and15092@byui.edu,Male,999,ALPINE CHALET,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2WwNxvHU86Ndokj,Default Response Set,"Fehrenbacker, Brynlee",,feh15002@byui.edu,Female,1374,JORDAN RIDGE,,Somewhat Agree,Somewhat Agree,Agree,Agree,Somewhat Agree
+R_1rel6gOI300YU2f,Default Response Set,"Michaely, Lauren",,mic13005@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1IyCRJpavJoYTXz,Default Response Set,"Blackmon, Staci",,bla16060@byui.edu,Female,870,BROOKLYN APARTMENTS,,Strongly Agree,Strongly Agree,Agree,Strongly Agree,Agree
+R_116KZYQF211Tj1e,Default Response Set,"Flake, Daria",,fla17002@byui.edu,Female,1374,JORDAN RIDGE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3ElEF4OihhNKzjI,Default Response Set,"Livingston, Lori",,liv17002@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_ZqsafcvWdkFZC5H,Default Response Set,"Harger, Taylor",,har15062@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1hKoQBwhmioE1ZT,Default Response Set,"Allen, Brittany",,all17026@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3kIddGzKub3TjY9,Default Response Set,"Mekonnen, Kalki",,mek17002@byui.edu,Female,1245,COLONIAL HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3j8S1h7sYEGfY9u,Default Response Set,"Hughes, Megan",,hug16002@byui.edu,Female,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Strongly Agree
+R_2e8y3Iv0U2pX5vs,Default Response Set,"Jindo, Atsushi",,jin15001@byui.edu,Male,1125,SNOWVIEW APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2rDvPZGbcJoag7g,Default Response Set,"Westrup, Richard",,wes17004@byui.edu,Male,1325,BRIGHAM'S MILL,,Agree,Agree,Agree,Agree,Agree
+R_1Icp7GEIjErIqWq,Default Response Set,"Schwendiman, Tyrel",,sch17037@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Somewhat Agree,Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree
+R_2doIzVPB00LowdT,Default Response Set,"Murillo Ibarra, Yusbith",,mur16037@byui.edu,Female,980,BIRCH PLAZA,,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_2tG7RE3CiHNHWEK,Default Response Set,"Henderson, Sam",,hen14003@byui.edu,Male,1537.333333,NORTHPOINT - WOMEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_115wBww7rlKcWk0,Default Response Set,"Ricks, Evan",,ric11042@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Agree,Agree,Agree,Agree,Agree
+R_2uq9uv6iM2HxsmE,Default Response Set,"Turner, Kyle Kent",,tur17013@byui.edu,Male,1345,"CEDARS, THE-MEN",,Agree,Strongly Agree,Agree,Strongly Agree,Agree
+R_1Hbkp4IlSuFSrrB,Default Response Set,"Petersen, Charlotte",,pet14040@byui.edu,Female,1019,BIRCH WOOD I,,Agree,Agree,Agree,Agree,Agree
+R_114lg4w2hh2SpeR,Default Response Set,"Selfaison, Jennette",,sel16001@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_233NgRzvIpYlIy8,Default Response Set,"Zeman, Maddi or Alexandria",,zem17001@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3R2XrhMog8gnUwp,Default Response Set,"Daniel, Em",,dan17008@byui.edu,Female,1375,"GATES, THE - WOMEN",,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_2QhY82coAeOgfOI,Default Response Set,"Dockstader, Jagen",,doc16002@byui.edu,Female,1259,HERITAGE WOMEN,,Agree,Agree,Strongly Agree,Agree,Strongly Agree
+R_PYsBhCly50il5aF,Default Response Set,"Anders, Malachi",,and17109@byui.edu,Male,999,ALPINE CHALET,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3KvbB2uB4QX5h8s,Default Response Set,"Blair, Jaxon",,bla17018@byui.edu,Male,870,BROOKLYN APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2E4cVBgIlDL4ios,Default Response Set,"Quispe, Emily",,qui17008@byui.edu,Female,1345,AUTUMN WINDS,,Agree,Agree,Agree,Agree,Agree
+R_xGbdLI7p9l5Y5bj,Default Response Set,"Martin, Michaela",,mar16064@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_3rPnYysl6B1ST7e,Default Response Set,"Mayberry, Josh",,may15012@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Strongly Agree,Somewhat Agree,Agree,Strongly Agree,Agree
+R_3EHhDKLVMaQtInU,Default Response Set,"Tillou, Hannah",,til17007@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1et18JuTSewghD7,Default Response Set,"Smoot, Madison",,smo17005@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Somewhat Agree,Disagree,Agree,Neither Agree nor Disagree,Neither Agree nor Disagree
+R_3FIfsY5cMjHrpZl,Default Response Set,"Davis, Kelsey",,dav13042@byui.edu,Female,1375,"GATES, THE - WOMEN",,Somewhat Agree,Neither Agree nor Disagree,Somewhat Agree,Agree,Agree
+R_1l4rXH6UfjXAW9J,Default Response Set,"Jacobsen, Makenzie",,jac17010@byui.edu,Female,995,ROYAL CREST,,Agree,Agree,Agree,Agree,Neither Agree nor Disagree
+R_3dGR382FjdMeLMi,Default Response Set,"Shannon, Matthew Lowell",,sha12041@byui.edu,Male,999,ALPINE CHALET,,Agree,Somewhat Agree,Agree,Somewhat Agree,Agree
+R_1gAa6iEFMCwueYe,Default Response Set,"Barmore, Savannah",,bar14024@byui.edu,Female,1345,AUTUMN WINDS,,Agree,Agree,Agree,Agree,Agree
+R_UnlNKPnzejwISpX,Default Response Set,"Schimpf, Madison",,sch17022@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Agree,Agree,Strongly Agree
+R_22FjWAod80XoBmJ,Default Response Set,"Josephson, Emily",,jos15002@byui.edu,Female,1400,TOWERS II,,Agree,Agree,Agree,Agree,Agree
+R_1QmE91LWHWtGiXc,Default Response Set,"Cook, Jonathan James",,coo13002@byui.edu,Male,955,COTTONWOOD-MEN,,Neither Agree nor Disagree,Neither Agree nor Disagree,Neither Agree nor Disagree,Agree,Somewhat Disagree
+R_1NELabHkwBDrOdr,Default Response Set,"Smith, Nikki",,smi17127@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_1gpvvm3traFmpYs,Default Response Set,"Barney, Kayla",,bar16049@byui.edu,Female,1222,AVONLEA APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2XpV9zmyRui13BB,Default Response Set,"Castillo, Estefany",,cas14014@byui.edu,Female,1349,CENTRE SQUARE-MEN,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1lcQ2DZYeHioUgb,Default Response Set,"Hill, Holly",,hil16004@byui.edu,Female,NA,"PINES NORTH, THE",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1k2nv1kMwIMECkE,Default Response Set,"Willson, Elizabeth",,wil15107@byui.edu,Female,1035,ABBY LANE MANOR,,Agree,Disagree,Somewhat Agree,Agree,Strongly Agree
+R_Tcssvb0ymAUAonf,Default Response Set,"Orton, Olivia",,ort14009@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Agree,Agree,Agree
+R_tZ1UAzHHh4dvHj3,Default Response Set,"Hollist, J",,hol17070@byui.edu,Male,1046.25,PINNACLE POINT,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_DAGUWuGYXnlJpOp,Default Response Set,"Moore, Brett",,moo17008@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,Agree,Somewhat Agree,Agree,Neither Agree nor Disagree,Neither Agree nor Disagree
+R_1Kydug1wGvzkFFu,Default Response Set,"Clawson, Ashley",,cla15005@byui.edu,Female,995,CLARKE APARTMENTS,,Agree,Agree,Agree,Agree,Agree
+R_21H4lNyVTYH72hD,Default Response Set,"Williams, Chelise",,wil17065@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Somewhat Disagree,Agree,Agree,Agree
+R_3fPlFFdzfL9ZHQV,Default Response Set,"Watts, Merry",,wat13012@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_3EQomaasyTNXBUm,Default Response Set,"Harms, Beth",,har17110@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1dlUvdV9ufANcPa,Default Response Set,"Peterson, McKay",,pet14043@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,Agree,Somewhat Agree,Strongly Agree,Neither Agree nor Disagree,Agree
+R_UFHUwfgnaZcxexj,Default Response Set,"Flowers, Laura",,flo16023@byui.edu,Female,1095,KENSINGTON MANOR - MEN,,Neither Agree nor Disagree,Somewhat Agree,Agree,Agree,Somewhat Agree
+R_323ZM6M4IFC0G8F,Default Response Set,"Norton, Coley",,nor13008@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Agree,Agree,Strongly Agree,Agree,Somewhat Agree
+R_1BUVaWWmgcoyyjN,Default Response Set,"Dewsnup, Kia",,dew13002@byui.edu,Female,1189,HERITAGE MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_1q8uoPv9S6cNbrl,Default Response Set,"Didier, Rachel",,did13003@byui.edu,Female,1189,HERITAGE MEN,,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree
+R_22J7bjIP9xRcK83,Default Response Set,"Carbno, Brenna",,car13018@byui.edu,Female,1349,CENTRE SQUARE-MEN,,Neither Agree nor Disagree,Somewhat Agree,Agree,Agree,Neither Agree nor Disagree
+R_3QRazWF2bmhkus7,Default Response Set,"Ashton, Mary Daisy",,ash17021@byui.edu,Female,1018.333333,ARBOR COVE,,Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_2aQxwLkgqhOiC0e,Default Response Set,"Hale, Daniel",,hal14035@byui.edu,Male,1279,NAUVOO HOUSE I,,Agree,Agree,Agree,Strongly Agree,Agree
+R_2atN20ywnINa3fW,Default Response Set,"Stokes, Emma",,sto17016@byui.edu,Female,1245,COLONIAL HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1luWAPzPL4Lrbno,Default Response Set,"Baker, Angelie",,bak17014@byui.edu,Female,900,ASPEN VILLAGE - WOMEN,,Agree,Somewhat Agree,Agree,Agree,Agree
+R_RFjxCj9T9H0DWud,Default Response Set,"Wahlquist, Matthew",,wah17002@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,Agree,Agree,Agree,Agree,Agree
+R_2bK9Z1wv1u0zng6,Default Response Set,"Adams, Emily",,ada17004@byui.edu,Female,1420,ABRI APARTMENTS - MEN,,Agree,Agree,Agree,Agree,Agree
+R_1Ns3LvIRSqOEQJe,Default Response Set,"Muhlestein, Tallon",,muh17003@byui.edu,Male,995,GEORGETOWN APARTMENTS,,Agree,Somewhat Agree,Strongly Agree,Somewhat Agree,Somewhat Agree
+R_3dMozVrbnXK8HyS,Default Response Set,"Bushong, Madison",,bus14008@byui.edu,Female,1345,"CEDARS, THE-MEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1LGrQsJp55Wbot2,Default Response Set,"McEntire, Jason",,mce13005@byui.edu,Male,1420,ABRI APARTMENTS - MEN,,Agree,Strongly Agree,Agree,Agree,Agree
+R_2PqeHmrKgq29mLz,Default Response Set,"Richardson, Heidi",,ric16031@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_3m44uGk8hJQurtz,Default Response Set,"Schwendiman, Kristjan",,sch15051@byui.edu,Male,999,ALPINE CHALET,,Agree,Agree,Agree,Agree,Agree
+R_Yb6EhUwvZekf9eh,Default Response Set,"Strasser, Carter",,str12047@byui.edu,Male,1345,"CEDARS, THE-MEN",,Somewhat Agree,Somewhat Agree,Somewhat Agree,Agree,Strongly Agree
+R_0Om9xjy5BA8ZrS9,Default Response Set,"Berry, Caleb",,ber14015@byui.edu,Male,1200,BOUNTIFUL PLACE,,Neither Agree nor Disagree,Agree,Agree,Agree,Somewhat Agree
+R_qzqVLR4vIQVFJqp,Default Response Set,"Gjennestad, David",,gje17001@byui.edu,Male,1323,MOUNTAIN LOFTS - MEN,,Agree,Strongly Agree,Agree,Agree,Agree
+R_9Zug6YGrQnTkkQ9,Default Response Set,"Bekker, Evgeniy",,bek17003@byui.edu,Male,1019,BIRCH WOOD I,,Somewhat Agree,Agree,Agree,Agree,Somewhat Agree
+R_2w5ZfBUODJWUZRu,Default Response Set,"Newman, Sydney",,new16003@byui.edu,Female,1245,COLONIAL HOUSE,,Neither Agree nor Disagree,Neither Agree nor Disagree,Somewhat Agree,Somewhat Agree,Strongly Disagree
+R_3ErNIMvpUHGglKf,Default Response Set,"Kump, Josh",,kum14001@byui.edu,Male,1325,BRIGHAM'S MILL,,Agree,Agree,Agree,Agree,Agree
+R_1IvkSgpLERKEMCW,Default Response Set,"Christensen, Clark",,chr13062@byui.edu,Male,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2feW5InUAFF0Bss,Default Response Set,"Knight, Stephanie",,kni13005@byui.edu,Female,1585,WINDSOR MANOR-WOMEN,,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2D1WHFgvHbTuvQG,Default Response Set,"Casto, Rachel",,cas17022@byui.edu,Female,1349,CENTRE SQUARE-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1Iu5CosUwlg03go,Default Response Set,"Hoover, Laurel",,hoo14005@byui.edu,Female,900,QUINCY HOUSE,,Agree,Neither Agree nor Disagree,Strongly Agree,Somewhat Agree,Strongly Agree
+R_2B5y4r32DEEsmvh,Default Response Set,"Behrmann, Laurie",,beh16005@byui.edu,Female,1019,BIRCH WOOD I,,Neither Agree nor Disagree,Somewhat Disagree,Somewhat Agree,Agree,Neither Agree nor Disagree
+R_2U3kOMfeWDOvoga,Default Response Set,"Andrus, Kristyn",,and16134@byui.edu,Female,999,ALPINE CHALET,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,
+R_2QEsEzK46x5Zw63,Default Response Set,"Stockdale, Anna",,sto16008@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Strongly Agree,Agree,Agree,Somewhat Disagree
+R_2BhfCFxvqfS9cS9,Default Response Set,"Larson, Quinn",,lar15037@byui.edu,Male,1345,"CEDARS, THE-MEN",,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1K9BZLYNhJTBP9j,Default Response Set,"Subieta, James",,sub17001@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Agree,Agree,Agree,Agree,Agree
+R_XSoDL8Xe0NUNMs1,Default Response Set,"Choi, Lily",,cho16012@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Agree,Agree,Agree,Strongly Agree
+R_1rAMZfkWczHa9di,Default Response Set,"Woods, Austin",,woo12002@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_3KJGMtH7Q4aDs3k,Default Response Set,"Cook, Clarissa",,coo16003@byui.edu,Female,955,COTTONWOOD-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_10UcmjP9tAvg68o,Default Response Set,"Cranney, Afton",,cra17007@byui.edu,Female,1375,"GATES, THE - MEN",,Neither Agree nor Disagree,Disagree,Somewhat Agree,Strongly Agree,Somewhat Agree
+R_3R1OHOKEHGRKOXr,Default Response Set,"van Uitert, Vanessa",,van17050@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_2V3nqI4f72kOXeP,Default Response Set,"McCrea, Claire",,mcc17019@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_2QPCiKuD7dpRgBy,Default Response Set,"Walker, Kimberlee",,wal14010@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_R2Xcu4lrFHdD31v,Default Response Set,"Callister, Sharee",,cal15011@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Somewhat Agree,Agree,Agree,Agree,Agree
+R_1jJ8tFNVd9Rl4x6,Default Response Set,"Stitzer, Emma",,sti17003@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,Somewhat Agree,Agree,Agree,Somewhat Agree,Neither Agree nor Disagree
+R_1N4DZQyef3cD5Ab,Default Response Set,"Geisler, Megan",,gei14005@byui.edu,Female,1323,MOUNTAIN LOFTS - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2s7n8SvTVqqEcR2,Default Response Set,"Wirth, Hunter",,wir17003@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3CV3r1TVK8mhI6m,Default Response Set,"Asay, Hailey",,asa12006@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Agree,Somewhat Agree,Strongly Agree,Agree,Somewhat Agree
+R_vcvzAx0lhWnVkc1,Default Response Set,"Lau, Tyli",,lau17010@byui.edu,Female,980,BIRCH PLAZA,,Agree,Agree,Strongly Agree,Somewhat Agree,Neither Agree nor Disagree
+R_1mWTpjncB7bvnkN,Default Response Set,"Donovan, Addie",,don17012@byui.edu,Female,1259,HERITAGE WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2bQ9GFBZNarwoSj,Default Response Set,"Moran, Savannah",,mor17030@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_wT63QyPC1Cr755v,Default Response Set,"Nield, Aubrie",,nie15004@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,Agree,Strongly Agree,Agree,Strongly Agree,Somewhat Agree
+R_2a9QS54RA2Kat2N,Default Response Set,"Stewart, Jake",,ste15035@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_30czDruW53YKZv0,Default Response Set,"Martinez, Eric",,mar16131@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_yrOxJKavOpYbyvf,Default Response Set,"MacTavish, Klare",,mac16004@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_29nyqgwQR39oXoO,Default Response Set,"Grover, Rina",,gro13011@byui.edu,Female,1388,MOUNTAIN LOFTS - WOMEN,,Neither Agree nor Disagree,Neither Agree nor Disagree,Neither Agree nor Disagree,Neither Agree nor Disagree,Strongly Disagree
+R_vAI9g204KSipBQt,Default Response Set,"Searle, Faithful",,sea14001@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree
+R_3KOSCrZ7A85zPd4,Default Response Set,"Pyatt, Vannah",,pya17001@byui.edu,Female,1245,COLONIAL HOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1giQRiLLMa9mq1q,Default Response Set,"Wobrock, Cassie",,wob15001@byui.edu,Female,1345,AUTUMN WINDS,,Strongly Disagree,Disagree,Agree,Strongly Agree,Strongly Agree
+R_27VFXTh5qHaOjGj,Default Response Set,"Mayes, Jacob",,may15001@byui.edu,Male,1420,ABRI APARTMENTS - MEN,,Strongly Disagree,Somewhat Agree,Strongly Agree,Somewhat Disagree,Disagree
+R_RqULV86MQpj9de1,Default Response Set,"Hansen, Julia",,han17099@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,Agree,Agree,Agree,Agree,Agree
+R_WfwM98YZywgaFoZ,Default Response Set,"Powell, Carlirose",,pow17010@byui.edu,Female,1310,BROOKSIDE VILLAGE - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_XHYyIErLvZWvHmp,Default Response Set,"Corn, Katherine",,cor17043@byui.edu,Female,NA,DANBURY MANOR,,Agree,Agree,Agree,Agree,Agree
+R_1ogLwBrQnSqRFLb,Default Response Set,"Smith, Justin",,smi14082@byui.edu,Male,1000,ALLEN'S SUNRISE VILLAGE - MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2PsPWmMb6tmO9Kl,Default Response Set,"Dysart, Andrew",,dys17001@byui.edu,Male,1267.5,"IVY, THE - Men",,Neither Agree nor Disagree,Neither Agree nor Disagree,Agree,Agree,Somewhat Disagree
+R_eFqZlWl5cN1uI4V,Default Response Set,"Snyder, Roxy",,sny17004@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Agree,Agree,Agree
+R_2Cqds5AefyFp0Dm,Default Response Set,"Jardine, Karmyn",,jar14010@byui.edu,Female,995,ROYAL CREST,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_1FDRVavIY7iivJF,Default Response Set,"Probst, Amy",,pro16001@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,,,,,
+R_247AuKnrz0vEB8W,Default Response Set,"Montoya, Edgar",,mon17018@byui.edu,Male,1345,"CEDARS, THE-MEN",,,,,,
+R_2bKko0F4PgAqNX5,Default Response Set,"Pringle, Katie",,pri16007@byui.edu,Female,1125,SNOWVIEW APARTMENTS,,,,,,
+R_2D6vmLsrE02i85M,Default Response Set,"Dawson, Jared",,daw15004@byui.edu,Male,995,GEORGETOWN APARTMENTS,,Agree,Agree,Agree,Agree,Agree
+R_5bFnDB2WYsztwtj,Default Response Set,"de Melo Campos, Vivian",,cam15001@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,,,,,
+R_3iyY4MS3cgGgn7O,Default Response Set,"Ward, Braxton",,war17047@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,,,,,
+R_1dcUoPRq2SrZsCv,Default Response Set,"Richardson, Angeline",,ric17069@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,Neither Agree nor Disagree,Strongly Agree,Somewhat Agree,Agree,Neither Agree nor Disagree
+R_2Yi7y6wVJvnfm8j,Default Response Set,"Ramsden, Julia",,ram17014@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,,,,,
+R_3kbJpLHEsMctqqa,Default Response Set,"Jorgensen, Callie",,jor17011@byui.edu,Female,1400,TOWERS II,,,,,,
+R_3iQlybeNvpze4jA,Default Response Set,"Davis, Mary",,dav17065@byui.edu,Female,995,GEORGETOWN APARTMENTS,,,,,,
+R_AAOUv2PG9HBORAR,Default Response Set,"Coontz, Scott",,coo17009@byui.edu,Male,950,COTTONWOOD-WOMEN,,,,,,
+R_2dZtBPwLnMdrfyw,Default Response Set,"Solomon, Alec",,sol15009@byui.edu,Male,896.666666,ROCKLAND APARTMENTS,,,,,,
+R_2rYLbsIxq40A1jI,Default Response Set,"Yamashita, Sarah",,yam17003@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,,,,,
+R_1rpOrsZS6xhoYly,Default Response Set,"Billings, Mikayla",,bil16005@byui.edu,Female,1225,BRIGHTON APARTMENTS-MEN,,,,,,
+R_3sohedHMKxomJbF,Default Response Set,"Fagerburg, Jay",,fag14001@byui.edu,Male,1267.5,"IVY, THE - Women",,Agree,Agree,Agree,Agree,Agree
+R_yTP0tT6O1NJrPz3,Default Response Set,"Wood, Connor",,woo15031@byui.edu,Male,975,"PINES SOUTH, THE",,,,,,
+R_XOmgIR22Ie7Ykdr,Default Response Set,"Ferreras, Amelia",,fer17006@byui.edu,Female,1374,JORDAN RIDGE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_3psTgnWm7dKh2Sz,Default Response Set,"Gallegos, Josh",,gal17005@byui.edu,Male,1374,LEGACY RIDGE,,,,,,
+R_3iDaYSo4GnMPIj2,Default Response Set,"Claypool, Kaleb",,cla17017@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,,,,,
+R_2TnOJ5CPp4dX4N4,Default Response Set,"Nesbitt, Emily",,nes16001@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,,,,,
+R_yC3UkV4bC3CyZmF,Default Response Set,"Gooch, Jacob",,goo15032@byui.edu,Male,1388,MOUNTAIN LOFTS - WOMEN,,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree,Somewhat Agree
+R_1OuJ5cTr38OJFNs,Default Response Set,"Jones, Parker",,jon15056@byui.edu,Male,1300,TOWERS I,,Agree,Agree,Agree,Agree,Agree
+R_9MMRmtzpkHrVLnb,Default Response Set,"Schmidt, Rachelle",,sch16100@byui.edu,Female,1000,ALLEN'S SUNRISE VILLAGE - WOMEN,,,,,,
+R_3k0ntjYwzI7jHIh,Default Response Set,"Kelley, Cade",,kel14012@byui.edu,Male,NA,TUSCANY PLACE - MEN,,Strongly Agree,Agree,Strongly Agree,Strongly Agree,Agree
+R_1LtzYh1paED2EFQ,Default Response Set,"Barnes, Zach",,bar13121@byui.edu,Male,1345,AUTUMN WINDS,,,,,,
+R_2wFevkuxv0LNmJY,Default Response Set,"Lambert, Jackie",,lam15010@byui.edu,Female,1125,SNOWVIEW APARTMENTS,,,,,,
+R_21blhe3ibpAmQDj,Default Response Set,"Shumway, Sam",,shu16024@byui.edu,Male,995,GEORGETOWN APARTMENTS,,,,,,
+R_3QYITefywkY9lew,Default Response Set,"Gunnell, Taylor",,gun14005@byui.edu,Male,1279,NAUVOO HOUSE I,,,,,,
+R_2Yb8vj7x4P47ISK,Default Response Set,"Parraga, JeanPaul",,par15026@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_TvVAoDPhNwo5dFD,Default Response Set,"Stevens, Makenzie",,ste17025@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,,,,,
+R_wXfQrDpEgD525J7,Default Response Set,"Keim, Josie",,kei17003@byui.edu,Female,NA,TUSCANY PLACE - MEN,,,,,,
+R_1pA8Yh9VlUUk7Nk,Default Response Set,"Draper, Hannah",,dra17013@byui.edu,Female,1125,HILLCREST TOWNHOUSES,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_1F49CIV1kQFlnXV,Default Response Set,"Pilling, Clair",,pil13001@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,,,,,
+R_31TQ7623AlNhXco,Default Response Set,"Lett, Hannah",,let15001@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Agree,Agree,Agree,Somewhat Agree
+R_20ToATREuAYANw6,Default Response Set,"Hatcher, Rebeka",,hat16010@byui.edu,Female,1537.333333,NORTHPOINT - MEN,,,,,,
+R_3PZyx8D3uiP5Un9,Default Response Set,"Obrey, Rosey",,obr17004@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,,,,,
+R_3FROmX7maikDADa,Default Response Set,"Vance, Melissa",,van17010@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Agree,Strongly Agree,Agree,Strongly Agree,Disagree
+R_2UhlupTiucEvGQw,Default Response Set,"Heagle, Becka",,hea14009@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_1BSdNQpjd5SRF3K,Default Response Set,"DeTavis, Derek",,det14001@byui.edu,Male,1189,HERITAGE MEN,,,,,,
+R_1HnGQGJw7x7Z9Xx,Default Response Set,"Montgomery, Zach",,mon17033@byui.edu,Male,975,"PINES SOUTH, THE",,,,,,
+R_28zA1neCw9YfB1f,Default Response Set,"Whiting, Joseph",,whi15034@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,,,,,
+R_2cuO8pteaF0v8VL,Default Response Set,"Tracy, Jonathan",,tra14006@byui.edu,Male,1325,BRIGHAM'S MILL,,,,,,
+R_SUyGXBiFw20cnpn,Default Response Set,"Noall, Carissa",,noa17003@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,,,,,
+R_3D8EJRNCJIeAF57,Default Response Set,"Watson, Judd",,wat15028@byui.edu,Male,975,"PINES SOUTH, THE",,Agree,Agree,Agree,Agree,Agree
+R_2dsToCcIbE8vniq,Default Response Set,"Radicic, Lauren",,rad16003@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,,,,,
+R_0k8GLPgFxogDI8V,Default Response Set,"Davies, Mackenzie",,dav17010@byui.edu,Female,1375,"GATES, THE - WOMEN",,,,,,
+R_27jQYuQIKl0a6Mk,Default Response Set,"Bartlett, Hayden",,bar15108@byui.edu,Male,1222,AVONLEA APARTMENTS,,Agree,Neither Agree nor Disagree,Strongly Agree,Agree,Agree
+R_1CBzFzlMEJCErD6,Default Response Set,"Norton, Molly",,nor17013@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,,,,,
+R_2pSN5vsJsdSwgmt,Default Response Set,"Kelley, Taylor",,kel16005@byui.edu,Male,1302.5,TUSCANY PLACE - WOMEN,,,,,,
+R_3IVLj80pzL9IOcA,Default Response Set,"Aponte, Dariam",,apo16001@byui.edu,Female,999,ALPINE CHALET,,,,,,
+R_W0yWzEaKXBuZoop,Default Response Set,"Hamblin, Jessica",,ham14008@byui.edu,Female,1279,NAUVOO HOUSE II,,,,,,
+R_39vwtnCKjlWGY8h,Default Response Set,"Tolman, Mikey",,tol17015@byui.edu,Male,999,ALPINE CHALET,,,,,,
+R_33memefYQOnoFQA,Default Response Set,"Kiesow, Katrina",,kie15001@byui.edu,Female,1560,WINDSOR MANOR-MEN,,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Somewhat Agree
+R_12sP4lPLs1fG00q,Default Response Set,"Kinghorn, Kristen",,kin05021@byui.edu,Female,1560,WINDSOR MANOR-MEN,,Agree,Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_2S7CiS4EOGSq5W1,Default Response Set,"Toll, Tanner",,tol17017@byui.edu,Male,1537.333333,NORTHPOINT - MEN,,Agree,Agree,Agree,Agree,Agree
+R_3PTz3R2FeAQMm7y,Default Response Set,"Smith, Ambrya",,smi16035@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,,,,,
+R_XLAH8A9iWcuaCKl,Default Response Set,"Gleed, Kyle",,gle13001@byui.edu,Male,1323,MOUNTAIN LOFTS - MEN,,,,,,
+R_22SpFCmfjjQmVfZ,Default Response Set,"Adams, Chad",,ada17005@byui.edu,Male,1420,ABRI APARTMENTS - MEN,,Agree,Somewhat Agree,Strongly Agree,Somewhat Agree,Strongly Agree
+R_2qvYXkwr3JBOifP,Default Response Set,"Crandall, Deseret",,cra17010@byui.edu,Female,1375,"GATES, THE - MEN",,Somewhat Agree,Strongly Agree,Agree,Agree,Neither Agree nor Disagree
+R_3sn0urpGYmXU3SJ,Default Response Set,"Jensen, Nate",,jen16088@byui.edu,Male,1155,SHELBOURNE APARTMENTS,,,,,,
+R_3IawATuzrjygEiX,Default Response Set,"Stoker, McKenna",,sto13012@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,,,,,
+R_24cmcyfWMlwgpHh,Default Response Set,"Tenney, Ty",,ten17004@byui.edu,Male,1349,CENTRE SQUARE-MEN,,Somewhat Disagree,Somewhat Disagree,Agree,Neither Agree nor Disagree,Strongly Disagree
+R_2zkd5dpfdpxxrvW,Default Response Set,"Sumano Alcocer, Gerardo",,sum15007@byui.edu,Male,NA,"PINES NORTH, THE",,,,,,
+R_2w4XZHRZICL7IlK,Default Response Set,"Ferguson, Ashlynn",,fer17005@byui.edu,Female,1374,JORDAN RIDGE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2QhPfU73dSE4zFe,Default Response Set,"Suter, Brianna",,sut17003@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_AojVMmMese7EO8V,Default Response Set,"Silveria, Madelyn",,sil16002@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,,,,,
+R_2uZBgiWyjNrIeVQ,Default Response Set,"Moyle, Preston",,moy17006@byui.edu,Male,999,ALPINE CHALET,,,,,,
+R_O0WUmPvn7mhdFYd,Default Response Set,"Martinez Gallardo, Selene",,mar16110@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,,,,,
+R_3Jy26vRiG0LnAer,Default Response Set,"Ryu, Rachel",,ryu14001@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,,,,,
+R_TwnDhIExEjk7Q1H,Default Response Set,"Robinson, Kylie",,rob16051@byui.edu,Female,1019,BIRCH WOOD I,,Disagree,Disagree,Disagree,Disagree,Disagree
+R_22G37FtM2zlXOdg,Default Response Set,"Smith, Tyler",,smi17138@byui.edu,Male,999,ALPINE CHALET,,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Agree
+R_R9N1QhPHxSXSkRX,Default Response Set,"Lockyer, Veronica",,loc16002@byui.edu,Female,1110,SOMERSET APARTMENTS - WOMEN,,,,,,
+R_1111eaCi0NnAFhf,Default Response Set,"Perrins, Sierra",,per16059@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,,,,,
+R_C1CDzmcwU6VqZPj,Default Response Set,"Johansson, Sarah",,joh12004@byui.edu,Female,1110,SOMERSET APARTMENTS - MEN,,,,,,
+R_2TZt98mMzq2EJ1a,Default Response Set,"Kent, Ashley",,ken15003@byui.edu,Female,1302.5,TUSCANY PLACE - WOMEN,,Strongly Agree,Strongly Agree,Agree,Strongly Agree,Strongly Agree
+R_1GvlTJQVIQNpNfh,Default Response Set,"Kurns, Jessica",,kur17003@byui.edu,Female,980,BIRCH PLAZA,,,,,,
+R_6lomPD3Ar3mMIPn,Default Response Set,"Sandkamp, Tony",,san17059@byui.edu,Male,1345,"CEDARS, THE-MEN",,,,,,
+R_4Vi6zii9VhizkuB,Default Response Set,"McKell, Jared",,mck17020@byui.edu,Male,1110,SOMERSET APARTMENTS - MEN,,,,,,
+R_XAMG4FrJhWuRHoJ,Default Response Set,"Taggart, Jack",,tag17003@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,,,,,
+R_Azo64iRA2CsDqff,Default Response Set,"Aieti, Lisi",,aie17001@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,,,,,
+R_wQVaIjyGoEa0HgR,Default Response Set,"Gilchrist, Jacey",,gil15006@byui.edu,Female,1323,MOUNTAIN LOFTS - MEN,,,,,,
+R_2qmbOj0K6RSqK9L,Default Response Set,"Choi, Chan-Young",,cho17003@byui.edu,Male,1349,CENTRE SQUARE-WOMEN,,,,,,
+R_QhbHWF0YQJvKGVb,Default Response Set,"Brewer, Landon",,bre17010@byui.edu,Male,1216.666666,CAMDEN APARTMENTS-WOMEN,,,,,,
+R_2n6ucO2Es5wLoxr,Default Response Set,"Meservy, Megan",,mes17003@byui.edu,Female,1245,COLONIAL HOUSE,,,,,,
+R_1mvX04Mak0dDXBI,Default Response Set,"Barlow, Hannah",,bar16019@byui.edu,Female,1222,AVONLEA APARTMENTS,,,,,,
+R_2ckexZjylShTmzK,Default Response Set,"Opdahl, Tyanin",,opd17001@byui.edu,Female,1245,COLONIAL HOUSE,,,,,,
+R_2dXWsYAhjuhlABE,Default Response Set,"Dean, Lochlan",,dea17006@byui.edu,Male,981,GREENBRIER NORTH,,,,,,
+R_2v05O0QWgDhSSCX,Default Response Set,"McAllister, Dara",,mca14004@byui.edu,Female,1445,ABRI APARTMENTS - WOMEN,,,,,,
+R_2DTzf7DMh4Ha5A5,Default Response Set,"Lewis, Adrien",,lew13014@byui.edu,Male,999,ALPINE CHALET,,,,,,
+R_VIpKIVmD0cMBNbr,Default Response Set,"Peck, Julia",,pec17007@byui.edu,Female,1245,COLONIAL HOUSE,,,,,,
+R_31cPxxNegJMc5Ek,Default Response Set,"Kesler, Paige Marie",,kes17003@byui.edu,Female,1410,WEST WINDS,,Strongly Agree,Agree,Agree,Agree,Somewhat Agree
+R_2wjet8N89W03icz,Default Response Set,"Holden, Emma",,hol14014@byui.edu,Female,1046.25,PINNACLE POINT,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_BYwkEHpRxqQ4B8Z,Default Response Set,"Conley, McKenna",,con15040@byui.edu,Female,1245,COLONIAL HOUSE,,,,,,
+R_32L7MVPClmymBmp,Default Response Set,"Stolp, Steven",,sto15076@byui.edu,Male,850,COLONIAL HEIGHTS TOWNHOUSE,,,,,,
+R_3NwCgWNX2gwLyIV,Default Response Set,"Schaelling, Carly",,sch12043@byui.edu,Female,1050,AMERICAN AVENUE - WOMEN,,,,,,
+R_3lRBY4bY7vg4nd9,Default Response Set,"Crass, Katie",,cra14024@byui.edu,Female,1375,"GATES, THE - MEN",,,,,,
+R_1nOMPa91qNouydS,Default Response Set,"Krivanec, Kate",,kri15005@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,Agree,Agree,Agree,Agree,Agree
+R_1nZugxgrGBcPZKU,Default Response Set,"Whitney, Raegan",,whi17011@byui.edu,Female,1537.333333,NORTHPOINT - WOMEN,,,,,,
+R_2BfbkwkUUr38BWr,Default Response Set,"Archibald, Hailey",,arc16002@byui.edu,Female,1202.5,AMERICAN AVENUE - MEN,,,,,,
+R_ZeCL7Ve0vLWFdgl,Default Response Set,"Cannon, Reed",,can17014@byui.edu,Male,1495,"CEDARS, THE-WOMEN",,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Somewhat Agree
+R_OK0acdfOUpqW1I5,Default Response Set,"Clubb, Brooke",,clu14002@byui.edu,Female,1245,COLONIAL HOUSE,,,,,,
+R_1rMNhy3W6Pe4ldP,Default Response Set,"Borup, Natalie",,bor17009@byui.edu,Female,961.666666,BUNKHOUSE,,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Neither Agree nor Disagree
+R_3HtUu69IQ3u0nIP,Default Response Set,"Bradford, Kira Elise",,bra16018@byui.edu,Female,961.666666,BUNKHOUSE,,,,,,
+R_24CWuEhQYyv6BMZ,Default Response Set,"Wadsworth, Tate",,wad17010@byui.edu,Male,1345,"CEDARS, THE-MEN",,Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_31uzEzq8a3EWoAh,Default Response Set,"Obando Lobo, Samanta",,oba13001@byui.edu,Female,1345,AUTUMN WINDS,,,,,,
+R_3F4lzVXMzn82Bak,Default Response Set,"Tilley, Elizabeth",,til16001@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,Agree,Neither Agree nor Disagree,Agree,Somewhat Agree,Somewhat Agree
+R_3g0c7xromsZ3BQB,Default Response Set,"Thomas, Josh",,tho12058@byui.edu,Male,1420,ABRI APARTMENTS - MEN,,Strongly Agree,Somewhat Agree,Strongly Agree,Agree,Agree
+R_r2cKMlt8zlOKl9f,Default Response Set,"Hale, Kayla",,hal17043@byui.edu,Female,1279,NAUVOO HOUSE II,,,,,,
+R_1dtdKyhAsKRQhTV,Default Response Set,"Guerrero, Brandon",,gue17007@byui.edu,Male,1279,NAUVOO HOUSE I,,Agree,Somewhat Agree,Strongly Agree,Strongly Agree,Strongly Agree
+R_2En0kiUBunjCzXj,Default Response Set,"Blankinship, Courtney",,bla15008@byui.edu,Female,870,BROOKLYN APARTMENTS,,Neither Agree nor Disagree,Neither Agree nor Disagree,Strongly Agree,Agree,Somewhat Agree
+R_246L7bzre2I1fQl,Default Response Set,"Johns, Kaitlyn",,joh12099@byui.edu,Female,1110,SOMERSET APARTMENTS - MEN,,,,,,
+R_1M0M0CgQF7a08Kw,Default Response Set,"Rich, Taralyn",,ric11017@byui.edu,Female,1310,BROOKSIDE VILLAGE - WOMEN,,Agree,Agree,Strongly Agree,Agree,Agree
+R_1gzIkfRBii0pc0b,Default Response Set,"Lighthall, Taylor",,lig17002@byui.edu,Female,1349,CENTRE SQUARE-WOMEN,,,,,,
+R_2fq8XZBCjopxnop,Default Response Set,"ZoBell, Brittney",,zob17001@byui.edu,Female,1245,COLONIAL HOUSE,,Agree,Somewhat Agree,Agree,Agree,Somewhat Agree
+R_268vH0qEWTrypeX,Default Response Set,"Wadsworth, Rachel",,wad14004@byui.edu,Female,972.5,ALEXANDER APARTMENT,,,,,,
+R_3fpY3iMVadaVzeY,Default Response Set,"Johnson, Rachael",,joh12160@byui.edu,Female,1110,SOMERSET APARTMENTS - MEN,,Somewhat Agree,Somewhat Agree,Agree,Agree,Somewhat Agree
+R_1Q6sbQGfCUgtKxi,Default Response Set,"Dial, Devin",,dia17018@byui.edu,Male,1189,HERITAGE MEN,,Agree,Agree,Agree,Agree,Agree
+R_1o6L3IDfdWolEZ1,Default Response Set,"Campbell, Aarlee",,cam16044@byui.edu,Female,1495,"CEDARS, THE-WOMEN",,,,,,
