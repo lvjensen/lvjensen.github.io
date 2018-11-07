@@ -1,12 +1,11 @@
 name: "little-book-of-RStudio-websites"
 output:
   html_document:
-    theme: flatly # specifies the theme
+    theme: flatly 
 navbar:
+  title: "Logan's Work Portfolio"
   left:
-    - text: "Data"
-      href: Date
     - text: "Analyses"
-      href: Analyses
+      href: AnalysisProjects.html
       
 output_dir: "." 

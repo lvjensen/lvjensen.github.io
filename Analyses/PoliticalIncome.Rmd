@@ -35,7 +35,7 @@ This analysis will be based off of the General Social Survey, which is a survey 
 
 I will be using the following logistic regression equation to display my test:
 $$
-  P(Y_i = 1|\, x_{i1},x_{i22},\ldots,x_{i26}) = \frac{e^{\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i22} + \ldots + \beta_6 x_{i26}}}{1+e^{{\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i22} + \ldots + \beta_6 x_{i26}}}} = \pi_i
+  P(Y_i = 1|\, x_{i1},x_{i22},\ldots,x_{i26}) = \frac{e^{\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i22} + \ldots + \beta_6 x_{i26}}}{1+e^{{\beta_0 + \beta_1 x_{i1}}} + \beta_2 x_{i22} + \ldots + \beta_6 x_{i26}}}} = \pi_i
 $$
 
 For this analysis, $Y_i=0$ denotes the political party being Republican of that individual and $Y_i=1$ would denote that the political party is Democrat. To explain each different variable, I've created the following table:

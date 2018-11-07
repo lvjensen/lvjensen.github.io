@@ -1,0 +1,20 @@
+---
+title: "Analyses"
+output: 
+  html_document: 
+    theme: cerulean
+    highlight: tango
+---
+
+<script type="text/javascript">
+ function showhide(id) {
+    var e = document.getElementById(id);
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+ }
+</script>
+
+
+
+----
+
+- [Car Prices Statistical Analysis](Analyses/CarPrices.html)
