@@ -1,0 +1,95 @@
+---
+title: "Gun Deaths Regarding Diversity"
+output:
+  html_document:  
+    theme: flatly 
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+#install.packages("tidyverse") # run this line once in console to get package
+library(readr)
+library(tidyverse)
+library(forcats)
+library(plyr)
+library(ggthemes)
+full_data <- read_csv("/Users/loganjensen/Desktop/M335_Jensen_Loga/Case_Study_04/full_data.csv")
+```
+
+```{r load_data}
+# Use this R-Chunk to import all your datasets!
+
+```
+
+I found a dataset on all gun-related deaths in the United States from the past few years and hoped to be able to find some insight ourt of it. For reference of where I found the data, please see this article done by [fivethirtyeight.com](https://fivethirtyeight.com/features/gun-deaths/). 
+
+## Data Visualization
+
+```{r tidy_data}
+
+full_data%>%
+  filter(!is.na(intent))%>%
+  mutate(intent = fct_relevel(intent, c('Undetermined','Accidental','Homicide','Suicide')))%>%
+  ggplot()+
+  geom_bar(mapping = aes(x = intent, fill = intent))+
+  scale_color_brewer()+
+  labs(x = 'Cause of Death', y = 'Frequency', title = 'Suicides are Much More Common Among Gun Deaths')+
+  guides(fill = FALSE)+
+  theme_stata()+
+  scale_fill_manual(values = c('gold3','darkseagreen','dodgerblue','firebrick'))
+  
+full_data$seasons <- mapvalues(full_data$month, c('12','01','02','03','04','05','06','07','08','09','10','11'), c(rep('Winter',3), rep('Spring',3), rep('Summer',3), rep('Fall',3)))
+
+
+
+```
+
+I have always believed it was something to fear when people own guns. I'm not anti-gun, but hearing all the news about guns makes you wonder how to deal in this world. It's been interesting to find all this new data on homicides and that, unexpectedly, Suicides are the most common. Among those suicides, older men are most commonly victims. This is another one of those 'River of Myths' we need to overcome, thinking that taking away guns is the solution to preventling gun deaths. At this point, I'm not sure what is, but with all the variability in gun deaths, there can't just be one simple solution.
+
+
+```{r plot_data}
+# Use this R-Chunk to plot & visualize your data!
+full_data$ageint <- cut(full_data$age, c(0, 19, 30, 45, 120), c('18 or Younger','19-29', '30-44', '45 and Older'))
+
+
+full_data%>%
+  filter(intent == 'Homicide')%>%
+  mutate(newgender = case_when(
+    sex == 'M' ~ 'Male', 
+    sex == 'F' ~ 'Female'
+    
+  ))%>%
+  mutate(seasons = fct_relevel(seasons, c('Spring','Summer','Fall','Winter')))%>%
+  ggplot()+
+  geom_bar(mapping = aes(x = seasons, fill =race), position = 'dodge')+
+  theme_economist()+
+  facet_wrap(~newgender)+
+  labs(title = 'Homicide Most Common Among Black Men', x = 'Time of Year', y = 'Count')+
+  scale_fill_manual(values = c('firebrick','skyblue','darkorchid3','darkseagreen2','orange2'))
+
+```
+This plot describes the relationship between sex and the seasons for Homicides. it's interesting that among women, White women are most commonly killed, yet among men black men are most commonly killed. Even more interesting, men seem to peak around Summer whereas Women seem to peak around Spring.
+
+
+```{r}
+full_data%>%
+  filter(intent == 'Accidental')%>%
+  mutate(seasons = fct_relevel(seasons, c('Spring','Summer','Fall','Winter')))%>%
+  ggplot()+
+  geom_freqpoly(mapping = aes(x = age, color = seasons))+
+  facet_wrap(~sex)+
+  theme_economist()+
+  labs(title = 'Different Seasons are Dangerous for Different Genders', x = 'Age', subtitle = 'Based on Accidental Gun Deaths')
+
+  
+```
+This plot describes the relationship between age and seasons between the sexes for Accidental gun deaths. Women seem to have a peak in the Spring around the age 50 whereas men seem to have a peak around the age 25 in the summer.
+
