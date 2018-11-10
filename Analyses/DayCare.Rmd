@@ -32,18 +32,6 @@ late <- read.csv("../Data/late.csv", header=TRUE)
 
 
 
-----
-
-<!--If you want to give your critiquers some ideas about what you have questions on and would like help with, place those details here.-->
-
-**Comments to Critiquers:** 
-
-
-
-<!--End your comments to your critiquers before this line.-->
-
-----
-
 
 ## Background {.tabset .tabset-fade}
 
@@ -56,9 +44,6 @@ This analysis is based off of the study called 'A Fine is a Price', which studie
 This study is important for finding out methods of helping day cares become more efficient. Teachers give valuable time when kids stay late and aren't paid for this. Thus, could fining families who pick their kids up late help establish a culture where they're picked up on time?
 
 
-<!--End your background before here.-->
-<!--Click the little black arrow to 
-the left to expand/hide these next sections.-->
 ### Study Details
 
 <div style="color:#a8a8a8;">

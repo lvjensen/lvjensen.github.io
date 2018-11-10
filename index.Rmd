@@ -2,7 +2,7 @@
 title: "About Me"
 output: 
   html_document:
-    theme: cerulean
+    theme: flatly
 ---
 
 
@@ -16,8 +16,12 @@ output:
 
 
 ----
+<link rel="stylesheet" href="styles.css" type="text/css">
 
+<img src="images/Logan_Portrait.png" style="width:32%; border:5px solid; margin-right: 20px" align="right">
 
-##About Me
+My name is Logan Jensen and I am an aspiring data scientist who is passionate about using data to tell stories and offer insight. I'm currently studying Data Science at Brigham Young University - Idaho, where I have taken classes involving Non-parametric Statistical Modeling, Data Wrangling and Visualization, SQL Database Development, Object-oriented Programming, and many other topics. I'm experienced in R, Python, SQL, Excel, Power BI and other software and I love to learn and am always looking for opportunities to practice further.
 
-My name is Logan Jensen
+I originally started school looking to become a Physical Therapist or Physician's Assistant. I commenced the Exercise Physiology program and began taking Chemistry, Physics, Biology and Anatomy Classes. These classes i found enjoyable, but my life course changed when I took my first college statistics course. I realized that my heart and brain thrived on data, and though I do believe I would've loved working in the medical field, I know i am truly studying my passion now that i am in Data Science.
+
+Please check out my projects. I feel very confident working in R, which is what I've dedicated this sight to. I'm looking for opportunities to learn more and I know i could be a valuable asset to any data-centered team.

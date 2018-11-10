@@ -2,7 +2,7 @@
 title: "Analyses"
 output: 
   html_document: 
-    theme: cerulean
+    theme: flatly
     highlight: tango
 ---
 
@@ -17,5 +17,13 @@ output:
 
 ----
 
+I have experience in various forms of statistical methods, including linear regression, logistic regression, simple t-tests, ANOVA, Chi-Squared Tests, as well as non-parametric equivalents of these such as the Kruskal-Wallis, Wilcoxon and Permutation testing. These projects I have done to practice as well as prove my knowledge of statistics.
+
+- [MLB Payrolls and Season Success Analysis](Analyses/MySimpleLinearRegression.html)
+- [Movies Analysis](Analyses/Movies.html)
+- [MLB Logistic Analysis on Wins](Analyses/MyLogisticRegression.html)
 - [Car Prices Statistical Analysis](Analyses/CarPrices.html)
 - [Income in Politics Logistic Regression Analysis](Analyses/PoliticalIncome.html)
+- [Analysis on Worldwide Chocolae Quality](Analyses/Chocolate.html)
+- [Analysis on Israeli Daycares](Analyses/DayCare.html)
+- [Wealth's Relation to Happiness Analysis](Analyses/happy.html)
