@@ -5,7 +5,9 @@ output:
 navbar:
   title: "Logan's Work Portfolio"
   left:
-    - text: "Analyses"
+    - text: "Statistical Analyses"
       href: AnalysisProjects.html
+    - text: 'Data Wrangling/Visualization Analyses'
+      href: dwvanalyses.html
       
 output_dir: "." 

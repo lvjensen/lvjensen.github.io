@@ -1,0 +1,94 @@
+---
+title: "Logan Jensen Final"
+author: "Logan Jensen"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+#install.packages("tidyverse") # run this line once in console to get package
+library(tidyverse)
+library(lubridate)
+library(ggthemes)
+library(scales)
+library(viridis)
+```
+
+```{r load_data}
+# Use this R-Chunk to import all your datasets!
+nycstuff <- read_csv("https://byuistats.github.io/M335/data/runners_100k.csv")
+
+maraton <- nycstuff %>%
+  mutate(chiptime = as.integer(chiptime), hora = chiptime%/% 60, minuto = chiptime %% 60) %>%
+  select(age, chiptime, hora, minuto, country, us, europe, canada, other) %>%
+  mutate(cooltime = str_c(hora, ":", minuto), newcool = make_datetime(hour = hora, min = minuto), coolnew = format(newcool, '%H:%M')) 
+
+  
+```
+
+
+## Data Visualization
+
+```{r tidy_data}
+# Use this R-Chunk to clean & wrangle your data!
+maraton %>%
+  ggplot()+
+  geom_histogram(aes(x = newcool, y = ..count../sum(..count..)), binwidth = 30) +
+  geom_vline(xintercept = make_datetime(hour = 4, min = 30), color = 'firebrick') +
+  geom_vline(xintercept = make_datetime(hour = 5, min = 00), color = 'firebrick') +
+  geom_vline(xintercept = make_datetime(hour = 4, min = 00), color = 'firebrick') +
+  geom_vline(xintercept = make_datetime(hour = 3, min = 30), color = 'firebrick') +
+  geom_vline(xintercept = make_datetime(hour = 3, min = 00), color = 'firebrick') +
+  geom_vline(xintercept = make_datetime(hour = 5, min = 30), color = 'firebrick') +
+  geom_vline(xintercept = make_datetime(hour = 6, min = 00), color = 'firebrick') +
+  theme_pander() +
+  labs(x = 'Time', y = 'Percent', title = 'Marathoners Race Times Fall Distributed Around 4 Hours') +
+  coord_cartesian(xlim = c(make_datetime(hour = 2, min = 00), make_datetime(hour = 7, min = 30))) +
+  scale_y_continuous(labels = percent, position = 'right')
+  
+
+```
+
+
+
+```{r plot_data}
+# Use this R-Chunk to plot & visualize your data!
+maraton %>%
+  ggplot()+
+  geom_hex(aes(x = age, y = newcool)) +
+  scale_fill_viridis(option = 'cividis') +
+  labs(x = 'Age', y = 'Clock Time',title = 'Racers Vary Greatly in Age, Yet Finishing Time Clusters Around 4:30')+
+  theme_pander() 
+
+```
+
+```{r}
+maraton %>%
+  mutate(continent = case_when(
+    us == 1 ~ 'USA',
+    canada == 1 ~ 'Canada',
+    europe == 1~ 'Europe',
+    TRUE ~ 'Other'
+  )) %>%
+  ggplot()+
+  geom_boxplot(aes(x = continent, y = newcool, fill = continent))+
+  labs(x = 'Region', y = 'Chip Time', title = 'US Marathons Trend Towards Slower Marathon Times') +
+  scale_fill_brewer(palette = 'Set1') +
+  theme_gdocs() +
+  guides(fill = FALSE)
+```
+
+
