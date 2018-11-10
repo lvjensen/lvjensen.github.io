@@ -81,7 +81,7 @@ delta%>%
 
 ## Question #2
 
-While answering this question, I struggled significantly to figure out ho to put them all on the same plot. If you have any ideas, please let me know. However, I created 3 different bar plots to help describe which airline to take before noon with the best on time departures. For JFK, The two best airlines to travel would be DL and HA. For EWR, the best airlines to travel would be DL, US, and 9E. Then, for LGA, the best airlines are US and YV. 
+I created 3 different bar plots to help describe which airline to take before noon with the best on time departures. For JFK, The two best airlines to travel would be DL and HA. For EWR, the best airlines to travel would be DL, US, and 9E. Then, for LGA, the best airlines are US and YV. 
 
 ```r
 plot1<-flights%>%
@@ -127,6 +127,4 @@ grid.arrange(plot1, plot2, plot3, ncol=3)
 
 ![](CaseStudy3_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
-## Quote
 
-'If the data don’t have a question yet, I usually start thinking right away about what questions can actually be answered with the data and what can’t. This prevents me from wasting a lot of time later chasing trends.'
