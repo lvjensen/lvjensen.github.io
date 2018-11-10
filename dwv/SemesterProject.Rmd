@@ -1,0 +1,302 @@
+---
+title: "Looking at Education as an Investment"
+output:
+  html_document:  
+    theme: flatly 
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+#install.packages("tidyverse") # run this line once in console to get package
+library(tidyverse)
+library(ggthemes)
+library(stringr)
+library(forcats)
+library(ggrepel)
+library(scales)
+library(data.table)
+library(plyr)
+```
+
+```{r load_data}
+# Use this R-Chunk to import all your datasets!
+colegesandstuff <- read_csv("~/Downloads/MERGED2013_PP.csv")%>%
+  select(INSTNM, GRAD_DEBT_MDN, CITY, UGDS, PCTPELL, TUITIONFEE_IN, SAT_AVG, ACTCMMID) 
+ 
+
+morecolleges <- read_csv("~/Downloads/salaries-by-region.csv")
+colnames(morecolleges) <- c("SchoolName", "Region",'StartingMedianSalary','MidCareerMdnSalary', 'MidCareer10thpercent','MidCareer25thpercent','MidCareer75thpercent','MidCareer90thpercent') 
+
+collegeeduc <- read_csv('~/Downloads/degrees-that-pay-back.csv')
+
+collegeeduc <- collegeeduc %>%
+  dplyr::mutate(DegreeName =collegeeduc$`Undergraduate Major`, 
+         StartingMedianSalary = collegeeduc$`Starting Median Salary`, 
+         PercentChange = collegeeduc$`Percent change from Starting to Mid-Career Salary`,
+         midcarmdnsalary = collegeeduc$`Mid-Career Median Salary`)
+
+collegeeduc <- collegeeduc %>%
+  dplyr::mutate(
+    StartingMedianSalary = str_replace_all(StartingMedianSalary, '\\.00',''),
+    StartingMedianSalary = str_replace_all(collegeeduc$StartingMedianSalary, '\\D',''),
+    StartingMedianSalary = as.integer(StartingMedianSalary),
+    midcarmdnsalary = str_replace_all(midcarmdnsalary, "\\D",''),
+    midcarmdnsalary = as.integer(midcarmdnsalary),
+    StartingMedianSalary = StartingMedianSalary/100,
+    midcarmdnsalary = midcarmdnsalary/100,
+    StartingMedianSalary = as.integer(StartingMedianSalary),
+    midcarmdnsalary = as.integer(midcarmdnsalary))
+
+collegeeduc$area_of_study <- mapvalues(collegeeduc$DegreeName, c('Aerospace Engineering','Chemical Engineering','Computer Engineering','Chemistry', 'Civil Engineering','Electrical Engineering','Construction','Geology','Industrial Engineering','Information Technology (IT)','Computer Science','Mechanical Engineering','Physics','Architecture','Math','Management Information Systems (MIS)','Accounting', 'Business Management', 'Communications', 'Economics','Marketing','Finance','Agriculture','Biology','Forestry','Health Care Administration','Nursing','Physician Assistant','Nutrition','Anthropology','Criminal Justice','English','History','Hospitality & Tourism','Philosophy','Geography','Spanish','Religion','International Relations', 'Journalism', 'Political Science','Film','Music','Graphic Design','Drama','Art History','Interior Design','Psychology','Education','Sociology'), c(rep('Physcial Sciences and Engineering',16), rep('Business and Communication',6), rep('Life Sciences', 7), rep('History and Languages',12), rep('Visual and Performing Arts',6), rep('Human Development',3)))
+
+
+
+
+
+
+
+
+```
+
+## Background
+
+  As a high school student coming to graduation, we all ask many questions. What college can I afford to attend? What do I want to study? Is it actually worth it to get into a top college?
+  
+  When I came out of high school, I had many of these questions and got so lost I ended up at a community college. Afraid to waste money and unsure of what to do with college, I stuck around there while I realized the importance of getting a quality education. I wanted to be sure I could support a family with my education and be able to enjoy my occupation.
+  
+  For these reasons, I've gathered data to answer this question: when considering finances, where should one attend college? Also, is it actually worth it to seek out schools with better reputations? 
+  
+  
+  \n
+  The data comes from collegescorecard.com and the Wall Street Journal. Some Data is also from usnews.com.
+  
+
+```{r tidy_data}
+# Use this R-Chunk to clean & wrangle your data!
+collegesandstuff2 <- colegesandstuff %>%
+  select(INSTNM, GRAD_DEBT_MDN, CITY, UGDS, PCTPELL, TUITIONFEE_IN, SAT_AVG, ACTCMMID) %>%
+  dplyr::mutate(SchoolName = INSTNM) %>%
+  select(SchoolName, CITY, GRAD_DEBT_MDN, UGDS, PCTPELL, TUITIONFEE_IN, SAT_AVG, ACTCMMID) %>%
+  dplyr::mutate(SchoolName = str_replace_all(SchoolName, "\\-", "\\, "), 
+          SchoolName = str_replace_all(SchoolName, ' at ',', '),
+         SchoolName = str_trim(SchoolName, side = 'both'), 
+         SchoolName = str_replace_all(SchoolName, pattern = "\\([:graph:]+\\)", replacement = ""), SchoolName = str_trim(SchoolName, side = 'both'),
+         SchoolName = str_replace_all(SchoolName,'State University of New York', 'SUNY'),
+         SchoolName = str_replace_all(SchoolName,', Main Campus', ''),
+         SchoolName = str_trim(SchoolName, side = 'both'), 
+         SchoolName = case_when(
+           SchoolName == 'University of Washington, Seattle Campus' ~ 'University of Washington',
+           SchoolName == 'Colorado State University, Fort Collins' ~ 'Colorado State University',
+           SchoolName == 'University of Alabama in Huntsville' ~ 'University of Alabama, Huntsville',
+           SchoolName == 'Columbia University in the City of New York' ~ 'Columbia University',
+           SchoolName == 'Kent State University, Kent' ~ 'Kent State University',
+           SchoolName == 'Louisiana State University and Agricultural & Mechanical College' ~ 'Louisiana State University',
+           SchoolName == 'Missouri State University, Springfield' ~ 'Missouri State University',
+           SchoolName == 'North Carolina State University, Raleigh' ~ 'North Carolina State University',
+           SchoolName == 'Rutgers University, New Brunswick' ~ 'Rutgers University',
+           SchoolName == 'Saint Cloud State University' ~ 'St. Cloud State University',
+           SchoolName == 'Texas A&M University, San Antonio' ~ 'Texas A&M University',
+           SchoolName == 'University of Akron Main Campus' ~ 'University of Akron',
+           SchoolName == 'University of Alaska Anchorage' ~ 'University of Alaska, Anchorage',
+           SchoolName == 'University of Hawaii, Manoa' ~ 'University of Hawaii',
+           SchoolName == 'University of Illinois, Urbana, Champaign' ~ 'University of Illinois, Urbana-Champaign',
+           SchoolName == 'University of Michigan, Ann Arbor' ~ 'University of Michigan',
+           SchoolName == 'University of Minnesota, Twin Cities' ~ 'University of Minnesota',
+           SchoolName == 'University of Missouri, St Louis' ~ 'University of Missouri, St. Louis',
+           SchoolName == 'The University of Montana' ~ 'University of Montana',
+           SchoolName == 'University of Nebraska, Lincoln' ~ 'University of Nebraska',
+           SchoolName == 'University of Maryland, Baltimore County' ~ 'University of Maryland Baltimore County',
+           SchoolName == 'University of Oklahoma, Norman Campus' ~ 'University of Oklahoma',
+           SchoolName == 'University of South Carolina, Columbia' ~ 'University of South Carolina',
+           SchoolName == 'The University of Tennessee, Knoxville' ~ 'University of Tennessee',
+           SchoolName == 'The University of Texas, El Paso' ~ 'University of Texas, El Paso',
+           SchoolName == 'The University of Texas, Arlington' ~ 'University of Texas, Arlington',
+           SchoolName == 'The University of Texas, San Antonio' ~ 'University of Texas, San Antonio',
+           SchoolName == 'The University of Texas, Austin' ~ 'University of Texas, Austin',
+           TRUE ~ SchoolName
+         ))
+
+morecolleges2 <- morecolleges %>%
+  dplyr::mutate(SchoolName = str_trim(SchoolName, side = 'both'), 
+         SchoolName = str_replace_all(SchoolName, pattern = "\\(.+\\)", replacement = ""),
+         SchoolName = str_trim(SchoolName, side = 'both'),
+         SchoolName = str_replace_all(SchoolName,'State University of New York', 'SUNY'),
+         SchoolName = str_replace_all(SchoolName, ' at ',', '),
+         SchoolName = str_replace_all(SchoolName, ' , ',', '),
+         SchoolName = str_replace(SchoolName, ' - ',', '),
+         SchoolName = str_replace(SchoolName, 'Wisconsin , ', "Wisconsin, "),
+         SchoolName = str_replace_all(SchoolName, 'Massachusetts , ', 'Massachusetts, '),
+         SchoolName = str_trim(SchoolName, side = 'both'),
+         SchoolName = case_when(
+           SchoolName == 'Cal Poly San Luis Obispo' ~ 'California Polytechnic State University, San Luis Obispo', 
+           SchoolName == 'Brigham Young University' ~ 'Brigham Young University, Provo',
+           SchoolName == 'Arizona State University' ~ 'Arizona State University, Tempe',
+           SchoolName == 'Penn State, Harrisburg' ~ 'Pennsylvania State University, Penn State Harrisburg',
+           SchoolName == 'University of Colorado, Boulder' ~ 'University of Colorado Boulder',
+           SchoolName == 'University of Alabama, Tuscaloosa' ~ 'The University of Alabama',
+           SchoolName == 'Montana State University, Bozeman' ~ 'Montana State University',
+           SchoolName == 'Southern Illinois University Carbondale' ~ 'Southern Illinois University, Carbondale',
+           SchoolName == 'University of Colorado, Denver' ~ 'University of Colorado Denver',
+           SchoolName == 'University Of Maine' ~ 'University of Maine',
+           SchoolName == 'University of North Carolina, Wilmington' ~ 'University of North Carolina Wilmington',
+           SchoolName == 'University of Texas , Austin' ~ 'University of Texas, Austin',
+           SchoolName == 'Utah Valley State College' ~ 'Utah Valley University',
+           SchoolName == 'University Of Chicago' ~ 'University of Chicago',
+           TRUE ~ SchoolName
+         ))
+
+collegejoin <- morecolleges2 %>%
+  left_join(collegesandstuff2, by = 'SchoolName') %>%
+  dplyr::mutate(StartingMedianSalary = str_replace_all(StartingMedianSalary, '\\$',''), 
+         StartingMedianSalary = str_replace_all(StartingMedianSalary, '\\,',''),
+         StartingMedianSalary = str_replace_all(StartingMedianSalary, '\\.00',''), 
+         StartingMedianSalary = as.integer(StartingMedianSalary), 
+         GRAD_DEBT_MDN = as.integer(GRAD_DEBT_MDN), 
+         UGDS = as.integer(UGDS),
+         ivy = case_when(
+           SchoolName %in% c('Brown University', 'Columbia University', 'Cornell University','Dartmouth College', 'Harvard University','Princeton University','University of Pennsylvania','Yale University') ~ 'Ivy League',
+           SchoolName %in% c('University of Chicago', 'Massachusetts Institute of Technology', 'Stanford University','Duke University','California Institute of Technology','Northwestern University','Rice University','Vanderbilt University','University of Notre Dame', 'Georgetown University','Emory University','University of California, Berkeley','University of California, Los Angeles','University of Southern California','Carnegie Mellon University','University of Virginia') ~ 'Other Top 25 Schools',
+           TRUE ~ 'Not a Top 25 School'
+         )) %>%
+  select(SchoolName, Region, StartingMedianSalary, CITY, GRAD_DEBT_MDN, UGDS, ivy, PCTPELL, TUITIONFEE_IN, SAT_AVG, ACTCMMID)
+
+byuidata <- data.table(SchoolName = 'Brigham Young University, Idaho', Region = 'Western', StartingMedianSalary = 39900, CITY = 'Rexburg', GRAD_DEBT_MDN = 11000, UGDS = 25867, ivy = 'Not a Top 25 School', PCTPELL = .26, TUITIONFEE_IN = 8667, SAT_AVG = NA, ACTCMMID = NA)
+
+collegejoin <- collegejoin %>%
+  rbind(byuidata) %>%
+  dplyr::mutate(ivy = case_when(
+    SchoolName == 'Brigham Young University, Idaho' ~ 'BYU-Idaho',
+    TRUE ~ ivy
+  ))
+
+collegejoin2 <- collegejoin %>%
+  filter(is.na(GRAD_DEBT_MDN))
+
+collegejoints <- collegejoin %>%
+  filter(StartingMedianSalary>58000 | GRAD_DEBT_MDN < 12000) %>%
+  dplyr::mutate(TUITIONFEE_IN = as.double(TUITIONFEE_IN), 
+         PCTPELL = as.double(PCTPELL))
+
+collegefun <- collegejoints %>%
+  filter(SchoolName %in% c('Brigham Young University, Idaho','Harvard University'))
+
+```
+
+## Choice of School
+
+```{r plot_data}
+collegejoin %>%
+  filter(!is.na(GRAD_DEBT_MDN)&!is.na(StartingMedianSalary&!is.na(UGDS))) %>%
+  ggplot()+
+  geom_point(mapping = aes(x = GRAD_DEBT_MDN, y = StartingMedianSalary, color = Region, size = UGDS))+
+  geom_text_repel(data = collegejoints, mapping = aes(x = collegejoints$GRAD_DEBT_MDN, y = collegejoints$StartingMedianSalary, label = collegejoints$SchoolName), size = 3) +
+  geom_smooth(aes(x = GRAD_DEBT_MDN, y = StartingMedianSalary))+
+  scale_colour_brewer(palette = 'Set1') +
+  theme_pander() +
+  labs(x = 'Median Debt at Graduation', y = 'Starting Median Salary', size = 'Student Enrollment', title = 'More Expensive Debts Do Not Produce More Successful Careers') +
+  scale_y_continuous(labels = dollar) +
+  scale_x_continuous(labels = dollar) +
+  theme(axis.title.y = element_text(size = 15),
+        axis.title.x = element_text(size = 15))
+```
+
+  It's obvious in this plot that there are many different variations of student debt and starting salaries. While we all want to end up on the high end of the starting salary, we want to end up on the low end of the student debt. Many students work during school to help their debt situation, yet find it difficult to escape the entire idea of debt. Even at BYU-Idaho, where tuition is relatively inexpensive, students graduate with about $11,000 in student debt and leave earning just under $40,000. The complexing thing is, the trend the plot offers suggest that the more debt you are in, the less your starting salary will be after you graduate. There are many universities that offer expensive 4-year degrees, yet the return isn't as good.
+  
+  This leads to my next point, what is the potential students may have at other schools? BYU-Idaho offers great programs, but it's reputation is still being constructed. Other schools with far better reputations tend to be better options for students. This includes Harvard, Yale, Brown, etc. Their college names are revered in every household and most students only dream of being able to attend.
+  
+  This next graph exhibits more boldly the effect a reputation can have on a starting salary and debt. Notice where the top 25 schools according to US News are located in the plot.
+  
+```{r}
+collegejoints1 <- collegejoin %>% #----------create labels for following chart
+  filter(ivy != 'Not a Top 25 School')
+
+collegejoin %>%
+  dplyr::mutate(slivy = case_when(
+    ivy == 'Ivy League'|ivy == 'Other Top 25 Schools' ~ 'Top 25 Schools',
+    ivy == 'BYU-Idaho' ~ 'BYU-Idaho',
+    TRUE ~ 'Not a Top 25 School'
+  ),
+                ivy = fct_relevel(ivy, c('Ivy League','Other Top 25 Schools','Not a Top 25 School'))) %>%
+  ggplot()+
+  geom_point(mapping = aes(x = GRAD_DEBT_MDN, y = StartingMedianSalary, color = slivy, size = UGDS))+
+  geom_text_repel(data = collegejoints1, mapping = aes(x = collegejoints1$GRAD_DEBT_MDN, y = collegejoints1$StartingMedianSalary, label = collegejoints1$SchoolName), size = 3) +
+  theme_pander() +
+  labs(x = 'Median Debt at Graduation', y = 'Starting Median Salary', size = 'Student Enrollment', title = "Us News' Top 25 Schools Rise Above the Rest for Starting Salaries") +
+  scale_colour_manual(values = c('forestgreen','lavender', 'slateblue'))+
+  scale_y_continuous(labels = dollar) +
+  scale_x_continuous(labels = dollar) +
+  theme(axis.title.y = element_text(size = 15),
+        axis.title.x = element_text(size = 15))
+```
+
+
+  Notice how these Ivy League schools, such as Harvard and Princeton, have some of the lowest median student debts after graduation. Surely these schools are worthy of seeking entry. However, entry into schools like these are close to impossible without incredible amounts of hard work and determination. Harvard has only a 5% acceptance rate, while most of the others have acceptance rates below 20% as well. 
+  
+```{r}
+
+collegelit <- collegejoints1 %>%
+  dplyr::mutate(
+         TUITIONFEE_IN = as.double(TUITIONFEE_IN), 
+         PCTPELL = as.double(PCTPELL),
+         SAT_AVG = as.integer(SAT_AVG))
+
+collegejoin %>%
+  dplyr::mutate(
+         TUITIONFEE_IN = as.double(TUITIONFEE_IN), 
+         PCTPELL = as.double(PCTPELL),
+         SAT_AVG = as.integer(SAT_AVG)) %>%
+  ggplot() +
+  geom_point(mapping = aes(x = TUITIONFEE_IN, y = PCTPELL, color = Region, size = SAT_AVG)) +
+  geom_text_repel(data = collegelit, aes(x = TUITIONFEE_IN, y = PCTPELL, label = SchoolName))+
+  geom_smooth(aes(x = TUITIONFEE_IN, y = PCTPELL))+
+  scale_x_continuous(labels = dollar) +
+  scale_y_continuous(labels = percent)+
+  theme_pander()+
+  labs(color = 'Region', size = 'Average Accepted SAT Score', title = 'Schools with Higher Costs of Tuition Receive Less Pell Grants',x = 'Tuition and Fees', y = 'Percentage of Students Receiving Pell Grants') +
+  theme(axis.title.y = element_text(size = 15),
+        axis.title.x = element_text(size = 15)) +
+  scale_color_brewer(palette = 'Set1')
+```
+  
+  In reality, Harvard is a very expensive University. After tuition, room, and boardHowever, thanks to their endowment fund, they offer a significant amount of scholarships to their students, many being need based. Those that come from lower-income families have a lot of help. However, nearly 60% of the school student body comes from family incomes of over $125000. Thus, those students who come from these families, without merit-based scholarships, tend to have a lot of help from family.
+  
+  There's reasons that top universities offer such great starting salaries after graduation, yet many people have to find outside help for tuition. It's something to take into consideration; Universities always offer financial aid, but one must be proactive in finding help. Keep in mind, the trend suggests that the more the college costs, the less you receive from Pell Grants.
+
+  Higher income families are more likely to apply for such schools as the Ivy Leagues, but in addition to this one must consider the academic abilities of the applicant. Noted in the plot above, SAT scores for Ivy League schools are well above a normal applicants ability. for Harvard, the average accepted SAT score was 1501. Truly, the difficulty of entering Harvard measures close to the difficulty of funding enrolling.
+  
+  
+## Choice of Study
+  
+  Though school choice has a lot to do with our future, choice of major is also incredibly important. There are many degrees that offer enjoyable careers, but very few can really offer financial prosperity. If financial prosperity is important for a student, they would definitely want to seek out a degree that tends to be successful. Granted, one can be successful in any type of degree, but there are certainly types of degrees that higher median career salaries. The following plot demonstrates the types of degrees and where they can get you financially.
+  
+```{r}
+
+collegeeduc5 <- collegeeduc %>%
+  dplyr::mutate(StartingMedianSalary = StartingMedianSalary/1000, midcarmdnsalary = midcarmdnsalary/1000) %>%
+  dplyr::select(DegreeName, area_of_study, StartingMedianSalary, midcarmdnsalary) %>%
+  tidyr::gather(3:4, key = 'Career', value = 'salary') %>%
+  tidyr::unite(area_of_study, Career, col = 'combine', sep = ' ', remove = FALSE)
+
+collegeeduc5 %>%
+  ggplot()+
+  geom_jitter(aes(y = salary, x = area_of_study, color = combine), size = 6)+
+  labs(y = 'Salary (In Thousands of USD)', x = 'Area of Study', title = 'Physical Sciences and Engineering Degrees Offer Highest Salaries', subtitle = 'Dark colors represent mid-career salaries whereas lighter colors represent recent graduate salaries') +
+  scale_colour_manual(values = c('red4', 'red', 'royalblue4', 'royalblue1','darkorange3','darkorange','purple4','purple1','springgreen4','springgreen1','salmon4','salmon1')) +
+  coord_flip()+
+  guides(color = FALSE) +
+  theme(axis.title.y = element_text(size = 15),
+        axis.title.x = element_text(size = 15)) +
+  theme_pander()
+```
+  
+  If one wants to make money with their degree, they are most likely to do so while studying some sort of STEM field. Fields to avoid would evidently be the arts and human development, such as Psychology and Education.
+  
+## Conclusions
+  All in all, schooling is a difficult thing to understand and invest in. We never really can know where we will end up after an education even with all this information. However, knowing these little pieces of information give us the opportunity to analyze what we want to spend money on, whether it be an ivy league school, a less expensive college, or even no college. Surely, attending an ivy League college would be pricey, but the return on salary would make it valuable; Ivy League college graduates can make $30,000+ more than other colleges starting out. As far as income goes, reaching the top schools would be well worth it over one's lifetime.

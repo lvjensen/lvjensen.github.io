@@ -1,10 +1,8 @@
 ---
 title: "New York Airports and Their Productivity"
 output:
-  html_document:  
-    keep_md: true
-    toc: true
-    toc_float: true
+  html_document: 
+    theme: flatly 
     code_folding: hide
     fig_height: 6
     fig_width: 12
