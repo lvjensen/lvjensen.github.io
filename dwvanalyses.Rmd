@@ -1,0 +1,19 @@
+---
+title: "dwvanalyses"
+author: "Logan Jensen"
+date: "11/9/2018"
+output: html_document
+---
+
+<script type="text/javascript">
+ function showhide(id) {
+    var e = document.getElementById(id);
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+ }
+</script>
+
+
+
+----
+
+- [Worldwide Marathons](dwv/Jensen_165909072_final.html)
