@@ -1,9 +1,9 @@
-name: "little-book-of-RStudio-websites"
+name: "Logan's Super Lit Data"
 output:
   html_document:
     theme: flatly 
 navbar:
-  title: "Logan's Work Portfolio"
+  title: "Logan's Super Lit Data"
   left:
     - text: "Statistical Analyses"
       href: AnalysisProjects.html
