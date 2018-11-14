@@ -17,7 +17,7 @@ output: html_document
 These projects under this folder I have created to help further my data wrangling, visualization and analysis skills. I am passionate about finding some sort of insight out of any data and hope to be able to communicate it well. I enjoyed every one of these projects, as they have widened my understanding of the potentials of R programming and RStudio; I feel that they are very powerful tools in the Data Science world. I know I have a lot to learn and am excited about what is ahead of me.
 
 
-- [The Investment of Education](dwv/SemesterProject/html)
+- [The Investment of Education](dwv/SemesterProject.html)
 - [Worldwide Marathons](dwv/Jensen_165909072_final.html)
 - [Christ in The Book of Mormon](dwv/Case_Study_7.html)
 - [Gun Deaths](dwv/CaseStudy4.html)
