@@ -1,0 +1,55 @@
+---
+title: "Shiny"
+author: "Logan Jensen"
+date: "November 27, 2018"
+output: html_document
+runtime: shiny
+---
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+library(shiny)
+library(tidyverse)
+library(ggplot2)
+library(ggthemes)
+names <- read_csv('C:/Users/loganvj/Documents/NationalNames.csv')
+```
+
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+# Define UI ----
+ui <- fluidPage(
+  titlePanel("National Names"),
+  
+  sidebarPanel(
+    textInput(inputId = 'lit', label = 'Desired Name', value = 'Logan')), 
+
+  mainPanel(plotOutput('histogram')
+  
+))
+
+# Define server logic ----
+server <- function(input, output) {
+  
+  dataInput <- reactive({
+    names %>% filter(Name == input$lit)
+  })
+  
+
+  output$histogram <- renderPlot(
+    
+      dataInput() %>%
+        ggplot() +
+        geom_bar(mapping = aes(x = Year, y = Count), stat = 'identity') +
+        theme_pander() +
+        scale_fill_manual(values = c('dodgerblue')),
+      width = 550,
+      height = 300
+    
+  )
+  
+}
+
+# Run the app ----
+shinyApp(ui = ui, server = server)
+```
+
