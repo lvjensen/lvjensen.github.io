@@ -1,8 +1,9 @@
 ---
-title: "Shiny"
-author: "Logan Jensen"
-date: "November 27, 2018"
-output: html_document
+title: "How Common is Your Name?"
+output:
+  html_document: 
+    theme: flatly 
+    code_folding: hide
 runtime: shiny
 ---
 
@@ -39,9 +40,8 @@ server <- function(input, output) {
     
       dataInput() %>%
         ggplot() +
-        geom_bar(mapping = aes(x = Year, y = Count), stat = 'identity') +
-        theme_pander() +
-        scale_fill_manual(values = c('dodgerblue')),
+        geom_bar(mapping = aes(x = Year, y = Count, fill = ), stat = 'identity', fill = 'dodgerblue') +
+        theme_pander(),
       width = 550,
       height = 300
     
