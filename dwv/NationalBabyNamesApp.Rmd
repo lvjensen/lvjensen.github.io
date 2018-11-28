@@ -12,7 +12,8 @@ library(shiny)
 library(tidyverse)
 library(ggplot2)
 library(ggthemes)
-names <- read_csv('C:/Users/loganvj/Documents/NationalNames.csv')
+#names <- read_csv('C:/Users/loganvj/Documents/NationalNames.csv')
+names <- read_csv('/Users/loganjensen/Downloads/NationalNames.csv')
 ```
 
 
@@ -38,12 +39,38 @@ server <- function(input, output) {
 
   output$histogram <- renderPlot(
     
+<<<<<<< HEAD
       dataInput() %>%
         ggplot() +
         geom_bar(mapping = aes(x = Year, y = Count, fill = ), stat = 'identity', fill = 'dodgerblue') +
         theme_pander(),
       width = 550,
       height = 300
+=======
+    dataInput() %>%
+      filter(Gender == 'M') %>%
+      ggplot() +
+      geom_bar(mapping = aes(x = Year, y = Count), stat = 'identity', fill = 'dodgerblue') +
+      theme_pander() +
+      scale_fill_manual(values = c('dodgerblue')) +
+      theme(text = element_text(size = 40)),
+    width = 550,
+    height = 500
+    
+  )
+  
+  output$histo1 <- renderPlot(
+    
+    dataInput() %>%
+      filter(Gender == 'F') %>%
+      ggplot() +
+      geom_bar(mapping = aes(x = Year, y = Count), stat = 'identity', fill = 'pink') +
+      theme_pander() +
+      scale_fill_manual(values = c('pink')) +
+      theme(text = element_text(size = 40)),
+    width = 550,
+    height = 500
+>>>>>>> 14b25095ca1f6c1356be034d9c47acb223c23d49
     
   )
   
