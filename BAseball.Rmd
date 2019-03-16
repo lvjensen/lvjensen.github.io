@@ -1,0 +1,94 @@
+---
+title: "CASE STUDY TITLE"
+author: "YOUR NAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+#install.packages("tidyverse") # run this line once in console to get package
+library(tidyverse)
+library(Lahman)
+library(imputeTS)
+
+bats1 <- Batting %>%
+  left_join(Master, by = 'playerID') %>%
+  filter(yearID == 2016, teamID == 'ARI') %>%
+  mutate(triple = X3B/H, 
+         OBP = (H+BB+HBP)/AB, 
+         double = X2B/H, 
+         single = (H - X2B - X3B - HR)/H, 
+         homers = HR/H,
+         walk = (BB)/(AB + BB),
+         hobp = (OBP - walk)/OBP) %>%
+  select(playerID, G, AB, R, H, X2B, X3B, HR, BB, nameFirst, nameLast, walk, single, double, triple, homers, OBP, hobp) %>%
+  arrange(desc(AB))
+
+batshome <- na.replace(bats1, 0)
+
+pitch <- Pitching %>%
+  left_join(Master, by = 'playerID') %>%
+  filter(yearID == 2016) %>%
+  mutate(hbbpb = (H+BB)/BFP)
+
+pitchhome <- na.replace(pitch, 0)
+
+
+
+```
+
+```{r load_data}
+# Use this R-Chunk to import all your datasets!
+
+lineup1 <- batshome %>%
+  filter(playerID %in% c('segurje01', 'goldspa01', 'tomasya01', 'lambja01', 'drurybr01', 'owingch01', 'castiwe01', 'bournmi01', 'ahmedni01'))
+
+```
+
+```{r}
+
+setClass("batter", slots = list(onbase = FALSE))
+outs <-  0
+number <- 0
+batters <- list()
+#while (outs < 3) {
+for (i in seq(1, 100)) {
+  if (i > 9) {
+    i = i %% 9 + 1
+  }
+  
+  geton = runif(1,0,1)
+  
+  if (outs == 3) {
+    outs = 0
+    batters = list()
+  }
+  
+  if 
+}
+#  while (outs < 3) {
+#  outs = outs + 1
+#  number = number + lineup1$H[i]
+#  print(lineup1$playerID[i])
+#}
+#  } 
+
+inning = 0
+while
+random <- runif(1,0, 1)
+```
+
+
