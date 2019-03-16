@@ -23,6 +23,7 @@ library(ggrepel)
 library(scales)
 library(data.table)
 library(plyr)
+library(plotly)
 ```
 
 ```{r load_data}
@@ -192,7 +193,7 @@ collegefun <- collegejoints %>%
 ## Choice of School
 
 ```{r plot_data}
-collegejoin %>%
+p <- collegejoin %>%
   filter(!is.na(GRAD_DEBT_MDN)&!is.na(StartingMedianSalary&!is.na(UGDS))) %>%
   ggplot()+
   geom_point(mapping = aes(x = GRAD_DEBT_MDN, y = StartingMedianSalary, color = Region, size = UGDS))+
@@ -205,6 +206,8 @@ collegejoin %>%
   scale_x_continuous(labels = dollar) +
   theme(axis.title.y = element_text(size = 15),
         axis.title.x = element_text(size = 15))
+
+ggplotly(p)
 ```
 
   It's obvious in this plot that there are many different variations of student debt and starting salaries. While we all want to end up on the high end of the starting salary, we want to end up on the low end of the student debt. Many students work during school to help their debt situation, yet find it difficult to escape the entire idea of debt. Even at BYU-Idaho, where tuition is relatively inexpensive, students graduate with about $11,000 in student debt and leave earning just under $40,000. The complexing thing is, the trend the plot offers suggest that the more debt you are in, the less your starting salary will be after you graduate. There are many universities that offer expensive 4-year degrees, yet the return isn't as good.
