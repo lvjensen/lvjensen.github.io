@@ -6,7 +6,7 @@
 #
 #    http://shiny.rstudio.com/
 #
-
+library(readxl)
 library(shiny)
 library(tidyverse)
 courses <- read_xlsx('C:/Users/loganvj/Documents/Courseformatting.xlsx') %>%

@@ -24,4 +24,4 @@ My name is Logan Jensen and I am an aspiring data scientist who is passionate ab
 
 I originally started school looking to become a Physical Therapist. I commenced the Exercise Physiology program and began taking Chemistry, Physics, Biology and Anatomy Classes. These classes I found very enjoyable, but my life course changed when I took my first college statistics course. I realized that my heart and brain thrived on data, and though I do believe I would've loved working in the medical field, I know I am truly studying my passion now that I am in Data Science.
 
-Please check out my projects. I feel very confident working in R, which is what I've dedicated this sight to. I'm looking for opportunities to learn more and I know I could be a valuable asset to any data-centered team.
+Please check out my projects. I feel very confident working in R, which is what I've dedicated this site to. I'm looking for opportunities to learn more and I know I could be a valuable asset to any data-centered team.
