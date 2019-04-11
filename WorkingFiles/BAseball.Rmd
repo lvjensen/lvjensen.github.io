@@ -23,6 +23,8 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 library(tidyverse)
 library(Lahman)
 library(imputeTS)
+library(XML)
+library(RCurl)
 
 bats1 <- Batting %>%
   left_join(Master, by = 'playerID') %>%
@@ -49,6 +51,23 @@ pitchhome <- na.replace(pitch, 0)
 
 
 ```
+
+### Scrape Tables
+
+```{r}
+url_ari <- "https://www.baseball-reference.com/teams/ARI/2018.shtml"
+
+dbacks <- url_ari %>%
+  getURL() %>%
+  readHTMLTable() %>%
+  .[[1]] %>%
+  as.tibble() %>%
+  filter(Rk != 'Rk')
+
+
+```
+
+
 
 ```{r load_data}
 # Use this R-Chunk to import all your datasets!
@@ -90,5 +109,8 @@ inning = 0
 while
 random <- runif(1,0, 1)
 ```
+
+
+
 
 
