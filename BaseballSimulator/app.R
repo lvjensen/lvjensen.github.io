@@ -47,7 +47,7 @@ ui <- fluidPage(
             uiOutput('teambat6'),
             uiOutput('teambat7'),
             uiOutput('teambat8'),
-            uiOutput('teambat9'),)
+            uiOutput('teambat9'))
    ),
       
       # Show a plot of the generated distribution
@@ -67,7 +67,35 @@ server <- function(input, output) {
       getURL() %>%
       readHTMLTable() %>%
       .[[1]] %>%
-      as.tibble() %>%
+      as.data.frame() %>%
+      filter(Rk != 'Rk') %>%
+      mutate(Name = str_remove_all(Name, '\\#'), Name = str_remove_all(Name, '\\*'))
+    
+    return(data)
+  })
+  
+  team2bat <- reactive ({
+    url <- paste("https://www.baseball-reference.com/teams/", input$team2, "/", input$team2year ,".shtml", sep='')
+    
+    data <- url %>%
+      getURL() %>%
+      readHTMLTable() %>%
+      .[[1]] %>%
+      as.data.frame() %>%
+      filter(Rk != 'Rk') %>%
+      mutate(Name = str_remove_all(Name, '\\#'), Name = str_remove_all(Name, '\\*'))
+    
+    return(data)
+  })
+  
+  team2pitch <- reactive ({
+    url <- paste("https://www.baseball-reference.com/teams/", input$team2, "/", input$team2year ,".shtml", sep='')
+    
+    data <- url %>%
+      getURL() %>%
+      readHTMLTable() %>%
+      .[[2]] %>%
+      as.data.frame() %>%
       filter(Rk != 'Rk') %>%
       mutate(Name = str_remove_all(Name, '\\#'), Name = str_remove_all(Name, '\\*'))
     
@@ -80,12 +108,60 @@ server <- function(input, output) {
   })
   
   output$teambat1 <- renderUI({
-    selectInput('team1bat2', label = 'Get Lit', choices = batoptions())
+    selectInput('team1bat1', label = 'Batter 1', choices = batoptions())
+  })
+  
+  
+  output$teambat2 <- renderUI({
+    selectInput('team1bat2', label = 'Batter 2', choices = batoptions())
+  })
+  
+  
+  output$teambat3 <- renderUI({
+    selectInput('team1bat3', label = 'Batter 3', choices = batoptions())
+  })
+  
+  
+  output$teambat4 <- renderUI({
+    selectInput('team1bat4', label = 'Batter 4', choices = batoptions())
+  })
+  
+  
+  output$teambat5 <- renderUI({
+    selectInput('team1bat2', label = 'Batter 5', choices = batoptions())
+  })
+  
+  
+  output$teambat6 <- renderUI({
+    selectInput('team1bat2', label = 'Batter 6', choices = batoptions())
+  })
+  
+  
+  output$teambat7 <- renderUI({
+    selectInput('team1bat2', label = 'Batter 7', choices = batoptions())
+  })
+  
+  
+  output$teambat8 <- renderUI({
+    selectInput('team1bat2', label = 'Batter 8', choices = batoptions())
+  })
+  
+  
+  output$teambat9 <- renderUI({
+    selectInput('team1bat2', label = 'Batter 9', choices = batoptions())
+  })
+  
+  createteam1 <- reactive({
+    data <- team1bat() %>%
+      mutate(Name = str_remove_all(Name, '\\#'), Name = str_remove_all(Name, '\\*'))
+    team1 <- data %>%
+      filter(Name == input$team1bat1)
+    team1 <- rbind(team1, data %>%filter(Name == input$team1bat2))
+    return(team1)
   })
    
    output$table1 <- renderTable({
-      data <- team1bat()
-      data
+      team2pitch()
    })
 }
 
