@@ -41,86 +41,93 @@ for (i in 1:N) {
 hist(score)
 
 #Testing batter
+scores <- c()
+for (i in 1:1000) {
 runs <- 0
 inning <- 1
 while (inning < 10) {
   outs <- 0
   onbase <- c()
-  while (outs < 3) {
+  #while (outs < 3) {
     for (batter in lineup) {
       num <- runif(1, min = 0, max = 1)#Create random number between 0 and 1
       slot(batter, 'obp') <- (slot(batter, 'obp') + slot(p1, 'obpa'))/2 #average pitcher's skill and batter's skill
-      
+      print(onbase)
       #if they get on base
       if (num < slot(batter, 'obp')) {
-        onbase <- c(onbase, batter)
         num2 <- runif(1, min = 0, max = 1)
         
         if (num2 < slot(batter, 'single')) {#get a single
-          onbase <- c(onbase, batter)
+          
           #move rest of batters on base
           for (b in onbase) {
-            slot(b, 'base') <- slot(b, 'base') + 1
-            print(slot(b, 'base'))
-            print(slot(b, 'name'))
-            if (slot(b, 'base') >= 4) {
+            b <- b + 1
+            if (b >= 4) {
               runs <- runs + 1
-              slot(b, 'base') <- -1000
+              b <- NULL
             }
           }
+          onbase <- c(onbase, 1)
+         } else if (num2 < slot(batter, 'single') + slot(batter, 'double')) {#If batter doubles
+           slot(batter, 'base') <- 2
 
+           #move rest of batters on base
+           for (b in onbase) {
+             b <- b + 2
+             if (b >= 4) {
+               runs <- runs + 1
+               b <- NULL
+             }
+           }
+           onbase <- c(onbase, 2)
+            #print(onbase)
+         } else if (num2 < slot(batter, 'single') + slot(batter, 'double') + slot(batter, 'triple')) {#If batter triples
+
+           #move rest of batters on base
+           for (b in onbase) {
+             b <- b + 3
+             if (b >= 4) {
+               runs <- runs + 1
+               b <- NULL
+             }
+           }
+           onbase <- c(onbase, 3)
+           #print(onbase)
+         } else if (num2 < slot(batter, 'single') + slot(batter, 'double')+ slot(batter, 'triple')+ slot(batter, 'hr')) {#If batter homeruns
+             runs <- runs + 1
+           #move rest of batters on base
+             for (b in onbase) {
+               runs = runs + 1
+             }
+
+             #print(onbase)
           
-        # } else if (num2 < slot(batter, 'single') + slot(batter, 'double')) {#If batter doubles
-        #   slot(batter, 'base') <- 2
-          
-        #   #move rest of batters on base
-        #   for (batter in onbase) {
-        #     slot(batter, 'base') <- slot(batter, 'base') + 1
-        #     if (slot(batter, 'base') >= 4) {
-        #       runs <- runs + 1
-        #       slot(batter, 'base') <- -1000
-        #     }
-        #   }
-        # } else if (num2 < slot(batter, 'single') + slot(batter, 'double') + slot(batter, 'triple')) {#If batter triples
-        #   slot(batter, 'base') <- 3
-          
-        #   #move rest of batters on base
-        #   for (batter in onbase) {
-        #     slot(batter, 'base') <- slot(batter, 'base') + 1
-        #     if (slot(batter, 'base') >= 4) {
-        #       runs <- runs + 1
-        #       slot(batter, 'base') <- -1000
-        #     }
-        #   }
-        # } else if (num2 < slot(batter, 'single') + slot(batter, 'double')+ slot(batter, 'triple')+ slot(batter, 'hr')) {#If batter homeruns
-        #   slot(batter, 'base') <- 3
-          
-        #   #move rest of batters on base
-        #   for (batter in onbase) {
-        #     slot(batter, 'base') <- slot(batter, 'base') + 1
-        #     if (slot(batter, 'base') >= 4) {
-        #       runs <- runs + 1
-        #       slot(batter, 'base') <- -1000
-        #     }
-        #   }
+        }} else { #batter is out
+          outs <- outs + 1
         }
         
-      } else { #batter is out
-        outs <- outs + 1
-      }
       if (outs == 3) {
+        # for (b in onbase) {
+        #   if (b >= 4) {
+        #     runs <- runs + 4
+        #   }
+        # }
+        onbase <- c()
         break
-      }
-    }
+      }}
   inning <- inning + 1
-  }
-  print(inning)
+  print(paste("Inning: ",inning))
+  print(paste("runs: ", runs))
+}
+scores <- c(scores, runs)
 }
 
+hist(scores)
 
-print(runs)
-
-
+for (b in onbase) {
+  b <- b + 1
+  print(b)
+}
 
 if (num < slot(batter, 'obp')) {
   onbase <- c(onbase, batter)
@@ -130,7 +137,6 @@ if (num < slot(batter, 'obp')) {
     onbase <- c(onbase, batter)
     #move rest of batters on base
     for (b in onbase) {
-      slot(b, 'base') <- slot(b, 'base') + 1
       print(slot(b, 'base'))
       print(slot(b, 'name'))
       if (slot(b, 'base') >= 4) {
@@ -144,9 +150,12 @@ if (num < slot(batter, 'obp')) {
 
 
 
-
-
-
+onbase <- c(onbase, batter)
+onbase
+for (b in onbase) {
+  slot(b, 'base') <- slot(b, 'base') + 1
+  print(slot(b, 'base'))
+}
 # x <- 0
 # while (x<1) {
 #   for (batter in lineup) {
