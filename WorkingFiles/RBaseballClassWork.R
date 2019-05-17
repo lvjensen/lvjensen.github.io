@@ -9,37 +9,12 @@ b6 <- new('batter', name = 'Juan6', average = .260, obp = .332, single = .432, d
 b7 <- new('batter', name = 'Juan7', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
 b8 <- new('batter', name = 'Juan8', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
 b9 <- new('batter', name = 'Juan9', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-p1 <- new('pitcher', name = 'John', obpa =.360)
+p1 <- new('pitcher', name = 'John', obpa =.280)
 
 lineup <- c(b1, b2, b3, b4, b5, b6, b7, b8, b9, b1, b2, b3, b4, b5, b6, b7, b8, b9)
-N <- 100
-inning <- 1
-score <- rep(NA, N)
 
 
 #finding out if for loop works
-for (i in 1:N) {
-
-  runs <- 0
-  
-  for (batter in lineup){
-    
-    slot(batter, 'obp') <- (slot(batter, 'obp') + slot(p1, 'obpa'))/2
-    
-    num <- runif(1, min = 0, max = 1)
-    
-    if (num <= slot(batter, 'obp')) {
-      
-      runs <- runs + 1
-    
-      }
-  }
-  
-  score[i] <- runs
-}
-
-hist(score)
-
 #Testing batter
 scores <- c()
 for (i in 1:1000) {
@@ -128,38 +103,7 @@ hist(scores)
 sum(scores)/1000
 table(scores)
 
-for (b in onbase) {
-  b <- b + 1
-  print(b)
-}
 
-if (num < slot(batter, 'obp')) {
-  onbase <- c(onbase, batter)
-  num2 <- runif(1, min = 0, max = 1)
-  
-  if (num2 < slot(batter, 'single')) {#get a single
-    onbase <- c(onbase, batter)
-    #move rest of batters on base
-    for (b in onbase) {
-      print(slot(b, 'base'))
-      print(slot(b, 'name'))
-      if (slot(b, 'base') >= 4) {
-        runs <- runs + 1
-        slot(b, 'base') <- -1000
-      }
-    }}} 
-
-
-
-
-
-
-onbase <- c(onbase, batter)
-onbase
-for (b in onbase) {
-  slot(b, 'base') <- slot(b, 'base') + 1
-  print(slot(b, 'base'))
-}
 # x <- 0
 # while (x<1) {
 #   for (batter in lineup) {

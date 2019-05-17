@@ -79,9 +79,9 @@ for (i in 1:100) {
   print(dbacks[b,3])
 }
 
-dbacks %>%
-  mutate(totalAB = AB + BB + HBP + SF, OnBase = BB + H + HBP, OBP2 = OnBase/totalAB) %>%
-  select(Name, OBP, OBP2)
+dbacks2 <- dbacks %>%
+  mutate(totalAB = AB + BB + HBP + SF, OnBase = BB + H + HBP, OBP2 = OnBase/totalAB, oneb = H - dbacks$`2B` - dbacks$`3b` - HR, double = dbacks$`2B`/totalAB, single =  ) %>%
+  select(Name, OBP, OBP2, single, double)
 ```
 
 
