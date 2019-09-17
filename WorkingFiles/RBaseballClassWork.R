@@ -1,30 +1,46 @@
 setClass('batter', slots = list(name = 'character', average = 'numeric', obp = 'numeric', bb = 'numeric', single = 'numeric', double = 'numeric', triple = 'numeric', hr = 'numeric', base = 'numeric'))
 setClass('pitcher', slots = list(name = 'character', obpa = 'numeric'))
-b1 <- new('batter', name = 'Juan', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-b2 <- new('batter', name = 'Juan2', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-b3 <- new('batter', name = 'Juan3', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-b4 <- new('batter', name = 'Juan4', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-b5 <- new('batter', name = 'Juan5', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-b6 <- new('batter', name = 'Juan6', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-b7 <- new('batter', name = 'Juan7', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-b8 <- new('batter', name = 'Juan8', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-b9 <- new('batter', name = 'Juan9', average = .260, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-p1 <- new('pitcher', name = 'John', obpa =.280)
+b1 <- new('batter', name = 'Juan', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
+b2 <- new('batter', name = 'Juan2', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
+b3 <- new('batter', name = 'Juan3', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
+b4 <- new('batter', name = 'Juan4', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
+b5 <- new('batter', name = 'Juan5', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
+b6 <- new('batter', name = 'Juan6', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
+b7 <- new('batter', name = 'Juan7', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
+b8 <- new('batter', name = 'Juan8', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
+b9 <- new('batter', name = 'Juan9', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
+p1 <- new('pitcher', name = 'John', obpa =.231)
 
-lineup <- c(b1, b2, b3, b4, b5, b6, b7, b8, b9, b1, b2, b3, b4, b5, b6, b7, b8, b9)
+lineup3 <- c(b1, b2, b3, b4, b5, b6, b7, b8, b9)
 
+lineup2 <- rep(lineup3, 10)
 
+#lineup[[1]] <- NULL
+
+totalbats <- 0
+
+length(lineup)
 #finding out if for loop works
 #Testing batter
 scores <- c()
 for (i in 1:1000) {
 runs <- 0
 inning <- 1
+lineup <- lineup2
+bat <- 0
 while (inning < 10) {
+  totalbats <- 0
   outs <- 0
   onbase <- c()
+  # for (n in lineup){
+  #   print(slot(n, 'name'))
+  # }
   #while (outs < 3) {
     for (batter in lineup) {
+      #print(paste("totalbatters", totalbats))
+      print(slot(batter, 'name'))
+      totalbats <- totalbats + 1
+      #bat <- bat + 1
       num <- runif(1, min = 0, max = 1)#Create random number between 0 and 1
       slot(batter, 'obp') <- (slot(batter, 'obp') + slot(p1, 'obpa'))/2 #average pitcher's skill and batter's skill
       #if they get on base
@@ -80,19 +96,28 @@ while (inning < 10) {
         }} else { #batter is out
           outs <- outs + 1
         }
-      print(onbase)
+      # print(slot(batter, 'name'))
+      # print(bat)
+      # lineup[bat] <- NULL
+      # print(slot(batter, 'name'))
+      #print(onbase)
         
       if (outs == 3) {
         for (b in onbase) {
           if (b >= 4) {
             runs <- runs + 1
           }
-         }
+        }
+        for (p in 1:totalbats) {
+          lineup[1] <- NULL
+        }
         onbase <- c()
         break
       }}
-  print(paste("Runs:", runs))
+  #print(paste("Runs:", runs))
+  print(totalbats)
   inning <- inning + 1
+  print(runs)
   #print(paste("Inning: ",inning))
   #print(paste("runs: ", runs))
 }
