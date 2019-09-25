@@ -9,7 +9,7 @@ b6 <- new('batter', name = 'Juan6', average = .247, obp = .332, single = .432, d
 b7 <- new('batter', name = 'Juan7', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
 b8 <- new('batter', name = 'Juan8', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
 b9 <- new('batter', name = 'Juan9', average = .247, obp = .332, single = .432, double = .135, triple = .063, hr = .072, bb = .297, base = 0)
-p1 <- new('pitcher', name = 'John', obpa =.231)
+p1 <- new('pitcher', name = 'John', obpa =.31)
 
 lineup3 <- c(b1, b2, b3, b4, b5, b6, b7, b8, b9)
 
@@ -124,10 +124,33 @@ while (inning < 10) {
 scores <- c(scores, runs)
 }
 
+games <- as.data.frame(cbind(scores, scores1)) %>%
+  mutate(win = case_when(
+    scores >= scores1 ~ 1,
+    TRUE ~ 0
+  ))
+
+mean(games$win)
+
 hist(scores)
 sum(scores)/1000
 table(scores)
 
+game
+x <- c(.45, .55)
+y <- c('team1', 'team2')
+probs <- as.data.frame(cbind('game probability', x, y))
+
+probs
+
+probs <- probs %>%
+  mutate(x = as.numeric(as.character(x)))
+
+probs %>%
+  ggplot() +
+  geom_bar(aes(y = x, x = V1, fill = y), stat = 'identity', width = .25) +
+  #position_dodge(width = .5)
+  coord_flip()
 
 # x <- 0
 # while (x<1) {

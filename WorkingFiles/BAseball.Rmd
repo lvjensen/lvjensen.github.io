@@ -48,7 +48,16 @@ pitch <- Pitching %>%
 
 pitchhome <- na.replace(pitch, 0)
 
-
+dbacks %>%
+  mutate(PA2 = AB + BB + SF + HBP,
+             homers = HR/PA2,
+             triples = `3B`/PA2,
+             doubles = `2B`/PA2,
+             walks = (BB + HBP)/PA2,
+             sing = H - HR - `2B` - `3B`,
+             singles = sing/PA2,
+             obp2 = singles + walks + doubles + triples + homers) %>%
+  select(Name, PA, PA2, singles, doubles, triples, homers, walks, OBP, obp2)
 
 ```
 
