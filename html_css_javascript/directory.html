@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <meta charset="utf-8">
+    <script>
+        function loadDoc(url) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var object1 = JSON.parse(this.responseText);
+                    var list1 = '<table><tr><th>File Name</th><th>File Type</th><th>Working Directory</th><th>Action</th></tr>\n';
+                    for (var index = 0; index < object1.length;index++) {
+                        list1 = list1 + "<tr><td>" + object1[index].fileName + "</td>" + "<td>" + object1[index].fileType + "</td>" + "<td>" + object1[index].cwd + "</td>" + "<td>" + "<button  onclick = 'window.location=\"" + object1[index].fileName+ "\"'>" + "Awesome" + "</button>" + "</td></tr>\n";
+                    };
+                    list1 = list1 + "</table>";
+                    document.getElementById("cool").innerHTML = list1;
+                }};
+            xhttp.open("GET", url, true);
+            xhttp.send();
+        }
+    </script>
+    <style>
+        table, th, tr, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin: 5px;
+            background-color: #cf6766;
+            padding:5px;
+        }
+        body {
+            background-color: #8eaebd;
+        }
+        
+        #lit {
+            text-align: center;
+            border: solid #031424 5px;
+            border-radius: 5px;
+            background-color: #30415d;
+            padding: 20px;
+            margin: 50px 350px 50px 350px;
+        }
+        .center {
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class='center' id = 'lit'>
+        <h1>My Directory</h1>
+        <button onclick="loadDoc('file1.php')">Push for Directory</button>
+        <div id='cool' class = 'center'></div>
+    </div>
+</body>
+</html>

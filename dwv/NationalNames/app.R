@@ -11,8 +11,8 @@ library(shiny)
 library(tidyverse)
 library(ggplot2)
 library(ggthemes)
-names <- read_csv('C:/Users/loganvj/Documents/NationalNames.csv')
-#names <- read_csv('/Users/loganjensen/Downloads/NationalNames.csv')
+#names <- read_csv('/Users/loganvj/Documents/NationalNames.csv')
+names <- read_csv('/Users/loganjensen/Downloads/NationalNames.csv')
 
 # Define UI for application that draws a histogram
 

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment #13</title>
+    <script>
+        
+        
+        function duet() {
+            if (document.getElementById('duet1').checked) {
+                var student2 = "Student 2 First Name: <input type='text' name='s2fname' id='fname2'><br>Student 2 Last Name: <input type='text' name='s2lname' id='lname2'><br>Student 2 ID: <input type='text' name='s2id' id='id2'><br>";
+                document.getElementById('student2').innerHTML = student2;
+            }
+            else {
+                document.getElementById('student2').innerHTML = "";
+            }
+        };
+        
+        function load_php() {
+            var xhttp = new XMLHttpRequest();
+            var xhttp1 = new XMLHttpRequest();
+            
+            //Define Student 1
+            var fname = document.getElementById('fname').value;
+            var lname = document.getElementById('lname').value;
+            var id = document.getElementById('id').value;
+            
+            //Define Student 2
+            var fname2 = '';
+            var lname2 = '';
+            var id2 = '';
+            
+            //Define Performance
+            var perf = "";
+            var duet = document.getElementById('duet1');
+            var solo = document.getElementById('solo');
+            var concerto = document.getElementById('concerto');
+            if (duet.checked) {
+                perf = "Duet";
+                fname2 = document.getElementById('fname2').value;
+                lname2 = document.getElementById('lname2').value;
+                id2 = document.getElementById('id2').value;
+            }
+            else if (solo.checked) {
+                perf = "Solo";
+            }
+            else if (concerto.checked) {
+                perf = 'Concerto';
+            }
+            
+            //Define Skill
+            var e = document.getElementById("skill");
+            var skill = e.options[e.selectedIndex].value;
+            
+            //Define Instrument
+            var f = document.getElementById("instrument");
+            var instrument = f.options[f.selectedIndex].value;
+            
+            //Define room
+            var g = document.getElementById("room");
+            var room = g.options[g.selectedIndex].value;
+            
+            //Define Building
+            var h = document.getElementById("building");
+            var building = h.options[h.selectedIndex].value;
+            
+            //Define Time
+            var i = document.getElementById("time");
+            var time = i.options[i.selectedIndex].value;
+
+            //Create URL
+            //Change URL
+            var url = 'http://157.201.194.254/~loganvj/assign13.php?' + 'fname=' + fname + '&lname=' + lname + '&id=' + id + '&perf=' + perf + '&skill=' + skill + '&instrument=' + instrument + '&skill=' + skill + '&room=' + room + '&time=' + time + '&building=' + building + '&fname2=' + fname2 + '&lname2=' + lname2 + '&id2=' + id2;
+            
+
+            
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    xhttp1.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById('table').innerHTML = this.responseText;
+
+                            }
+                            };
+                        //Change the URL
+                        xhttp1.open("GET", "http://157.201.194.254/~loganvj/file1.txt", true);
+                        xhttp1.send();
+                }
+                };
+            xhttp.open("GET", url, true);
+            xhttp.send();
+            
+            clearall();
+            
+        };
+        
+        function loadfunction() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById('table').innerHTML = this.responseText;
+
+                    }
+                    };
+            xhttp.open("GET", "http://157.201.194.254/~loganvj/file1.txt", true);
+            xhttp.send();
+                };
+        
+        function clearall() {
+            document.getElementById('fname').value = '';
+            document.getElementById('lname').value = '';
+            document.getElementById('id').value = '';
+            document.getElementById('solo').checked = true;
+            document.getElementById('skill').value = 'Beginner';
+            document.getElementById('time').value = '8:00';
+            
+            duet();
+            
+        };
+        
+        function validate() {
+            if (document.getElementById('duet1').checked) {
+                var fname = document.getElementById('fname').value;
+                var lname = document.getElementById('lname').value;
+                var id = document.getElementById('id').value;
+                var fname2 = document.getElementById('fname2').value;
+                var lname2 = document.getElementById('lname2').value;
+                var id2 = document.getElementById('id2').value;
+                if (fname == '' || lname == '' || id == '' ||fname2 == '' || lname2 == '' || id2 == '' ) {
+                    alert("Please fill in all fields.");
+                } else {
+                    load_php();
+                }} else {
+                var fname = document.getElementById('fname').value;
+                var lname = document.getElementById('lname').value;
+                var id = document.getElementById('id').value;
+                if (fname == '' || lname == '' || id == '') {
+                    alert("Please fill in all fields.");
+                } else {
+                    load_php();
+                }}
+        }
+   
+        
+    </script>
+    <style>
+        body {
+            background-color: #efd9c1;
+        }
+        
+        .div1 {
+            background-color: #c7d8c6;
+            text-align: center;
+            padding: 15px;
+            margin: 15px 250px 15px 250px;
+            border: 1px solid black;
+        }
+        table {
+            width: 900px; 
+            border-collapse: collapse;
+            background-color: #cccbc6;
+        }
+        
+        tr, th, td {
+            border:solid black 1px;
+            border-collapse: collapse;
+        }
+        
+        .div2 {
+            background-color: #c7d8c6;
+            padding-top: 15px;
+            border: 1px solid black;
+            margin: 0px 200px 0px 200px;
+        }
+        .center table{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        header {
+            background-color: #c7d8c6;
+            font-size: 230%;
+            padding:15px;
+            text-align: center;
+            border: solid black 2px;
+            
+        }
+        
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="loadfunction()">
+    <header><b>Piano Festival Registration!</b></header>
+    
+    <div class='div1'>
+        <h1>Registration Form</h1>
+        First Name: <input type='text' name='s1fname' id='fname' placeholder="John"><br>
+        Last Name: <input type='text' name='s1lname' id='lname' placeholder="Smith"><br>
+        Student ID: <input type='text' name='s1id' id='id' placeholder="12345"><br>
+        <div id='student2'></div>
+        Performance: <br>
+        Solo<input type='radio' name='perf' id='solo' value='Solo' onchange="duet()" checked><br>
+        Duet<input type='radio' name='perf' id='duet1' value='Duet' onchange="duet()"><br>
+        Concerto<input type='radio' name='perf' id='concerto' value='Concerto' onchange="duet()"><br>
+        Skill Level: 
+        <select name="skill" id='skill'>
+            <option value='Beginner'>Beginner</option>
+            <option value='Intermediate'>Intermediate</option>
+            <option value='Pre-Advanced'>Pre-Advanced</option>
+            <option value='Advanced'>Advanced</option>
+        </select><br>
+        Instrument:
+        <select name='instrument' id ='instrument'>
+            <option value='Piano'>Piano</option>
+            <option value='String'>String</option>
+            <option value='Organ'>Organ</option>
+            <option value='Voice'>Voice</option>
+            <option value='Other'>Other</option>
+        </select><br>
+        Building:
+        <select name='building' id='building'>
+            <option value='Austin'>Austin</option>
+            <option value='Benson'>Benson</option>
+            <option value='Snow'>Snow</option>
+            <option value='Romney'>Romney</option>
+            <option value='Clarke'>Clarke</option>
+        </select><br>
+        Room:
+        <select name='room' id='room'>
+            <option value='100'>100</option>
+            <option value='110'>110</option>
+            <option value='130'>130</option>
+            <option value='150'>150</option>
+            <option value='167'>167</option>
+            <option value='200'>200</option>
+            <option value='210'>210</option>
+            <option value='220'>220</option>
+            <option value='240'>240</option>
+            <option value='255'>255</option>
+        </select><br>
+        Time:
+        <select name='time' id='time'>
+            <option value='8:00'>8:00 AM</option>
+            <option value='8:15'>8:15 AM</option>
+            <option value='8:30'>8:30 AM</option>
+            <option value='8:45'>8:45 AM</option>
+            <option value='9:00'>9:00 AM</option>
+            <option value='9:15'>9:15 AM</option>
+            <option value='9:30'>9:30 AM</option>
+            <option value='9:45'>9:45 AM</option>
+            <option value='10:00'>10:00 AM</option>
+            <option value='10:15'>10:15 AM</option>
+            <option value='10:30'>10:30 AM</option>
+            <option value='10:45'>10:45 AM</option>
+            <option value='11:00'>11:00 AM</option>
+            <option value='11:15'>11:15 AM</option>
+            <option value='11:30'>11:30 AM</option>
+            <option value='11:45'>11:45 AM</option>
+            <option value='12:00'>12:00 PM</option>
+            <option value='12:15'>12:15 PM</option>
+            <option value='12:30'>12:30 PM</option>
+            <option value='12:45'>12:45 PM</option>
+            <option value='1:00'>1:00 PM</option>
+            <option value='1:15'>1:15 PM</option>
+            <option value='1:30'>1:30 PM</option>
+            <option value='1:45'>1:45 PM</option>
+            <option value='2:00'>2:00 PM</option>
+            <option value='2:15'>2:15 PM</option>
+            <option value='2:30'>2:30 PM</option>
+            <option value='2:45'>2:45 PM</option>
+            <option value='3:00'>3:00 PM</option>
+            <option value='3:15'>3:15 PM</option>
+            <option value='3:30'>3:30 PM</option>
+            <option value='3:45'>3:45 PM</option>
+            <option value='4:00'>4:00 PM</option>
+            <option value='4:15'>4:15 PM</option>
+            <option value='4:30'>4:30 PM</option>
+            <option value='4:45'>4:45 PM</option>
+        </select><br>
+        <button onclick='validate()'>Register Student</button><br>
+        <button onclick='clearall()'>Clear Form</button>
+    </div>
+    <div class='div2'>
+        <h1>Registered Students</h1>
+        <div class='center' style='margin-bottom: 30px'>
+            <table style="border:solid black 1px;border-collapse: collapse;">
+                <tr><th style='width:200px'>Name</th><th style='width:100px'>ID</th><th style='width:100px'>Performance</th><th style='width:100px'>Skill</th><th style='width:100px'>Instrument</th><th style='width:100px'>Building</th><th style='width:100px'>Room</th><th style='width:100px'>Time</th></tr>
+            </table>
+            <div id='table'></div>
+        </div>
+    </div>
+    
+</body>
+</html>

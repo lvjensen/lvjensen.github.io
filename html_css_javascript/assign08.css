@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bokor';
+    background-color: #e9e7da;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header {
+    background-color: #333a56;
+    text-align: center;
+    font-family: 'Bokor';
+    font-size: 120px;
+    color: #e9e7da;
+
+}
+
+p {
+    font-size: 22px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"] {
+width: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+footer {
+    text-align: center;
+    background-color: beige;
+    color: #e9e7da;
+    background-color: #333a56;
+    padding: 5px;
+
+}
+
+.menu {
+    padding: 2px;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.section {
+    padding: 5px;
+    margin-top: 10px;
+    border: solid #e9e7da 10px;
+    text-align: center;
+    background-color: #97a9ef;
+}
+
+.menu li{
+    background-color: #cda34f;
+    padding: 25px 15px 25px 15px;
+    margin-bottom: 5px;
+    border: solid black 1px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
+}
+
+p {
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+    width: 100%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .cols-9{max-width: 75%}
+    .cols-12{max-width: 100%}
+}
+
+.side {
+    background-color: #cda34f;
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    border: solid black 1px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu li:hover {
+  background-color: #edca84;
+}

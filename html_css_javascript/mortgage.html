@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+    <title>Loan Calculator</title>
+    <style>
+        body {
+            background-color: #8eaebd;
+        }
+        
+        header {
+            background-color: #cf6766;
+            font-size: 300%;
+            text-align: center;
+            font-family: 'Bad Script';
+            
+        }
+        
+        #loan {
+            text-align: center;
+            border: solid #031424 5px;
+            border-radius: 5px;
+            background-color: #30415d;
+            padding: 20px;
+            margin: 50px 350px 50px 350px;
+        }
+        
+        p {
+            font-size: 130%;
+            background-color: darkgray;
+            border: solid #031424 2px;
+            padding: 10px;
+            margin: 0px 100px 0px 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>Loan Calculator</header>
+    <script type="text/javascript">
+        function calculate_monthly() {
+            var apr = document.getElementById('apr').value;
+            var term = document.getElementById('term').value;
+            var amount = document.getElementById('amount').value;
+            var newapr = apr*.01/12;
+            var newterm = term*12;
+            var monthlyamount = ((amount * ((newapr*(1 + newapr)**newterm)))/((1+newapr)**newterm - 1)).toFixed(2);
+            var total = monthlyamount
+            var validate = validation1()
+            if (validate == false) {
+                return 'Invalid Inputs';
+            }
+            else {
+                document.getElementById('log12').value = parseInt(total);
+            }
+            
+        }
+        
+        function validation1() {
+            var apr = document.getElementById('apr').value;
+            var term = document.getElementById('term').value;
+            var amount = document.getElementById('amount').value;
+            if (apr == '') {
+                alert("All fields must be filled");
+                document.getElementById('apr').focus();
+                return false;
+            }
+            else if (term == '') {
+                alert("All fields must be filled");
+                document.getElementById('term').focus();
+                return false;
+            }
+            else if (amount == '') {
+                alert("All fields must be filled");
+                document.getElementById('amount').focus();
+                return false;
+            }
+            else if (apr < 0 || apr > 25) {
+                alert('Invalid inputs for APR:\nMust be greater than 0 and less than 25.');
+                document.getElementById('apr').focus();
+                return false;
+            }
+            else if (term < 0 || term > 40) {
+                alert('Invalid inputs for Loan Term:\nMust be greater than 0 and less than 40.');
+                document.getElementById('term').focus();
+                return false;
+            }
+        }
+            
+        function change() {
+            var apr = document.getElementById('apr').value;
+            var term = document.getElementById('term').value;
+            var amount = document.getElementById('amount').value;
+            if (apr != '' && term != '' && amount != '') {
+                document.getElementById('demo').innerHTML = calculate_monthly();
+            }
+        }
+        
+    </script>
+    <div id = 'loan'>
+        <form id='getmonthly' action='mortgage.php' method="get">
+            APR: <input id = 'apr' type='number' name='apr' placeholder="Enter APR" min='0' max= '25' step='.01' onchange="change()" required autofocus> %<br>
+            Loan Term: <input id = 'term' type = 'number' name='term' placeholder='Enter Loan Term' min="0" onchange="change()" max="40" step='.01' required><br>
+            Loan Amount: $ <input id = 'amount' type='number' name='amount' placeholder="Enter Amount" min ='0' step='.01' onchange="change()" required><br>
+            <input type='hidden' id = 'log12' name='monthly'>
+            <input type='submit' value='Calculate' onclick="calculate_monthly();"><br>
+            <input type='reset' name='reset' value='Reset Values' onclick="document.getElementById('apr').focus()">
+        </form>
+    </div>
+
+    
+</body>
+</html>

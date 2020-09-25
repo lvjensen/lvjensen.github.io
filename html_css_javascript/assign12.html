@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mileage Calculator</title>
+    <meta charset="utf-8">
+    <script>
+        var places = "";
+    
+        
+        function mileage() {
+            var xhttp = new XMLHttpRequest();
+            var startCity = document.getElementById('startCity').value;
+            var startState = document.getElementById('startState').value;
+            var endCity = document.getElementById('endCity').value;
+            var endState = document.getElementById('endState').value;
+            var url = '/cgi-bin/cs213/mileageAjaxJSON' + '?startCity=' + startCity + '&startState=' + startState + '&endCity=' + endCity + '&endState=' + endState;
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var object1 = JSON.parse(this.responseText);
+                    var tmode = [];
+                    if (object1.trip.tmode != undefined) {
+                        for (i = 0; i < object1.trip.tmode.length;i++) {
+                            tmode[i] = object1.trip.tmode[i];
+                        }
+                    };
+                    places = "Trip From " + startCity + ", " + startState + " to " + endCity + ", " + endState + ": " + object1.trip.miles + " miles<br>" + "Travel Methods: " + tmode + "<br><br>" + places;
+                    document.getElementById('response').innerHTML = places;
+                }};
+            xhttp.open("GET", url, true);
+            xhttp.send();
+            }
+    </script>
+    <style>
+        body {
+            background-color: #1e392a;
+        }
+        
+        #travelinfo {
+            text-align: center;
+            background-color: #3cc47c;
+            border: 2px solid #e9c893;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 400px 10px 400px;
+        }
+        #output {
+            text-align: center;
+            background-color: #3cc47c;
+            border: 2px solid #e9c893;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 400px 10px 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id='travelinfo'>
+        <h1>Mileage Calculator</h1>
+    </div>
+    <div id='travelinfo'>
+        Start City: <input type='text' id ='startCity'><br>
+        Start State: <input type='text' id='startState'><br>
+        End City: <input type='text' id='endCity'><br>
+        End State: <input type='text' id='endState'><br>
+        <button onclick="mileage()">Submit</button>
+    </div>
+    <div id="output">
+        <p id='response'></p>
+    </div>
+
+
+    
+</body>
+</html>

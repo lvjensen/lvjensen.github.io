@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment #9</title>
+    <script>
+        function findtop() {
+            var xhttp = new XMLHttpRequest();
+            var url;
+            var country = document.getElementById('country').value;
+ /*           var radios = document.getElementsByName('country');
+            for (var index = 0;index < radios.length;index++) {
+                if (radios[index].checked) {
+                    country = radios[index].value;
+                    break;
+                }
+            }*/
+            if (country == 'United States') {
+                url = "http://157.201.194.254/~cs213/usa.txt";
+            }
+            else if (country == 'Mexico') {
+                url = "http://157.201.194.254/~cs213/mexico.txt";
+            }
+            else if (country == 'Russia') {
+                url = "http://157.201.194.254/~cs213/russia.txt";
+            }
+            else if (country == 'Canada') {
+                url = "http://157.201.194.254/~cs213/canada.txt";
+            }
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("cool").innerHTML = this.responseText;
+                }};
+            xhttp.open("GET", url, true);
+            xhttp.send();
+            }
+        
+        function urlfinder() {
+            var xhttp = new XMLHttpRequest();
+            var url = "http://157.201.194.254/~cs213/" + document.getElementById('url1').value;
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var object1 = JSON.parse(this.responseText);
+                    var list1 = '<table><tr><th>Name</th><th>Address</th><th>Major</th><th>GPA</th></tr>\n'
+                    for (var index = 0; index < object1.students.length;index++) {
+                        list1 = list1 + "<tr><td>" + object1.students[index].first + " " + object1.students[index].last + "</td>" + "<td>" + object1.students[index].address.city + ",  " + object1.students[index].address.state + " " + object1.students[index].address.zip + "</td>" + "<td>" + object1.students[index].major + "</td>" + "<td>" + object1.students[index].gpa + "</td></tr>\n"
+                    }
+                    list1 = list1 + "</table>"
+                    document.getElementById("demo").innerHTML = list1;
+                }
+                
+            };
+            xhttp.open("GET", url, true);
+            xhttp.send();
+        }
+    </script>
+    <style>
+        body {
+            background-color: #373590; 
+            font-family: sans-serif;
+            margin: 0px;
+        }
+        .level1 {
+            background-color: #E89A5F;
+            text-align: center;
+            margin: 0px 300px 0px 300px;
+            padding: 18px;
+        }
+        .level2 {
+            text-align: center;
+            margin: 0px 300px 0px 300px;
+            background-color: #BCB562;
+            padding: 18px;
+        }
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin: 5px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <div class='level1'>
+        <div>
+            <h1>Part 1</h1>
+            <p>Choose a Country:</p>
+            <select id='country' size='1'>
+                <option>United States</option>
+                <option>Mexico</option>
+                <option>Russia</option>
+                <option>Canada</option>
+            </select><br>
+            <button onclick="findtop()">Find Top Cities</button><br><br>
+            <textarea id='cool' cols="30" rows = 11></textarea>
+        </div>
+        <hr>
+        <div>
+            <h1>Part 2</h1>
+            <form>
+                Enter a Filename: <input id = 'url1' type="text" value='json.txt'>
+            </form><br>
+            <button onclick="urlfinder()">Return File Content</button><br>
+            <div class='center' id='demo'></div>
+        </div>
+    </div>
+    
+</body>
+</html>

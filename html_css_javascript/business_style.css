@@ -1,0 +1,112 @@
+header {
+    text-align: center;
+    font-size: 275%;
+    color: #49274a;
+    font-family: cursive;
+
+}
+
+body {
+    background-color: #94618e;
+}
+
+p {
+    background-color: #49274a;
+    font-size: 23px;
+}
+
+h4 {
+    text-align: center;
+    color: #49274a;
+}
+
+h1 {
+    text-align: center;
+    color: #f4decb;
+}
+
+a.toplinks:link {
+    color: #49274a;
+    background-color: #f4decb;
+    text-decoration: none;
+}
+
+a.toplinks:hover {
+    color: #f8eee7;
+    background-color: #9999;
+    text-decoration: underline;
+}
+
+a.toplinks:active {
+    color: yellow;
+    background-color: #f4decb;
+    text-decoration: underline;
+}
+
+blockquote {
+    font-size: 200%;
+    text-align: center;
+}
+
+.divh {
+    background-color: #f8eee7;
+}
+
+.div2 {
+    text-align: center;
+    font-size: 120%
+}
+
+.toplinks {
+    background-color: #f4decb;
+    border: solid black 3px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    width: 500px;
+}
+
+footer {
+    background-color: #49274a;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    display: block;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 0px;
+  width: 50px;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #55ACEE;
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.bord {
+    border: solid black 2px;
+}

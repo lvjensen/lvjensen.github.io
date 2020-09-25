@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <script>
+        function loadDoc(url) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                alert(this.status);
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("cool").innerHTML = this.responseText;
+                }};
+            xhttp.open("GET", url, true);
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="loadDoc('http://157.201.194.254/~ercanbracks/studentList.html')">Push Me</button>
+    <div id='cool'><p>This will change</p></div>
+</body>
+</html>

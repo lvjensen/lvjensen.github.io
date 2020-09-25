@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Food Order</title>
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet'>
+    <script>
+        function validate_phone() {
+            var phone = document.getElementById('phone1').value;
+            var pattern = /^\d{3}\-\d{3}\-\d{4}$/;
+            var test = pattern.test(phone);
+            if (test == true) {
+                document.getElementById('phonewarn').innerHTML = '';
+                return true;
+            }
+            else {
+                document.getElementById('phonewarn').innerHTML = 'PLEASE ENTER VALID PHONE NUMBER';
+                return false;
+            }
+        }
+        
+        function validate_date() {
+            var date = document.getElementById('date1').value;
+            var pattern = /^\d{2}\/\d{4}$/;
+            var pattern1 = /\d{2}/
+            var pattern2 = /\d{4}/
+            var test = pattern.test(date);
+            var exec = pattern1.exec(date);
+            var exec1 = pattern2.exec(date);
+            if (test == true) {
+                if (exec > 0 && exec < 13 && exec1 >2017){
+                    document.getElementById('datewarn').innerHTML = '';
+                    return true
+                }
+                else {
+                    document.getElementById('datewarn').innerHTML = 'PLEASE ENTER VALID EXPIRATION DATE';
+                    return false
+                }
+            }
+            else {
+                document.getElementById('datewarn').innerHTML = 'PLEASE ENTER VALID EXPIRATION DATE';
+                return false;
+            }
+        }
+        
+        function validate_cc() {
+            var cc = document.getElementById('ccnum').value;
+            var pattern = /^\d{16}$/;
+            var test = pattern.test(cc);
+            if (test == true) {
+                document.getElementById('ccwarn').innerHTML = '';
+                return true;
+                
+            }
+            else {
+                document.getElementById('ccwarn').innerHTML = 'PLEASE ENTER VALID CARD NUMBER';
+                return false;
+            }
+        }
+        
+        function validate_all() {
+            var v_cc = validate_cc();
+            var v_phone = validate_phone();
+            var v_date = validate_date();
+            var last1 = check_last();
+            var first1 = check_first();
+            var add1 = check_address();
+            if (first1 == false) {
+                alert('Please Make Sure All Fields Are Filled')
+                document.getElementById('first').focus();
+                return false;
+            }
+            else if (last1 == false) {
+                alert('Please Make Sure All Fields Are Filled')
+                document.getElementById('last').focus();
+                return false;
+            }
+            else if (add1 == false) {
+                alert('Please Make Sure All Fields Are Filled')
+                document.getElementById('address').focus();
+                return false;
+            }
+            else if (v_phone == false) {
+                alert("Invalid Phone Number\nPlease Use Format ###-###-####");
+                document.getElementById('phone1').focus();
+                return false;
+            }
+            else if (v_cc == false) {
+                alert("Invalid Credit Card Number\n16 Digits Required");
+                document.getElementById('ccnum').focus();
+                return false;
+            }
+            else if(v_date == false) {
+                alert("Invalid Expiration Date\nPlease Use Format XX/XXXX and make sure valid date after 2017 is entered.");
+                document.getElementById('date1').focus();
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        
+        function total_price() {
+            var total = 0;
+            var cool = document.getElementsByName('sales');
+            
+            for (var index = 0; index < cool.length; index ++) {
+                if (cool[index].checked) {
+                    total = total + parseInt(cool[index].value);
+                    console.log(total);
+                }
+            }
+            document.getElementById('total').value = total;
+        }
+        
+        function on_reset() {
+            document.getElementById('phonewarn').innerHTML = '';
+            document.getElementById('ccwarn').innerHTML = '';
+            document.getElementById('datewarn').innerHTML = '';
+            
+        }
+        
+        function check_last() {
+            var last = document.getElementById('last').value;
+            if (last == '') {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        
+        function check_first() {
+            var first = document.getElementById('first').value;
+            if (first == '') {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        
+        function check_address() {
+            var add = document.getElementById('address').value;
+            if (add == '') {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        
+    </script>
+    <style>
+        #center {
+            margin: 0px 200px 0px 200px;
+            text-align: center;
+            background-color: #e9e9e9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid black;
+
+        }
+        table, th {
+            margin: 0px auto;
+            border: solid black 1px;
+            border-collapse: collapse;
+            padding: 2px;
+        }
+        body {
+            background-color: #99d3df;
+            font-family: 'Arapey';
+        }
+        header {
+            background-color: #cdcdcd;
+            font-size: 300%;
+            text-align: center;
+            padding: 25px;
+            font-family: 'Allan';
+            
+        }
+        span {
+            border: 1px solid black;
+            padding:4px; 
+        }
+
+    </style>
+</head>
+<body>
+    <header>Order Some Food!</header>
+    <br>
+    <div id='center'>
+        <h2>Please Submit Your Order</h2><br>
+        <form id='orderform' onreset="on_reset()">
+            First Name: <input type='text' id='first'><br>
+            Last Name: <input type='text' id='last'><br>
+            Address: <input type='text' id='address'><br>
+            Phone(###-###-####): <input type='text' id='phone1' name='phone' onchange="validate_phone()"><p style="color:red;"  id='phonewarn'></p><br>
+    
+        <hr>
+            <table >
+                <tr>
+                    <th>Mark Desired Order</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+                <tr>
+                    <th><input type='checkbox' name='sales' value="15.00" id='sale1' onchange="total_price()" ></th>
+                    <th>Pepperoni Pizza</th>
+                    <th>$15.00</th>
+                </tr>
+                <tr>
+                    <th><input type='checkbox' name='sales' value='10.00' id='sale2' onchange="total_price();"></th>
+                    <th>Burrito Al Pastor</th>
+                    <th>$10.00</th>
+                </tr>
+                <tr>
+                    <th><input type='checkbox' name='sales' value='6' name='sale3' onclick="total_price();"></th>
+                    <th>Chili Fries</th>
+                    <th>$6.00</th>
+                </tr>
+                <tr>
+                    <th><input type='checkbox' name='sales' value='9' name='sale4' onclick="total_price();"></th>
+                    <th>Chow Mein Noodles Bowl</th>
+                    <th>$9.00</th>
+                </tr>
+                <tr>
+                    <th><input type='checkbox' name='sales' value='20' name='sale5' onclick="total_price();"></th>
+                    <th>Disgusting Vegan Burger</th>
+                    <th>$20.00</th>
+                </tr>
+                <tr>
+                    <th><input type='checkbox' name='sales' value='12' name='sale6' onclick="total_price();"></th>
+                    <th>Chicken Alfredo</th>
+                    <th>$12.00</th>
+                </tr>
+            </table>
+            <br>
+            <span>Grand Total: $<input id='total' type='text' readonly></span>
+        <hr>
+            <br>
+            Credit Card Type: <br>
+            <input type='radio' name='ctype' value='visa'>Visa<br>
+            <input type='radio' name='ctype' value='Mastercard'>Mastercard<br>
+            <input type='radio' name='ctype' value='amex'>American Express<br><br>
+            Credit Card #: <input type='text' id='ccnum' onchange="validate_cc()"><p style='color: red;' id='ccwarn'></p><br>
+            Credit Card Expiration Date(<i>mm/yyyy</i>): <input type='text' id='date1' onchange='validate_date();'><p id='datewarn' style='color: red;'></p><br>
+            <input type='reset' value="Reset Values" onclick="document.getElementById('first').focus();"><br>
+            <input type="submit" onclick="return validate_all();" value='Submit'>
+
+            <p id='demo'></p>
+        </form>
+    </div>
+</body>
+</html>

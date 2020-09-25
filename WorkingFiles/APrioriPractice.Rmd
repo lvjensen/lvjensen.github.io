@@ -1,0 +1,58 @@
+---
+title: "CASE STUDY TITLE"
+author: "YOUR NAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+#install.packages("tidyverse") # run this line once in console to get package
+library(tidyverse)
+library(arules)
+library(pander)
+```
+
+```{r load_data}
+# Use this R-Chunk to import all your datasets!
+groc <- Groceries
+```
+
+
+
+## Data Wrangling
+
+```{r tidy_data}
+# Use this R-Chunk to clean & wrangle your data!
+pander(summary(groc))
+itemFrequencyPlot(groc, topN = 5) # Items with highest summort
+```
+
+
+
+```{r plot_data}
+# Use this R-Chunk to plot & visualize your data!
+image(sample(groc, 100))
+myrules <- apriori(data = groc, 
+                   parameter = list(support = .006,
+                                    confidence = .001,
+                                    minlen = 2))
+summary(myrules)
+inspect(sort(myrules, by = 'lift')[1:100])#5 rules with highest lift
+inspect(sort(myrules, by = 'confidence')[1:30])
+inspect(sort(myrules, by = 'support')[1:10])
+```
+
+## Conclusions
