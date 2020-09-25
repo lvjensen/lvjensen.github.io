@@ -1,0 +1,75 @@
+install.packages("remotes")
+remotes::install_github("ropensci/qualtRics")
+install.packages('snakecase')
+
+
+library(snakecase)
+library(qualtRics)
+library(tidyverse)
+
+qualtrics_api_credentials(api_key="QQIHiGIIIS8sgwxKWS6JbCpjgmmMal0YDfDM2A4q", 
+                          base_url="byui.az1.qualtrics.com", 
+                          install=T,
+                          overwrite = T)
+readRenviron("~/.Renviron")
+
+surveys <- all_surveys()
+
+mysurvey <- fetch_survey(surveyID = "SV_2fwHLcolOMjzd5P", verbose = TRUE, force_request = TRUE)
+
+
+makeVlist <- function(dta){
+  
+  labels <- sapply(mysurvey, function(x)attr(x, "label"))
+  
+  tibble(names = names(labels), label = labels)
+  
+}
+
+bob <-makeVlist(mysurvey)
+
+colnames(mysurvey) <- bob$label
+
+colnames(mysurvey)[28] <- "Other:2"
+colnames(mysurvey)[51] <- "Other11"
+colnames(mysurvey)[52] <- "Other12"
+colnames(mysurvey)[41] <- "Other2"
+colnames(mysurvey)[62] <- "Other31"
+colnames(mysurvey)[70] <- "Other32"
+colnames(mysurvey)[63] <- "Phone1"
+colnames(mysurvey)[64] <- "Email1"
+colnames(mysurvey)[65] <- "Text1"
+colnames(mysurvey)[66] <- "Whatsapp1"
+colnames(mysurvey)[67] <- "GoogleVoice1"
+colnames(mysurvey)[68] <- "Zoom1"
+colnames(mysurvey)[69] <- "Skype1"
+
+mysurvey <- mysurvey %>%
+  mutate(LDSNUMBER = case_when(
+    is.na(LDSNUMBER) ~ StudentID,
+    TRUE ~ LDSNUMBER
+  ))
+
+mysurvey <- mysurvey %>% 
+  group_by(LDSNUMBER) %>%
+  slice(which.max(as.Date(StartDate, '%m/%d/%Y')))
+
+mysurvey1 <- mysurvey %>%
+  group_by(LDSNUMBER) %>%
+  summarise(count1 = n()) %>%
+  arrange(desc(count1))
+
+surveydata <- mysurvey
+
+
+
+write.csv(mysurvey)
+Email
+Text
+WhatsApp
+GoogleVoice
+Zoom
+Skype
+
+
+which( colnames(mysurvey)=="Phone" )

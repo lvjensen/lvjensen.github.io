@@ -23,6 +23,8 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 library(tidyverse)
 library(Lahman)
 library(imputeTS)
+library(XML)
+library(RCurl)
 
 bats1 <- Batting %>%
   left_join(Master, by = 'playerID') %>%
@@ -46,9 +48,52 @@ pitch <- Pitching %>%
 
 pitchhome <- na.replace(pitch, 0)
 
-
+dbacks %>%
+  mutate(PA2 = AB + BB + SF + HBP,
+             homers = HR/PA2,
+             triples = `3B`/PA2,
+             doubles = `2B`/PA2,
+             walks = (BB + HBP)/PA2,
+             sing = H - HR - `2B` - `3B`,
+             singles = sing/PA2,
+             obp2 = singles + walks + doubles + triples + homers) %>%
+  select(Name, PA, PA2, singles, doubles, triples, homers, walks, OBP, obp2)
 
 ```
+
+### Scrape Tables
+
+```{r}
+url_ari <- "https://www.baseball-reference.com/teams/ARI/2018.shtml"
+
+dbacks <- url_ari %>%
+  getURL() %>%
+  readHTMLTable() %>%
+  .[[1]] %>%
+  as.data.frame() %>%
+  filter(Rk != 'Rk') %>%
+  mutate(Name = str_remove_all(Name, '\\#'), Name = str_remove_all(Name, '\\*'))
+
+as.character(dbacks$Age)
+
+for (i in 4:ncol(dbacks)) {
+  dbacks[,i] <- as.numeric(as.character((dbacks[,i])))
+}
+
+for (i in 1:100) {
+  b <- i %% 9
+  if (i %% 9 == 0) {
+    b <- 9
+  }
+  print(dbacks[b,3])
+}
+
+dbacks2 <- dbacks %>%
+  mutate(totalAB = AB + BB + HBP + SF, OnBase = BB + H + HBP, OBP2 = OnBase/totalAB, oneb = H - dbacks$`2B` - dbacks$`3b` - HR, double = dbacks$`2B`/totalAB, single =  ) %>%
+  select(Name, OBP, OBP2, single, double)
+```
+
+
 
 ```{r load_data}
 # Use this R-Chunk to import all your datasets!
@@ -89,6 +134,16 @@ for (i in seq(1, 100)) {
 inning = 0
 while
 random <- runif(1,0, 1)
+
+
+
+for (row in 1:dim(dbacks)[1]) {
+  print(dbacks[row,]$Name)
+}
+
 ```
+
+
+
 
 
