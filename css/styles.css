@@ -1,7 +1,15 @@
+
 h1 {
   margin:0;
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  color: #3b6978;
+}
+
+h2 {
+  color: #3b6978;
+  text-align: center;
+  margin: 2% 0;
 }
 
 body {
@@ -19,12 +27,12 @@ ul {
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
-  display: block;
-  color: black;
+  display: inline-block;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -40,7 +48,7 @@ footer {
 
 table, tr, td, th {
 
-  padding: 3%;
+  padding: 0 3% 3% 3%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -98,7 +106,7 @@ hr {
 }
 
 .fa {
-  padding: .6em 1.2em;
+  padding: .8em 1.2em;
 }
 
 .fa-linkedin {
