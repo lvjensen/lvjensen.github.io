@@ -1,0 +1,110 @@
+h1 {
+  margin:0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #e4e3e3;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #204051;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3b6978;
+}
+
+footer {
+  background-color:#204051;
+}
+
+table, tr, td, th {
+
+  padding: 3%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #84a9ac;
+  border-width: 5px;
+  width: 30%;
+}
+
+/****************Classes********************/
+
+.work-exp {
+  width: 60%;
+  margin: 50px auto;
+}
+
+.logo {
+  width:25%;
+  float: left;
+  margin: 0 20px;
+}
+
+.work-exp p {
+  margin: 5px;
+}
+
+.work-desc {
+  font-size: 2em;
+}
+.logo-r {
+  width:45%;
+  float: right;
+  margin: 0 20px;
+}
+
+.intro {
+  margin: 10px auto;
+  width:40%;
+}
+
+.intro-p{
+  margin: 5% auto 20% auto;
+  text-align: center;
+}
+
+.intro-h {
+  margin: 8% auto 0 auto;
+  padding-top: 1.5em;
+}
+
+.fa {
+  padding: .6em 1.2em;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-github {
+  color: white;
+}
