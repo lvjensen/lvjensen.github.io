@@ -69,7 +69,6 @@ class Game(arcade.Window):
     This class handles all the game callbacks and interaction
     This class will then call the appropriate functions of
     each of the above classes.
-    You are welcome to modify anything in this class.
     """
 
     def __init__(self, width, height):
@@ -115,31 +114,31 @@ class Game(arcade.Window):
         """
         Draw ship, asteroids in asteroids list, bullets in bullets list
         Displays messages based on outcome of game
-        
+
         """
         self.ship.draw()
-        
+
         for i in self.bullets:
             i.draw()
-            
+
         for asteroid in self.asteroids:
             asteroid.draw()
-            
-        # Message displayed if ship dies    
+
+        # Message displayed if ship dies
         if not self.ship.alive:
             dead_text = 'Wo unto the blind that will not see;\nfor they shall perish also. \n 2 Nephi 9:32'
             dead_x = 200
             dead_y = SCREEN_HEIGHT // 2
             arcade.draw_text(dead_text, start_x=dead_x, start_y=dead_y, font_size=20, color=arcade.color.YELLOW)
-            
-        # Message displayed if game is won    
+
+        # Message displayed if game is won
         if not self.asteroids:
             win_text = 'That whosoever believeth in him\nshould not perish,\nbut have eternal life.\nJohn 3:15'
             win_x = 200
             win_y = SCREEN_HEIGHT // 2
             arcade.draw_text(win_text, start_x=win_x, start_y=win_y, font_size=20, color=arcade.color.YELLOW)
-        
-            
+
+
     def update(self, delta_time):
         """
         Update each object in the game.
@@ -161,7 +160,7 @@ class Game(arcade.Window):
             i.lives -=1
             if i.lives == 0:
                 i.alive = False
-        
+
         self.cleanup_zombies()
         self.check_off_screen()
         # TODO: Check for collisions
@@ -171,24 +170,24 @@ class Game(arcade.Window):
         checks if asteroids are too close to ship
         if they are too close, ship is dead
         """
-        
+
         for bullet in self.bullets:
             for asteroid in self.asteroids:
-                
+
                 if bullet.alive and asteroid.alive:
                     hit_range = bullet.radius + asteroid.radius
-                    
+
                     if (abs(bullet.center.x - asteroid.center.x) < hit_range and
                                 abs(bullet.center.y - asteroid.center.y) < hit_range):
-                        
+
                         bullet.alive = False
                         if asteroid.breaks():
                             self.asteroids += asteroid.breaks()
                             asteroid.alive = False
-                            
+
         for asteroid in self.asteroids:
             bad_pilot = asteroid.radius + self.ship.radius
-            
+
             if (abs(self.ship.center.x - asteroid.center.x) < bad_pilot and
                                 abs(self.ship.center.y - asteroid.center.y) < bad_pilot):
                 self.ship.alive = False
@@ -196,7 +195,6 @@ class Game(arcade.Window):
     def check_keys(self):
         """
         This function checks for keys that are being held down.
-        You will need to put your own method calls in here.
         """
         if arcade.key.LEFT in self.held_keys:
             self.ship.turn_left()
@@ -209,7 +207,7 @@ class Game(arcade.Window):
 
 
         if arcade.key.DOWN in self.held_keys:
-            self.ship.slow_down()          
+            self.ship.slow_down()
 
 
     def on_key_press(self, key: int, modifiers: int):
@@ -226,17 +224,17 @@ class Game(arcade.Window):
                 bullet.center.y = self.ship.center.y
                 bullet.fire(self.ship)
                 self.bullets.append(bullet)
-                
-                
+
+
     def cleanup_zombies(self):
-        
+
         """
         if bullets and asteroids are not alive, removes bullets and asteroids
         """
         for bullet in self.bullets:
             if not bullet.alive:
                 self.bullets.remove(bullet)
-                
+
         for asteroid in self.asteroids:
             if not asteroid.alive:
                 self.asteroids.remove(asteroid)
@@ -247,7 +245,7 @@ class Game(arcade.Window):
         """
         if key in self.held_keys:
             self.held_keys.remove(key)
-    
+
     def check_off_screen(self):
         """
         checks to see if bullets/asteroids aren't on screen, and if soo calls off screen
@@ -255,33 +253,31 @@ class Game(arcade.Window):
 
         for asteroid in self.asteroids:
             asteroid.is_off_screen(SCREEN_WIDTH, SCREEN_HEIGHT)
-            
+
         self.ship.is_off_screen(SCREEN_WIDTH, SCREEN_HEIGHT)
-        
+
         for i in self.bullets:
             i.is_off_screen(SCREEN_WIDTH, SCREEN_HEIGHT)
-        
+
 
 class Point:
-    
+
     def __init__(self): # define point variables for other classes
         self.x = 0.0
         self.y = 0.0
-        
+
 class Velocity:
-    
+
     def __init__(self): # define velocities for other classes
         self.dx = 0.0
         self.dy = 0.0
-        
-        
+
+
 class Fly(ABC): #flying objects class
     """
-    The Fly Object class is an abstract class where the other classes receive their framework.
-    The other classes will all use draw and this class will also advance the rest and chak if they're off screen
-    There is also a setter to return the velocity to zero when they are dead
+    The Fly Object class is an class where the other classes receive their framework.
     """
-    
+
     def __init__(self):
         self.center = Point()
         self.velo = Velocity()
@@ -289,18 +285,18 @@ class Fly(ABC): #flying objects class
         self.radius = 0
         self.alive = False
         self.turn = 0
-        
+
     def advance(self): #advance flying objects
         self.center.x += self.velo.dx
         self.center.y += self.velo.dy
         self.angle += self.turn
-        
+
     @abstractmethod
     def draw(self): #design later
         pass
-    
+
     def is_off_screen(self, width, height):
-    
+
         if self.center.x < 0:
             self.center.x = SCREEN_WIDTH
         elif self.center.x > SCREEN_WIDTH:
@@ -309,7 +305,7 @@ class Fly(ABC): #flying objects class
             self.center.y = SCREEN_HEIGHT
         elif self.center.y > SCREEN_HEIGHT:
             self.center.y = 0
-            
+
     @property #property to reset velocity to zero when dead
     def alive(self):
         return self._alive
@@ -321,27 +317,27 @@ class Fly(ABC): #flying objects class
             self.velo.dx = 0
             self.velo.dy = 0
 
-    
+
 class Bullet(Fly): #bullet inheriting flying objects
     """
     has the framework for bullets. The fire functions lets the bllet be fired from the ship in the same angle as the ship.
     """
-    
+
     def __init__(self):
         super().__init__()
         self.radius = BULLET_RADIUS
         self.lives = 60
-        
-        
+
+
     def draw(self): #draw bullet
         arcade.draw_texture_rectangle(self.center.x, self.center.y, bullet_width, bullet_height, BULLET_TEXTURE, self.angle, bullet_alpha)
-    
+
     def fire(self, ship): #Fire depending on angle of rifle
         self.alive = True
         self.angle = ship.angle + 90
         self.velo.dx = math.cos(math.radians(self.angle))*10 + ship.velo.dx
         self.velo.dy = math.sin(math.radians(self.angle))*10 + ship.velo.dy
-        
+
 
 class Asteroid(Fly): #Asteroid to be inherited
     """
@@ -352,15 +348,15 @@ class Asteroid(Fly): #Asteroid to be inherited
         self.center.y = random.uniform(0, 600)
         self.center.x = random.uniform(0, 800)
         self.alive = True
- 
+
     @abstractmethod
     def draw(self): #design more in-depth in inherited classes
         pass
-        
+
     @abstractmethod
     def breaks(self):
         pass
-    
+
 
 class Large(Asteroid): # Large Asteroid following target class
     """
@@ -373,11 +369,11 @@ class Large(Asteroid): # Large Asteroid following target class
         self.turn = BIG_ROCK_SPIN
         self.velo.dx = random.uniform(-2,2)
         self.velo.dy = random.uniform(-2,2)
-        
+
     def draw(self): #draw target when alive
         if self.alive == True:
             arcade.draw_texture_rectangle(self.center.x, self.center.y, big_width, big_height, BIG_ROCK_TEXTURE, self.angle, big_alpha)
-	   
+
     def breaks(self): # the Large Asteroid breaks into 2 Medium Asteroids and a Small Asteroid.
         med1 = Medium()
         med1.center.x = self.center.x
@@ -400,19 +396,19 @@ class Large(Asteroid): # Large Asteroid following target class
         list.append(sm1)
         return list
 
-    
-class Medium(Asteroid): 
-    
+
+class Medium(Asteroid):
+
     def __init__(self):
         super().__init__()
         self.radius = MEDIUM_ROCK_RADIUS
         self.turn = MEDIUM_ROCK_SPIN
-        
+
     def draw(self): #draw target when alive
         if self.alive == True:
             arcade.draw_texture_rectangle(self.center.x, self.center.y, medium_width, medium_height, MEDIUM_ROCK_TEXTURE, self.angle, medium_alpha)
-	   
-    def breaks(self): 
+
+    def breaks(self):
         list = []
         sm1 = Small()
         sm1.center.x = self.center.x
@@ -427,32 +423,32 @@ class Medium(Asteroid):
         sm2.velo.dy = self.velo.dy - 1.5
         list.append(sm2)
         return list
-        
-    
-class Small(Asteroid): 
-    
+
+
+class Small(Asteroid):
+
     def __init__(self):
         super().__init__()
         self.radius = SMALL_ROCK_RADIUS
         self.turn = SMALL_ROCK_SPIN
-        
+
     def draw(self): #draw target when alive
         if self.alive == True:
             arcade.draw_texture_rectangle(self.center.x, self.center.y, small_width, small_height, SMALL_ROCK_TEXTURE, self.angle, small_alpha)
-	   
+
     def breaks(self):
         bullet = Bullet()
         self.alive = False
-        
-        
-    
+
+
+
 class Ship(Fly):
-    
+
     """
     The ship class creates the original settings of the ship. Also it has the variables that control how it moves.
     """
-    
-    def __init__(self): 
+
+    def __init__(self):
         super().__init__()
         self.center.x = SCREEN_WIDTH // 2 # ship starts in middle of screen
         self.center.y = SCREEN_HEIGHT // 2
@@ -461,38 +457,38 @@ class Ship(Fly):
         self.angle = 0
         self.radius = SHIP_RADIUS
         self.alive = True
-        
+
     def draw(self):
         if self.alive == True:
             arcade.draw_texture_rectangle(self.center.x, self.center.y, ship_width, ship_height, SHIP_TEXTURE, self.angle, ship_alpha)
-           
-    
+
+
     def turn_left(self):
         self.angle += 3 #these change the angle of the ship to turn
-        
+
     def turn_right(self):
         self.angle -= 3
-        
+
     def speed_up(self): #positive acceleration
         speed = .25
         angle = self.angle + 90
         self.velo.dx += math.cos(math.radians(angle)) * speed
-        self.velo.dy += math.sin(math.radians(angle)) * speed 
-        
+        self.velo.dy += math.sin(math.radians(angle)) * speed
+
     def slow_down(self): #negative acceleration
         speed =.25
         angle = self.angle + 90
         self.velo.dx -= math.cos(math.radians(angle)) * speed
         self.velo.dy -= math.sin(math.radians(angle)) * speed
-        
-    
-        
 
 
-        
-           
 
-    
+
+
+
+
+
+
 
 
 

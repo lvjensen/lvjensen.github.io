@@ -27,15 +27,8 @@ SCORE_MISS = 5
 class Pong(arcade.Window):
     """
     This class handles all the game callbacks and interaction
-    It assumes the following classes exist:
-        Point
-        Velocity
-        Ball
-        Paddle
     This class will then call the appropriate functions of
     each of the above classes.
-    You are welcome to modify anything in this class,
-    but should not have to if you don't want to.
     """
 
     def __init__(self, width, height):
@@ -179,64 +172,64 @@ class Pong(arcade.Window):
 # Creates the game and starts it going
 
 class Point:
-    
+
     def __init__(self): # define random point variables
         self.x = random.uniform(0, SCREEN_WIDTH)
         self.y = random.uniform(0, SCREEN_HEIGHT)
-        
+
 class Velocity:
-    
+
     def __init__(self): # define random velocities
         self.dx = random.uniform(-5, -2) or random.uniform(2,5)
         self.dy = random.uniform(-5, -2) or random.uniform(2,5)
-        
+
 class Ball:
-    
+
     def __init__(self): #define ball location and velocity
         self.center = Point()
         self.velocity = Velocity()
         self.center.x = 0
         self.ball_color = (random.randrange(256), random.randrange(256), random.randrange(256))
-        
-        
+
+
     def draw(self): #draw ball
-        arcade.draw_circle_filled(self.center.x, self.center.y, BALL_RADIUS, self.ball_color) 
-    
+        arcade.draw_circle_filled(self.center.x, self.center.y, BALL_RADIUS, self.ball_color)
+
     def advance(self): # move the ball
         self.center.x += self.velocity.dx
         self.center.y += self.velocity.dy
-        
+
     def bounce_horizontal(self): #ball bouncing against left wall or paddle
         self.velocity.dx *= -1
-        
+
     def bounce_vertical(self): #ball bouncing against bottom or top
         self.velocity.dy *= -1
-    
+
     def restart(self): #if ball misses paddle, restart ball at left side
         self.center = Point()
         self.velocity = Velocity()
         self.center.x = 0
         self.ball_color = (random.randrange(256), random.randrange(256), random.randrange(256))
         self.draw()
-    
+
 class Paddle:
-    
+
     def __init__(self): # place paddle on right wall
         self.center = Point()
         self.center.x = SCREEN_WIDTH - (PADDLE_WIDTH//2)
-        
+
     def draw(self): #draw rectangle
         arcade.draw_rectangle_filled(self.center.x, self.center.y, PADDLE_WIDTH, PADDLE_HEIGHT, arcade.color.CHARCOAL)
-        
+
     def move_up(self): #move the paddle up
         if self.center.y <= SCREEN_HEIGHT - (PADDLE_HEIGHT//2):
             self.center.y += 5
-        
+
     def move_down(self): # move the paddle down
         if self.center.y >= 0 + (PADDLE_HEIGHT//2):
             self.center.y -= 5
-    
-        
-        
+
+
+
 window = Pong(SCREEN_WIDTH, SCREEN_HEIGHT)
 arcade.run()

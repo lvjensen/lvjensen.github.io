@@ -43,17 +43,8 @@ class Rifle:
 class Game(arcade.Window):
     """
     This class handles all the game callbacks and interaction
-    It assumes the following classes exist:
-        Rifle
-        Target (and it's sub-classes)
-        Point
-        Velocity
-        Bullet
     This class will then call the appropriate functions of
     each of the above classes.
-    You are welcome to modify anything in this class, but mostly
-    you shouldn't have to. There are a few sections that you
-    must add code to.
     """
 
     def __init__(self, width, height):
@@ -71,7 +62,7 @@ class Game(arcade.Window):
 
         # TODO: Create a list for your targets (similar to the above bullets)
         self.targets = []
-        
+
         arcade.set_background_color(arcade.color.WHITE)
 
     def on_draw(self):
@@ -90,7 +81,7 @@ class Game(arcade.Window):
             bullet.draw()
 
         # TODO: iterate through your targets and draw them...
-        
+
         for i in self.targets:
             i.draw()
 
@@ -121,7 +112,7 @@ class Game(arcade.Window):
             bullet.advance()
 
         # TODO: Iterate through your targets and tell them to advance
-        
+
         for i in self.targets:
             i.advance()
 
@@ -139,7 +130,7 @@ class Game(arcade.Window):
             target = Safe()
         elif ran == 3:
             target = Strong()
-            
+
         self.targets.append(target)
 
     def check_collisions(self):
@@ -214,8 +205,6 @@ class Game(arcade.Window):
         """
         Gets the value of an angle (in degrees) defined
         by the provided x and y.
-        Note: This could be a static method, but we haven't
-        discussed them yet...
         """
         # get the angle in radians
         angle_radians = math.atan2(y, x)
@@ -228,33 +217,33 @@ class Game(arcade.Window):
 # Creates the game and starts it going
 
 class Point:
-    
+
     def __init__(self): # define random point variables
         self.x = 0.0
         self.y = 0.0
-        
+
 class Velocity:
-    
+
     def __init__(self): # define random velocities
         self.dx = random.uniform(1, 5)
         self.dy = random.uniform(-5, 5)
-        
+
 class Fly(ABC): #flying objects class
-    
+
     def __init__(self):
         self.center = Point()
         self.velo = Velocity()
         self.radius = 0
         self.alive = False
-        
+
     def advance(self): #advance flying objects
         self.center.x += self.velo.dx
         self.center.y += self.velo.dy
-        
+
     @abstractmethod
     def draw(self): #design later
         pass
-    
+
     def is_off_screen(self, screen_width, screen_height): #when objects leave screen
         if self.center.x > screen_width + 10:
             self.alive = False
@@ -265,66 +254,66 @@ class Fly(ABC): #flying objects class
 
 
 class Bullet(Fly): #bullet inheriting flying objects
-    
+
     def __init__(self):
         super().__init__()
         self.radius = BULLET_RADIUS
-        
+
     def draw(self): #draw bullet
         arcade.draw_circle_filled(self.center.x, self.center.y, self.radius, BULLET_COLOR)
-    
+
     def fire(self, angle): #Fire depending on angle of rifle
         self.alive = True
         self.draw()
         self.velo.dx = math.cos(math.radians(angle))*20
         self.velo.dy = math.sin(math.radians(angle))*20
         self.advance()
-        
-        
+
+
 class Target(Fly): #target to be inherited
-    
+
     def __init__(self):
         super().__init__()
         self.radius = TARGET_RADIUS
         self.center.y = random.uniform(250, 500)
         self.alive = True
- 
+
     @abstractmethod
     def draw(self): #design more in-depth in inherited classes
         pass
-        
+
     @abstractmethod
     def hit(self):
         pass
-    
+
 class Standard(Target): # standard target following target class
-    
+
     def __init__(self):
         super().__init__()
-        
+
     def draw(self): #draw target when alive
         if self.alive == True:
             arcade.draw_circle_filled(self.center.x, self.center.y, self.radius, TARGET_COLOR)
-        
+
     def hit(self): #target dies and gives points
         bullet = Bullet()
         self.alive = False
-        return 5 
-    
+        return 5
+
 class Strong(Target): #Strong target following target class
-    
+
     def __init__(self):
         super().__init__()
         self.lives = 3
-        
+
     def draw(self): # draw target when it is alive with the amount of lives it has
         if self.alive == True:
             arcade.draw_circle_outline(self.center.x, self.center.y, self.radius, TARGET_COLOR)
             text_x = self.center.x - (self.radius / 2)
             text_y = self.center.y - (self.radius / 2)
             arcade.draw_text(repr(self.lives), text_x, text_y, TARGET_COLOR, font_size=20)
-         
-     
+
+
     def hit(self): #Extra strong target, requires 3 hits. Loses 1 life with each hit
         bullet = Bullet()
         too_close = bullet.radius + self.radius
@@ -334,25 +323,25 @@ class Strong(Target): #Strong target following target class
         elif self.lives == 1:
             self.alive = False
             return 15
-        
-     
+
+
 class Safe(Target): #Blue Safe Target
-    
+
     def __init__(self): # Set Variables
         super().__init__()
         self.radius = TARGET_SAFE_RADIUS
-           
+
     def draw(self): #Draw Safe target when it is alive
         if self.alive == True:
             arcade.draw_circle_filled(self.center.x, self.center.y, self.radius, TARGET_SAFE_COLOR)
- 
-        
+
+
     def hit(self): #Don't hit the safe target, you lose points!
         bullet = Bullet()
         self.alive = False
         return -10
-        
-         
+
+
 
 window = Game(SCREEN_WIDTH, SCREEN_HEIGHT)
 arcade.run()
